@@ -1,10 +1,10 @@
 backfill:
   arxiv:
     continuation: null
-    covered_from: '2025-09-22T16:32:29.418139Z'
+    covered_from: '2024-12-26T16:32:29.418139Z'
   huggingface:
     continuation:
-      cursor: eyJkYXRlIjoiMjAyNi0wNS0yMiIsInBhZ2UiOjAsInNvdXJjZV9jb25zdW1lZCI6Mjc5Nn0
+      cursor: eyJkYXRlIjoiMjAyNi0wMy0yNSIsInBhZ2UiOjAsInNvdXJjZV9jb25zdW1lZCI6NDMwMH0
       window_end: '2026-09-17T16:32:29.418139Z'
       window_start: '2025-09-17T16:32:29.418139Z'
     covered_from: '2026-09-17T16:32:29.418139Z'
