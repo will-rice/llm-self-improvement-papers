@@ -1,0 +1,50 @@
+repository:
+  name: "LLM Self-Improvement Papers"
+  slug: "llm-self-improvement-papers"
+  description: "Research papers on LLM self-improvement: self-training, self-refinement, self-play, self-rewarding, and self-evolving language models"
+adapters:
+  - name: arxiv
+    enabled: true
+    secret_env: null
+    lookback_days: 8
+    backfill_start: 2022-01-01
+    backfill_days: 90
+    page_size: 200
+    max_pages: 10
+    max_results: 2000
+    filters:
+      search_query: "(cat:cs.CL OR cat:cs.LG OR cat:cs.AI) AND (all:\"self-improvement\" OR all:\"self-improving\" OR all:\"self-improve\" OR all:\"self-refine\" OR all:\"self-refinement\" OR all:\"self-correction\" OR all:\"self-correcting\" OR all:\"self-play\" OR all:\"self-rewarding\" OR all:\"self-training\" OR all:\"self-evolving\" OR all:\"self-evolution\" OR all:\"self-reflection\" OR all:\"self-critique\" OR all:\"self-instruct\" OR all:\"self-taught\" OR all:\"self-generated data\" OR all:\"self-verification\" OR all:\"self-feedback\" OR all:\"self-alignment\" OR all:\"self-distillation\" OR all:\"recursive self-improvement\")"
+  - name: huggingface
+    enabled: true
+    secret_env: null
+    lookback_days: 8
+    backfill_start: 2023-05-04
+    backfill_days: 365
+    page_size: 100
+    max_pages: 100
+    max_results: 2000
+    filters: {}
+topic:
+  include_any: []
+  include_all: []
+  exclude_any: []
+  categories: []
+  plugin: "topic_plugin:accept_topic"
+fetch:
+  request_timeout_seconds: 30
+  retries: 3
+  backoff_seconds: 1
+  total_deadline_seconds: 900
+conversion:
+  max_batches_per_run: 20
+  max_papers: 20
+  max_cost: 1000
+  timeout_seconds: 1800
+  html_cost: 2
+  latex_cost: 4
+  pdf_cost: 20
+  deadline_seconds: 10800
+concurrency:
+  html: 4
+  latex: 2
+  pdf: 1

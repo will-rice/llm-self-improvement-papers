@@ -1,0 +1,7 @@
+_commit: v0.4.5
+_src_path: gh:will-rice/papers-template
+project_name: LLM Self-Improvement Papers
+project_slug: llm-self-improvement-papers
+template_version: 0.1.0
+topic_description: 'Research papers on LLM self-improvement: self-training, self-refinement,
+    self-play, self-rewarding, and self-evolving language models'
