@@ -16,6 +16,9 @@ failures:
   arxiv:2510.25621v1:
   - error: 'conversion timed out after 1800s: marker_single'
     occurred_at: '2026-09-25T18:43:23.428705Z'
+  arxiv:2511.09785v2:
+  - error: 'conversion timed out after 1800s: marker_single'
+    occurred_at: '2026-09-25T19:40:12.522226Z'
   arxiv:2605.05409v2:
   - error: 'conversion input HTTP 404: https://arxiv.org/pdf/2605.05409v2'
     occurred_at: '2026-09-25T17:15:44.214182Z'
