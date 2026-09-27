@@ -1,0 +1,5 @@
+paper: arxiv:2510.18619v4
+latest_error: conversion input HTTP 404: https://arxiv.org/pdf/2510.18619v4
+attempt: 2026-09-25T18:27:03.490583+00:00 conversion input HTTP 404: https://arxiv.org/pdf/2510.18619v4
+attempt: 2026-09-27T13:58:02.322336+00:00 conversion input HTTP 404: https://arxiv.org/pdf/2510.18619v4
+attempt: 2026-09-27T15:59:30.007857+00:00 conversion input HTTP 404: https://arxiv.org/pdf/2510.18619v4

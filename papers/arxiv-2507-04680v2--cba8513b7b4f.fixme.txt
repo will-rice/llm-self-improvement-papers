@@ -1,0 +1,5 @@
+paper: arxiv:2507.04680v2
+latest_error: conversion input HTTP 404: https://arxiv.org/pdf/2507.04680v2
+attempt: 2026-09-27T10:34:55.887202+00:00 conversion input HTTP 404: https://arxiv.org/pdf/2507.04680v2
+attempt: 2026-09-27T11:00:41.096761+00:00 conversion input HTTP 404: https://arxiv.org/pdf/2507.04680v2
+attempt: 2026-09-27T15:59:30.007857+00:00 conversion input HTTP 404: https://arxiv.org/pdf/2507.04680v2
