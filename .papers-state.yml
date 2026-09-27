@@ -10,14 +10,11 @@ backfill:
     covered_from: '2024-09-17T16:32:29.418139Z'
 continuations: {}
 failures:
-  arxiv:2506.15241v1:
-  - error: 'conversion timed out after 1800s: marker_single'
-    occurred_at: '2026-09-27T04:15:59.679482Z'
-  - error: 'conversion timed out after 1800s: marker_single'
-    occurred_at: '2026-09-27T07:47:09.293893Z'
   arxiv:2507.04680v2:
   - error: 'conversion input HTTP 404: https://arxiv.org/pdf/2507.04680v2'
     occurred_at: '2026-09-27T10:34:55.887202Z'
+  - error: 'conversion input HTTP 404: https://arxiv.org/pdf/2507.04680v2'
+    occurred_at: '2026-09-27T11:00:41.096761Z'
   arxiv:2510.18619v4:
   - error: 'conversion input HTTP 404: https://arxiv.org/pdf/2510.18619v4'
     occurred_at: '2026-09-25T18:27:03.490583Z'
