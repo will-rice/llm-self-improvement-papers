@@ -35,15 +35,23 @@ failures:
   arxiv:2510.25621v1:
   - error: 'conversion timed out after 1800s: marker_single'
     occurred_at: '2026-09-25T18:43:23.428705Z'
+  - error: 'conversion timed out after 1800s: marker_single'
+    occurred_at: '2026-09-27T13:58:12.173286Z'
   arxiv:2511.09785v2:
   - error: 'conversion timed out after 1800s: marker_single'
     occurred_at: '2026-09-25T19:40:12.522226Z'
+  - error: 'conversion timed out after 1800s: marker_single'
+    occurred_at: '2026-09-27T13:58:12.173286Z'
   arxiv:2511.21902v1:
   - error: 'conversion timed out after 1800s: marker_single'
     occurred_at: '2026-09-25T20:10:38.105734Z'
+  - error: 'conversion timed out after 1800s: marker_single'
+    occurred_at: '2026-09-27T13:58:12.173286Z'
   arxiv:2512.02810v1:
   - error: 'conversion timed out after 1800s: marker_single'
     occurred_at: '2026-09-25T20:40:43.929311Z'
+  - error: 'conversion timed out after 1800s: marker_single'
+    occurred_at: '2026-09-27T13:58:12.173286Z'
   arxiv:2605.05409v2:
   - error: 'conversion input HTTP 404: https://arxiv.org/pdf/2605.05409v2'
     occurred_at: '2026-09-25T17:15:44.214182Z'
