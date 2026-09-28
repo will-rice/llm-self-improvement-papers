@@ -41,3 +41,6 @@ failures:
   arxiv:2605.19748v2:
   - error: 'conversion input HTTP 404: https://arxiv.org/pdf/2605.19748v2'
     occurred_at: '2026-09-28T04:34:17.249798Z'
+  arxiv:2606.01101v2:
+  - error: 'conversion input HTTP 404: https://arxiv.org/pdf/2606.01101v2'
+    occurred_at: '2026-09-28T04:35:41.591399Z'
