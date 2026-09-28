@@ -22,3 +22,6 @@ failures:
     occurred_at: '2026-09-28T10:43:06.184290Z'
   - error: 'conversion timed out after 1800s: marker_single'
     occurred_at: '2026-09-28T11:14:15.212914Z'
+  arxiv:2608.10504v1:
+  - error: 'conversion timed out after 1800s: marker_single'
+    occurred_at: '2026-09-28T13:23:12.720576Z'
