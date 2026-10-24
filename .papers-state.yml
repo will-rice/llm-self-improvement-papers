@@ -6,4 +6,10 @@ backfill:
     continuation: null
     covered_from: '2023-05-04T00:00:00Z'
 continuations: {}
-failures: {}
+failures:
+  arxiv:2610.23257v1:
+  - error: 'conversion timed out after 1800s: marker_single'
+    occurred_at: '2026-10-24T02:37:28.232219Z'
+  arxiv:2610.24453v1:
+  - error: 'conversion timed out after 1800s: marker_single'
+    occurred_at: '2026-10-24T02:37:28.232219Z'
