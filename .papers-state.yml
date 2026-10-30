@@ -7,8 +7,9 @@ backfill:
     covered_from: '2023-05-04T00:00:00Z'
 continuations: {}
 failures:
-  arxiv:2610.37211v1:
+  arxiv:2610.38405v1:
   - error: 'conversion timed out after 1800s: marker_single'
-    occurred_at: '2026-10-28T02:29:52.736024Z'
+    occurred_at: '2026-10-30T02:29:58.527961Z'
+  arxiv:2610.38450v1:
   - error: 'conversion timed out after 1800s: marker_single'
-    occurred_at: '2026-10-29T02:29:45.552656Z'
+    occurred_at: '2026-10-30T02:29:58.527961Z'
