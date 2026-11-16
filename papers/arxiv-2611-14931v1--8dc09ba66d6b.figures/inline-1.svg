@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="660.00" height="1112.34" overflow="visible"><g transform="translate(0,1112.34) scale(1,-1)"><g transform="translate(0,0)"><g transform="translate(0,1112.36) scale(1,-1)"><foreignobject width="660.06" height="1112.36" overflow="visible"><object type="image/svg+xml" data="2611.14931v1/supplement_prompt_frame.svg" id="A3.p1.pic1.g1" class="ltx_graphics ltx_img_portrait" style="width:100%;height:100%;object-fit:contain" width="685" height="1155" aria-label="[Uncaptioned image]"></object></foreignobject></g></g><g transform="translate(19.69,11.81)"><g transform="scale(1,-1)"><text xml:id="A3.p1.pic1.1"><inline-logical-block class="ltx_minipage" vattach="middle" width="468.4pt" xml:id="A3.p1.pic1.1.1">
+                <para xml:id="A3.p1.pic1.p3">
+                  <p xml:id="A3.p1.pic1.p3.1">You are a visual-grounding analyst with access to privileged information. This request contains two complete views of the same scene. Image 1 is the unmodified original scene. Image 2 is an audit copy in which the intended segmentation target is enclosed by a thin red rectangle, and two positive interior locations on that same target are marked by a lime point and a cyan point, respectively.</p>
+                  <p xml:id="A3.p1.pic1.p3.2"><text font="bold" xml:id="A3.p1.pic1.p3.2.1">Original referring expression:<break></break></text></g><g transform="scale(1,-1)"><text font="typewriter" xml:id="A3.p1.pic1.p3.2.2">{{REFERRING_EXPRESSION_JSON}}</text></g><g transform="scale(1,-1)"><text font="typewriter" xml:id="A3.p1.pic1.p4.1.1">target</text></g><g transform="scale(1,-1)"><text font="typewriter" xml:id="A3.p1.pic1.p2.1.1.1">{</text></g><g transform="scale(1,-1)"><text font="typewriter" xml:id="A3.p1.pic1.p2.1.2.1">&quot;target&quot;: &quot;&lt;short object category inferred from the visible target&gt;&quot;,</text></g><g transform="scale(1,-1)"><text font="typewriter" xml:id="A3.p1.pic1.p2.1.3.1">&quot;cues&quot;: [&quot;&lt;visible, discriminative target cue&gt;&quot;, &quot;&lt;visible, discriminative target cue&gt;&quot;],</text></g><g transform="scale(1,-1)"><text font="typewriter" xml:id="A3.p1.pic1.p2.1.4.1">&quot;others&quot;: [&quot;&lt;confusable object or object group&gt;: &lt;key visible difference from the target&gt;&quot;],</text></g><g transform="scale(1,-1)"><text font="typewriter" xml:id="A3.p1.pic1.p2.1.5.1">&quot;steps&quot;: [&quot;&lt;short, ordered localization instruction&gt;&quot;]</text></g><g transform="scale(1,-1)"><text font="typewriter" xml:id="A3.p1.pic1.p2.1.6.1">}</text></g><g transform="scale(1,-1)"><text font="bold" xml:id="A3.p1.pic1.p5.1.1">Requirements:</text></g><g transform="scale(1,-1)"><text xml:id="A3.I1.i1.1"></text></tag>
+                        <tag role="typerefnum">1st item</tag>
+                      </tags>
+                      <para class="ltx_noindent" xml:id="A3.I1.i1.p1">
+                        <p xml:id="A3.I1.i1.p1.1"><text font="typewriter" xml:id="A3.I1.i1.p1.1.1">target</text></g><g transform="scale(1,-1)"><text xml:id="A3.I1.i2.1"></text></tag>
+                        <tag role="typerefnum">2nd item</tag>
+                      </tags>
+                      <para class="ltx_noindent" xml:id="A3.I1.i2.p1">
+                        <p xml:id="A3.I1.i2.p1.1"><text font="typewriter" xml:id="A3.I1.i2.p1.1.1">cues</text></g><g transform="scale(1,-1)"><text xml:id="A3.I1.i3.1"></text></tag>
+                        <tag role="typerefnum">3rd item</tag>
+                      </tags>
+                      <para class="ltx_noindent" xml:id="A3.I1.i3.p1">
+                        <p xml:id="A3.I1.i3.p1.1"><text font="typewriter" xml:id="A3.I1.i3.p1.1.1">others</text></g><g transform="scale(1,-1)"><text xml:id="A3.I1.i4.1"></text></tag>
+                        <tag role="typerefnum">4th item</tag>
+                      </tags>
+                      <para class="ltx_noindent" xml:id="A3.I1.i4.p1">
+                        <p xml:id="A3.I1.i4.p1.1"><text font="typewriter" xml:id="A3.I1.i4.p1.1.1">steps</text></g><g transform="scale(1,-1)"><text xml:id="A3.I1.i5.1"></text></tag>
+                        <tag role="typerefnum">5th item</tag>
+                      </tags>
+                      <para class="ltx_noindent" xml:id="A3.I1.i5.p1">
+                        <p xml:id="A3.I1.i5.p1.1">Do not mention either image number, the red rectangle, the colored points, annotations, bounding boxes, coordinates, pixels, or numerical geometry.</p>
+                      </para>
+                    </item>
+                    <item xml:id="A3.I1.i6">
+                      <tags>
+                        <tag>•</tag>
+                        <tag role="autoref">item <text xml:id="A3.I1.i6.1"></text></tag>
+                        <tag role="typerefnum">6th item</tag>
+                      </tags>
+                      <para class="ltx_noindent" xml:id="A3.I1.i6.p1">
+                        <p xml:id="A3.I1.i6.p1.1">Do not output an answer box or point coordinates.</p>
+                      </para>
+                    </item>
+                    <item xml:id="A3.I1.i7">
+                      <tags>
+                        <tag>•</tag>
+                        <tag role="autoref">item <text xml:id="A3.I1.i7.1"></text></tag>
+                        <tag role="typerefnum">7th item</tag>
+                      </tags>
+                      <para xml:id="A3.I1.i7.p1">
+                        <p xml:id="A3.I1.i7.p1.1">Use concise English strings and output JSON only.</p>
+                      </para>
+                    </item>
+                  </itemize>
+                </para>
+              </inline-logical-block></text></g></g><g transform="translate(19.69,1135.17)"><g transform="scale(1,-1)"><text color="#FFFFFF" font="bold" xml:id="A3.p1.pic1.2">Prompt Template</text></g></g></g></svg>
