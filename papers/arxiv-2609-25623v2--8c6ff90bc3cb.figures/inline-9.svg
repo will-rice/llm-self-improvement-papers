@@ -1,0 +1,17 @@
+<svg id="A2.SS1.p14.pic1" class="ltx_picture" height="173.49" overflow="visible" version="1.1" viewbox="0 0 676.77 173.49" width="676.77"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,173.49) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#A6A6A6;" fill="#A6A6A6" fill-opacity="1.0"><path style="stroke:none" d="M 0 2.77 L 0 170.72 C 0 172.25 1.24 173.49 2.77 173.49 L 674 173.49 C 675.53 173.49 676.77 172.25 676.77 170.72 L 676.77 2.77 C 676.77 1.24 675.53 0 674 0 L 2.77 0 C 1.24 0 0 1.24 0 2.77 Z" /></g><g style="--ltx-fill-color:#F7F7F7;" fill="#F7F7F7" fill-opacity="1.0"><path style="stroke:none" d="M 0.69 2.77 L 0.69 146.24 L 676.08 146.24 L 676.08 2.77 C 676.08 1.62 675.15 0.69 674 0.69 L 2.77 0.69 C 1.62 0.69 0.69 1.62 0.69 2.77 Z" /></g><g style="--ltx-fill-color:#E6E6E6;" fill="#E6E6E6" fill-opacity="1.0"><path style="stroke:none" d="M 0.69 146.94 L 0.69 170.72 C 0.69 171.87 1.62 172.8 2.77 172.8 L 674 172.8 C 675.15 172.8 676.08 171.87 676.08 170.72 L 676.08 146.94 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 12.93 156.75)"><foreignobject style="--ltx-fo-width:44.17em;--ltx-fo-height:0.68em;--ltx-fo-depth:0.23em;font-size:10pt;" height="12.45" overflow="visible" transform="matrix(1 0 0 -1 0 9.34)" width="611.19"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A2.SS1.p14.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:44.17em;">
+<span id="A2.SS1.p14.pic1.1.1" class="ltx_p"><span id="A2.SS1.p14.pic1.1.1.1" class="ltx_text ltx_font_bold" style="font-size:90%;--ltx-fg-color:#000000;">L2 (named strategy; sees L4 and L3)</span></span>
+</span></span></span></foreignobject></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 12.93 12.93)"><foreignobject style="--ltx-fo-width:49.78em;--ltx-fo-height:8.95em;--ltx-fo-depth:0.2em;font-size:10pt;" height="126.61" overflow="visible" transform="matrix(1 0 0 -1 0 123.84)" width="688.82"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A2.SS1.p14.pic1.2" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:49.78em;">
+<span id="A2.SS1.p14.pic1.2.1" class="ltx_p"><span id="A2.SS1.p14.pic1.2.1.1" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;">Must name at least one specific method, theorem, or tool that a student
+could look up, and may add one short conceptual clause explaining why it
+applies.
+<br class="ltx_break">Must not contain: procedural language (‘‘first X, then Y’’, numbered steps,
+‘‘write down’’, ‘‘carry over’’); any concrete numerical value from the
+problem; any symbolic substitution (‘‘let <math id="A2.SS1.p14.pic1.m1" class="ltx_Math" alttext="x=\ldots" display="inline" intent=":literal"><semantics><mrow><mi style="--ltx-fg-color:#000000;" mathcolor="#000000">x</mi><mo style="--ltx-fg-color:#000000;" mathcolor="#000000">=</mo><mi style="--ltx-fg-color:#000000;" mathcolor="#000000" mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">x=\ldots</annotation></semantics></math>’’); any intermediate
+expression or the final answer. ‘‘Then’’ is permitted only to connect two
+named methods, never two procedural steps.
+<br class="ltx_break">Self-checks: sequence-word ban; named-method requirement.
+<br class="ltx_break">Typical length 30--90 tokens.
+</span></span>
+</span></span></span></foreignobject></g></g></svg>

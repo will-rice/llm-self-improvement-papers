@@ -1,0 +1,35 @@
+<svg id="A2.SS3.p10.pic1" class="ltx_picture" height="387.7" overflow="visible" version="1.1" viewbox="0 0 676.77 387.7" width="676.77"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,387.7) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#A6A6A6;" fill="#A6A6A6" fill-opacity="1.0"><path style="stroke:none" d="M 0 2.77 L 0 384.93 C 0 386.46 1.24 387.7 2.77 387.7 L 674 387.7 C 675.53 387.7 676.77 386.46 676.77 384.93 L 676.77 2.77 C 676.77 1.24 675.53 0 674 0 L 2.77 0 C 1.24 0 0 1.24 0 2.77 Z" /></g><g style="--ltx-fill-color:#F7F7F7;" fill="#F7F7F7" fill-opacity="1.0"><path style="stroke:none" d="M 0.69 2.77 L 0.69 384.93 C 0.69 386.08 1.62 387.01 2.77 387.01 L 674 387.01 C 675.15 387.01 676.08 386.08 676.08 384.93 L 676.08 2.77 C 676.08 1.62 675.15 0.69 674 0.69 L 2.77 0.69 C 1.62 0.69 0.69 1.62 0.69 2.77 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 12.93 12.93)"><foreignobject style="--ltx-fo-width:49.78em;--ltx-fo-height:26.35em;--ltx-fo-depth:0.2em;font-size:10pt;" height="367.38" overflow="visible" transform="matrix(1 0 0 -1 0 364.61)" width="688.82"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A2.SS3.p10.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:49.78em;">
+<span id="A2.SS3.p10.pic1.1.1" class="ltx_p"><span id="A2.SS3.p10.pic1.1.1.1" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;">Audit the three hints against their declared definitions. Judge only what is
+actually written in each hint, using the problem, reference solution, and
+ground-truth answer only as verification context.
+</span></span>
+<span id="A2.SS3.p10.pic1.1.2" class="ltx_p"><span id="A2.SS3.p10.pic1.1.2.1" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;">ANSWER LEAKAGE:
+<br class="ltx_break">- ‘‘direct’’: explicitly states the final value, expression, option, or
+answer.
+<br class="ltx_break">- ‘‘equivalent’’: states a conclusion algebraically/logically equivalent to
+the final answer, so the answer is already determined without carrying out
+the intended solution.
+<br class="ltx_break">- ‘‘none’’: contains only guidance or classification. A useful strategy that
+makes the problem easier is NOT leakage.
+<br class="ltx_break">- ‘‘uncertain’’: evidence is genuinely ambiguous.
+</span></span>
+<span id="A2.SS3.p10.pic1.1.3" class="ltx_p"><span id="A2.SS3.p10.pic1.1.3.1" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;">L2 (named strategy): Must identify a concrete method, theorem, rule,
+representation, or tool. May briefly say why it fits. Must not carry out
+problem-specific calculations or a derivation. Must not give a multi-step
+operation sequence or the answer.
+</span></span>
+<span id="A2.SS3.p10.pic1.1.4" class="ltx_p"><span id="A2.SS3.p10.pic1.1.4.1" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;">L3 (method-independent framing): Must express one transferable cognitive
+framing shift. Must not name a specific theorem, algorithm, or concrete
+method. Must not prescribe a sequence of operations or give the answer.
+</span></span>
+<span id="A2.SS3.p10.pic1.1.5" class="ltx_p"><span id="A2.SS3.p10.pic1.1.5.1" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;">L4 (problem category): Must correctly identify the mathematical domain and
+relevant object/concept. Must not recommend a method, cognitive move, action
+sequence, or answer.
+</span></span>
+<span id="A2.SS3.p10.pic1.1.6" class="ltx_p"><span id="A2.SS3.p10.pic1.1.6.1" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;">For every false/violation judgment, quote at most two short exact spans from
+the corresponding hint in ‘‘evidence’’. Do not quote the reference solution.
+Set boundary_pass from the complete definition, not merely from answer
+leakage. Return JSON only, with exactly the requested schema.
+</span></span>
+</span></span></span></foreignobject></g></g></svg>
