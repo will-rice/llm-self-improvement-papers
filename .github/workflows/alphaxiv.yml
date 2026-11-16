@@ -23,7 +23,7 @@ jobs:
     steps:
       - name: Check out main
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
-        timeout-minutes: 2
+        timeout-minutes: 10
         with:
           ref: main
           persist-credentials: false
@@ -35,7 +35,7 @@ jobs:
       - name: Sync locked environment
         timeout-minutes: 3
         run: |
-          python -m pip install uv==0.8.17
+          python -m pip install uv==0.11.8
           uv sync --locked
       - name: Sync collection
         timeout-minutes: 20

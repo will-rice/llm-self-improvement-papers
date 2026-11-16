@@ -6,7 +6,12 @@ from pathlib import Path
 import shutil
 
 from papers_pipeline.adapters.base import Adapter
-from papers_pipeline.batching import expected_markdown, infer_backlog, select_batch
+from papers_pipeline.batching import (
+    expected_figures,
+    expected_markdown,
+    infer_backlog,
+    select_batch,
+)
 from papers_pipeline.config import PipelineConfig, load_config
 from papers_pipeline.convert import (
     CommandRunner,
@@ -18,7 +23,12 @@ from papers_pipeline.fetch import FetchResult, fetch_all
 from papers_pipeline.formatting import format_changed
 from papers_pipeline.git import GitOperations
 from papers_pipeline.http import Deadline, RequestClient
-from papers_pipeline.indexing import write_index
+from papers_pipeline.indexing import (
+    TITLE_INDEX_DIRECTORY,
+    title_index_paths,
+    write_index,
+    write_title_index,
+)
 from papers_pipeline.inventory import read_inventory, write_inventory
 from papers_pipeline.models import Paper, PipelineState
 from papers_pipeline.preflight import ToolLookup, validate_required_tools
@@ -48,6 +58,8 @@ class Dependencies:
     monotonic: Callable[[], float]
     materializer: InputMaterializer | None = None
     tool_lookup: ToolLookup | None = None
+    # Pushes the commits made so far; called after every batch when set.
+    publish: Callable[[], bool] | None = None
 
 
 @contextmanager
@@ -139,11 +151,23 @@ async def run_nightly(
                 raise
 
         attempted: set[str] = set()
+        # Papers the fast pass found to need docling; converted once no
+        # untried paper is left, so PDFs, which convert one at a time, never hold
+        # up papers that pandoc converts in seconds.
+        needs_pdf: set[str] = set()
         batch_number = 0
+        # Only batches that converted or failed a paper count toward the
+        # budget: a batch of papers deferred by a rate-limited host, or set
+        # aside for docling, costs nothing, and counting it would let such
+        # papers starve every other pending paper. Each paper is tried at most
+        # once per pass, so the loop still ends.
+        working_batches = 0
         backlog = infer_backlog(inventory, paths.root)
         summary.generated = len(backlog.generated)
         summary.pending = len(backlog.pending)
-        while backlog.pending and batch_number < config.conversion.max_batches_per_run:
+        while (
+            backlog.pending and working_batches < config.conversion.max_batches_per_run
+        ):
             if (
                 dependencies.monotonic() - run_started
                 >= config.conversion.deadline_seconds
@@ -152,20 +176,29 @@ async def run_nightly(
                     f"conversion deadline reached after {batch_number} batches"
                 )
                 break
-            eligible = tuple(
+            untried = tuple(
                 paper for paper in backlog.pending if paper.identifier not in attempted
             )
-            batch = select_batch(eligible, config.conversion)
+            batch = select_batch(
+                untried
+                or tuple(
+                    paper for paper in backlog.pending if paper.identifier in needs_pdf
+                ),
+                config.conversion,
+            )
             if not batch.papers:
                 break
 
             batch_number += 1
             attempted.update(paper.identifier for paper in batch.papers)
-            summary.attempted += len(batch.papers)
+            needs_pdf.difference_update(paper.identifier for paper in batch.papers)
+            summary.attempted = len(attempted)
             state_before_batch = state
             index_path = paths.root / "README.md"
+            title_paths = title_index_paths(paths.root, inventory)
             batch_paths = [
                 index_path,
+                *title_paths,
                 paths.state,
                 *(
                     path
@@ -177,6 +210,12 @@ async def run_nightly(
                 ),
             ]
             batch_before = _snapshot_files(batch_paths)
+            # Pending papers have no figures yet, so rolling back a batch means
+            # removing the figure directories it created.
+            batch_figures = [
+                expected_figures(paths.root, paper) for paper in batch.papers
+            ]
+            figures_before = {path for path in batch_figures if path.exists()}
             try:
                 with _timed(summary, "conversion", dependencies.monotonic):
                     converted = await convert_batch(
@@ -188,10 +227,22 @@ async def run_nightly(
                         dependencies.materializer,
                         dependencies.now(),
                         timeout_seconds=config.conversion.timeout_seconds,
+                        # The deadline also bounds a running batch: one batch
+                        # of slow PDFs could otherwise outlast the job timeout,
+                        # which discards every unpushed batch commit.
+                        time_budget_seconds=config.conversion.deadline_seconds
+                        - (dependencies.monotonic() - run_started),
+                        allow_pdf=not untried,
                     )
+                needs_pdf.update(paper.identifier for paper in converted.needs_pdf)
                 state = converted.state
                 summary.succeeded += len(converted.succeeded)
                 summary.failed += len(converted.failed)
+                summary.deferred += len(converted.deferred)
+                if len(converted.deferred) + len(converted.needs_pdf) < len(
+                    batch.papers
+                ):
+                    working_batches += 1
                 summary.promoted_to_fixme += len(converted.promoted)
                 summary.fixme_paths.extend(str(path) for path in converted.promoted)
                 summary.events.extend(
@@ -201,10 +252,19 @@ async def run_nightly(
                     )
                     for item in converted.failed
                 )
+                summary.events.extend(
+                    f"conversion deferred: {item.paper.identifier}: {item.error}"
+                    for item in converted.deferred
+                )
+                summary.events.extend(
+                    f"conversion deadline interrupted: {paper.identifier}"
+                    for paper in converted.interrupted
+                )
 
                 index_before = _file_content(index_path)
                 with _timed(summary, "index", dependencies.monotonic):
                     index = write_index(paths.root, inventory)
+                    write_title_index(paths.root, inventory)
                 changed_paths = [
                     item.output
                     for item in converted.succeeded
@@ -212,11 +272,23 @@ async def run_nightly(
                 ]
                 if _file_content(index) != index_before:
                     changed_paths.append(index)
+                changed_paths.extend(
+                    path
+                    for path in title_paths
+                    if _file_content(path) != batch_before[path]
+                )
 
                 with _timed(summary, "format", dependencies.monotonic):
                     await format_changed(changed_paths, dependencies.runner)
 
-                commit_paths = [*changed_paths, *converted.promoted]
+                commit_paths = [
+                    *changed_paths,
+                    *converted.promoted,
+                    *(
+                        expected_figures(paths.root, item.paper)
+                        for item in converted.succeeded
+                    ),
+                ]
                 with _timed(summary, "persist_batch", dependencies.monotonic):
                     if state != state_before_batch:
                         save_state(paths.state, state)
@@ -226,8 +298,21 @@ async def run_nightly(
                             commit_paths,
                             f"chore: convert paper batch {batch_number}",
                         )
+                        if (
+                            dependencies.publish is not None
+                            and not dependencies.publish()
+                        ):
+                            summary.events.append(
+                                f"publish failed after batch {batch_number}; "
+                                "a later push includes it"
+                            )
             except BaseException:
-                _rollback_files(batch_before, batch_paths, dependencies.git)
+                for path in batch_figures:
+                    if path not in figures_before:
+                        shutil.rmtree(path, ignore_errors=True)
+                _rollback_files(
+                    batch_before, [*batch_paths, *batch_figures], dependencies.git
+                )
                 raise
             backlog = infer_backlog(inventory, paths.root)
             summary.generated = len(backlog.generated)
@@ -331,6 +416,7 @@ def _managed_paths(paths: PipelinePaths) -> list[Path]:
         paths.inventory,
         paths.state,
         paths.root / "README.md",
+        paths.root / TITLE_INDEX_DIRECTORY,
         paths.root / "papers",
     ]
 

@@ -8,7 +8,13 @@ import pytest
 from papers_pipeline.convert import CommandRunner
 from papers_pipeline.errors import InfrastructureError, PaperError
 from papers_pipeline.formatting import format_changed, shard_paths
-from papers_pipeline.indexing import write_index
+from papers_pipeline.batching import expected_markdown
+from papers_pipeline.indexing import (
+    RECENT_PAPERS,
+    title_index_paths,
+    write_index,
+    write_title_index,
+)
 from papers_pipeline.models import Paper
 
 
@@ -193,6 +199,53 @@ def test_write_index_is_deterministic_and_skips_unchanged_rewrites(
     assert first_mtime == second_mtime
     assert first_content.endswith("\n")
     assert first_content.count("|") > 0
+
+
+def test_write_index_lists_only_the_most_recent_papers(tmp_path: Path) -> None:
+    (tmp_path / "README.md").write_text(
+        "<!-- papers-index:start -->\n<!-- papers-index:end -->\n", encoding="utf-8"
+    )
+    papers = [
+        paper(f"paper:{day:02d}", published=datetime(2025, 1, day, tzinfo=timezone.utc))
+        for day in range(1, RECENT_PAPERS + 2)
+    ]
+
+    text = write_index(tmp_path, papers).read_text(encoding="utf-8")
+
+    listed = [line.split(" | ")[1] for line in text.splitlines() if "paper:" in line]
+    assert listed == [f"paper:{day:02d}" for day in range(RECENT_PAPERS + 1, 1, -1)]
+    assert f"The {RECENT_PAPERS} most recent of {RECENT_PAPERS + 1} papers." in text
+
+
+def test_title_index_lists_every_paper_by_year_newest_first(tmp_path: Path) -> None:
+    older = paper("paper:1", published=datetime(2024, 5, 1, tzinfo=timezone.utc))
+    pending = paper(
+        "paper:2", published=datetime(2025, 1, 3, tzinfo=timezone.utc)
+    ).model_copy(update={"title": "Rates [draft]"})
+    converted = paper("paper:3", published=datetime(2025, 2, 4, tzinfo=timezone.utc))
+    markdown = expected_markdown(tmp_path, converted)
+    markdown.parent.mkdir(parents=True)
+    markdown.write_text("converted\n", encoding="utf-8")
+    papers = [older, pending, converted]
+
+    write_title_index(tmp_path, papers)
+
+    index = tmp_path / "index"
+    assert title_index_paths(tmp_path, papers) == [
+        index / "README.md",
+        index / "2025.md",
+        index / "2024.md",
+    ]
+    assert (index / "README.md").read_text(encoding="utf-8").splitlines()[-2:] == [
+        "- [2025](2025.md): 2 papers",
+        "- [2024](2024.md): 1 paper",
+    ]
+    # A converted paper links to its markdown; a pending one to its source.
+    assert (index / "2025.md").read_text(encoding="utf-8") == (
+        "# 2025\n\n"
+        f"- 2025-02-04 [paper:3 title](../papers/{markdown.name})\n"
+        "- 2025-01-03 [Rates \\[draft\\]](https://example.test/paper:2)\n"
+    )
 
 
 def test_write_index_preserves_bytes_outside_generated_section(tmp_path: Path) -> None:

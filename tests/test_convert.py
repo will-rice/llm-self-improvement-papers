@@ -1,4 +1,7 @@
 import asyncio
+import base64
+import io
+import itertools
 import os
 import subprocess
 import sys
@@ -7,10 +10,17 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlsplit
 
+import pypandoc
 import pytest
+from PIL import Image
 
 
-from papers_pipeline.batching import Batch, expected_markdown, infer_backlog
+from papers_pipeline.batching import (
+    Batch,
+    expected_figures,
+    expected_markdown,
+    infer_backlog,
+)
 from papers_pipeline.front_matter import with_front_matter
 from papers_pipeline.adapters.arxiv import ArxivAdapter
 from papers_pipeline.adapters.base import FetchWindow
@@ -19,8 +29,13 @@ from papers_pipeline.convert import (
     CommandRunner,
     DownloadingMaterializer,
     convert_batch,
+    localize_inline_figures,
+    localize_pdf_figures,
+    requeue_outdated_conversions,
+    write_figure,
 )
-from papers_pipeline.errors import InfrastructureError, PaperError
+from papers_pipeline import convert
+from papers_pipeline.errors import InfrastructureError, PaperError, RateLimitedError
 from papers_pipeline.http import RequestClient
 from papers_pipeline.models import FailureAttempt, InputFormat, Paper, PipelineState
 from papers_pipeline.remote import HttpResponse, RemoteDownloader
@@ -60,10 +75,17 @@ class FakeMaterializer:
         *,
         fixtures: Mapping[str, Path],
         behaviors: Mapping[str, str] | None = None,
+        downloads: Mapping[str, bytes] | None = None,
     ) -> None:
         self.fixtures = dict(fixtures)
         self.behaviors = dict(behaviors or {})
+        self.downloads = dict(downloads or {})
         self.materialized_urls: dict[Path, str] = {}
+
+    async def download(self, url: str) -> bytes:
+        if url not in self.downloads:
+            raise PaperError(f"conversion input HTTP 404: {url}")
+        return self.downloads[url]
 
     async def materialize(self, paper: Paper, root: Path) -> Path:
         behavior = self.behaviors.get(paper.input_url, "success")
@@ -116,7 +138,8 @@ class TrackingRunner(CommandRunner):
     ) -> subprocess.CompletedProcess[str]:
         self.timeouts.append(timeout)
         kind = _kind_for(argv)
-        input_path = Path(argv[1])
+        # docling takes its input after the "convert" subcommand.
+        input_path = Path(argv[2] if argv[0] == "docling" else argv[1])
         assert input_path.is_absolute()
         assert "://" not in argv[1]
         original_url = self.materializer.lookup(input_path)
@@ -362,7 +385,7 @@ async def test_downloading_materializer_maps_disk_errors_to_infrastructure_error
 
 
 @pytest.mark.asyncio
-@pytest.mark.parametrize("status_code", [400, 401, 403, 404, 410, 422, 429])
+@pytest.mark.parametrize("status_code", [400, 401, 403, 404, 410, 422])
 async def test_permanent_download_http_errors_are_paper_errors(
     status_code: int,
 ) -> None:
@@ -373,6 +396,218 @@ async def test_permanent_download_http_errors_are_paper_errors(
 
     with pytest.raises(PaperError, match=f"HTTP {status_code}"):
         await downloader.download("https://example.test/missing.pdf", 1)
+
+
+@pytest.mark.asyncio
+async def test_http_429_is_rate_limited() -> None:
+    downloader = RemoteDownloader(
+        resolver=FakeResolver(("8.8.8.8",)),
+        connector=FakeConnector(HttpResponse(status_code=429, content=b"")),
+    )
+
+    with pytest.raises(RateLimitedError, match="HTTP 429"):
+        await downloader.download("https://example.test/busy.pdf", 1)
+
+
+@pytest.mark.asyncio
+async def test_rate_limited_paper_is_deferred_without_a_strike(tmp_path: Path) -> None:
+    limited = paper("doi:limited", input_format="html")
+    successful = paper("doi:success", input_format="html")
+    earlier = [FailureAttempt(occurred_at=NOW.replace(day=22), error="HTTP 404")]
+    successful_materializer = FakeMaterializer(
+        fixtures={successful.input_url: fixture_for(successful)}
+    )
+
+    class LimitedMaterializer:
+        async def download(self, url: str) -> bytes:
+            return await successful_materializer.download(url)
+
+        async def materialize(self, paper: Paper, root: Path) -> Path:
+            if paper == limited:
+                raise RateLimitedError(
+                    f"conversion input HTTP 429: {paper.input_url}",
+                    url=paper.input_url,
+                )
+            return await successful_materializer.materialize(paper, root)
+
+    result = await convert_batch(
+        Batch(papers=(successful, limited), estimated_cost=2),
+        tmp_path,
+        PipelineState(failures={limited.identifier: earlier}),
+        CONCURRENCY,
+        TrackingRunner(materializer=successful_materializer),
+        LimitedMaterializer(),
+        NOW,
+    )
+
+    assert [item.paper for item in result.succeeded] == [successful]
+    assert result.failed == ()
+    assert [item.paper for item in result.deferred] == [limited]
+    assert result.state.failures == {limited.identifier: earlier}
+    assert infer_backlog([limited], tmp_path).pending == (limited,)
+
+
+@pytest.mark.asyncio
+async def test_papers_that_need_docling_wait_when_pdfs_are_not_allowed(
+    tmp_path: Path,
+) -> None:
+    fast = paper("doi:fast", input_format="html")
+    slow = paper("doi:slow", input_format="pdf")
+    earlier = [FailureAttempt(occurred_at=NOW.replace(day=22), error="HTTP 404")]
+    materializer = FakeMaterializer(
+        fixtures={item.input_url: fixture_for(item) for item in (fast, slow)}
+    )
+    runner = TrackingRunner(materializer=materializer)
+
+    result = await convert_batch(
+        Batch(papers=(fast, slow), estimated_cost=11),
+        tmp_path,
+        PipelineState(failures={slow.identifier: earlier}),
+        CONCURRENCY,
+        runner,
+        materializer,
+        NOW,
+        allow_pdf=False,
+    )
+
+    assert [item.paper for item in result.succeeded] == [fast]
+    assert result.needs_pdf == (slow,)
+    assert result.failed == ()
+    # The PDF is neither downloaded nor converted, and its history is kept.
+    assert runner.maximum_active["pdf"] == 0
+    assert result.state.failures == {slow.identifier: earlier}
+    assert infer_backlog([fast, slow], tmp_path).pending == (slow,)
+
+
+@pytest.mark.asyncio
+async def test_time_budget_interrupts_running_conversions_without_a_strike(
+    tmp_path: Path,
+) -> None:
+    fast = paper("doi:fast", input_format="html")
+    slow = paper("doi:slow", input_format="html")
+    materializer = FakeMaterializer(
+        fixtures={item.input_url: fixture_for(item) for item in (fast, slow)}
+    )
+    runner = TrackingRunner(materializer=materializer, delays={slow.input_url: 60})
+
+    result = await convert_batch(
+        Batch(papers=(fast, slow), estimated_cost=2),
+        tmp_path,
+        PipelineState(),
+        CONCURRENCY,
+        runner,
+        materializer,
+        NOW,
+        time_budget_seconds=0.5,
+    )
+
+    assert [item.paper for item in result.succeeded] == [fast]
+    assert result.interrupted == (slow,)
+    assert result.failed == ()
+    assert result.state.failures == {}
+    assert runner.active["html"] == 0
+    assert infer_backlog([fast, slow], tmp_path).pending == (slow,)
+
+
+@pytest.mark.asyncio
+async def test_materializer_stops_contacting_a_host_after_http_429(
+    tmp_path: Path,
+) -> None:
+    requested: list[str] = []
+
+    async def downloader(url: str, timeout: float) -> bytes:
+        requested.append(url)
+        if urlsplit(url).hostname == "busy.test":
+            raise RateLimitedError(f"conversion input HTTP 429: {url}", url=url)
+        return b"<html></html>"
+
+    materializer = DownloadingMaterializer(downloader=downloader)
+    for url in ("https://busy.test/1", "https://busy.test/2"):
+        with pytest.raises(RateLimitedError):
+            await materializer.download(url)
+    await materializer.download("https://calm.test/1")
+
+    assert requested == ["https://busy.test/1", "https://calm.test/1"]
+
+
+@pytest.mark.asyncio
+async def test_materializer_paces_listed_hosts() -> None:
+    loop = asyncio.get_running_loop()
+    started: dict[str, float] = {}
+
+    async def downloader(url: str, timeout: float) -> bytes:
+        started[url] = loop.time()
+        return b"<html></html>"
+
+    materializer = DownloadingMaterializer(
+        downloader=downloader, min_interval_seconds={"slow.test": 0.2}
+    )
+    await asyncio.gather(
+        *(
+            materializer.download(url)
+            for url in (
+                "https://slow.test/1",
+                "https://slow.test/2",
+                "https://fast.test/1",
+            )
+        )
+    )
+
+    assert started["https://slow.test/2"] - started["https://slow.test/1"] >= 0.2
+    assert started["https://fast.test/1"] - started["https://slow.test/1"] < 0.2
+
+
+@pytest.mark.asyncio
+async def test_materializer_retries_a_rate_limited_host_from_the_refused_hop() -> None:
+    connector = FakeConnector(
+        HttpResponse(status_code=302, content=b"", location="/paper.v1.pdf"),
+        HttpResponse(status_code=429, content=b""),
+        HttpResponse(status_code=429, content=b""),
+        HttpResponse(status_code=200, content=b"%PDF-1.7"),
+    )
+    downloader = RemoteDownloader(
+        resolver=FakeResolver(("8.8.8.8",)), connector=connector
+    )
+    materializer = DownloadingMaterializer(
+        downloader=downloader.download,
+        min_interval_seconds={"busy.test": 0.05},
+        rate_limit_attempts={"busy.test": 3},
+    )
+
+    payload = await materializer.download("https://busy.test/paper.pdf")
+
+    assert payload == b"%PDF-1.7"
+    assert [call["target"] for call in connector.calls] == [
+        "/paper.pdf",
+        "/paper.v1.pdf",
+        "/paper.v1.pdf",
+        "/paper.v1.pdf",
+    ]
+
+
+@pytest.mark.asyncio
+async def test_materializer_skips_a_host_after_its_rate_limit_attempts() -> None:
+    loop = asyncio.get_running_loop()
+    started: list[float] = []
+
+    async def downloader(url: str, timeout: float) -> bytes:
+        started.append(loop.time())
+        raise RateLimitedError(f"conversion input HTTP 429: {url}", url=url)
+
+    materializer = DownloadingMaterializer(
+        downloader=downloader,
+        min_interval_seconds={"busy.test": 0.05},
+        rate_limit_attempts={"busy.test": 3},
+    )
+    with pytest.raises(RateLimitedError, match="HTTP 429"):
+        await materializer.download("https://busy.test/1")
+    with pytest.raises(RateLimitedError, match="rate-limited this run"):
+        await materializer.download("https://busy.test/2")
+
+    assert len(started) == 3
+    assert all(
+        later - earlier >= 0.05 for earlier, later in itertools.pairwise(started)
+    )
 
 
 class FakeResolver:
@@ -562,7 +797,7 @@ async def test_remote_downloader_rejects_every_non_public_address_class(
 
 @pytest.mark.asyncio
 @pytest.mark.parametrize("failure", [OSError("DNS failed"), OSError("socket failed")])
-async def test_remote_downloader_maps_resolution_and_socket_errors_to_infrastructure(
+async def test_remote_downloader_maps_resolution_and_socket_errors_to_paper_errors(
     failure: OSError,
 ) -> None:
     if "DNS" in str(failure):
@@ -575,55 +810,48 @@ async def test_remote_downloader_maps_resolution_and_socket_errors_to_infrastruc
             connector=FakeConnector(error=failure),
         )
 
-    with pytest.raises(InfrastructureError):
+    with pytest.raises(PaperError):
         await downloader.download("https://papers.example/paper.pdf", 1)
 
 
 @pytest.mark.asyncio
-async def test_http_408_aborts_mixed_batch_without_mutating_failure_state(
-    tmp_path: Path,
+@pytest.mark.parametrize("status_code", [408, 500, 503])
+async def test_unavailable_input_host_fails_only_its_paper(
+    tmp_path: Path, status_code: int
 ) -> None:
-    timed_out = paper("arxiv:timeout", input_format="html")
+    unavailable = paper("arxiv:unavailable", input_format="html")
     successful = paper("arxiv:success", input_format="html")
-    prior_state = PipelineState(
-        failures={
-            timed_out.identifier: [
-                FailureAttempt(occurred_at=NOW.replace(day=21), error="old failure"),
-                FailureAttempt(occurred_at=NOW.replace(day=22), error="old failure"),
-            ]
-        }
+    remote = RemoteDownloader(
+        resolver=FakeResolver(("8.8.8.8",)),
+        connector=FakeConnector(HttpResponse(status_code=status_code, content=b"")),
     )
-    connector = FakeConnector(HttpResponse(status_code=408, content=b""))
-    remote = RemoteDownloader(resolver=FakeResolver(("8.8.8.8",)), connector=connector)
     successful_materializer = FakeMaterializer(
         fixtures={successful.input_url: fixture_for(successful)}
     )
 
     class MixedMaterializer:
+        async def download(self, url: str) -> bytes:
+            return await successful_materializer.download(url)
+
         async def materialize(self, paper: Paper, root: Path) -> Path:
-            if paper == timed_out:
+            if paper == unavailable:
                 await remote.download(paper.input_url, 1)
-                raise AssertionError("408 download returned")
+                raise AssertionError(f"HTTP {status_code} download returned")
             return await successful_materializer.materialize(paper, root)
 
-    for _ in range(2):
-        with pytest.raises(InfrastructureError, match="HTTP 408"):
-            await convert_batch(
-                Batch(papers=(successful, timed_out), estimated_cost=2),
-                tmp_path,
-                prior_state,
-                CONCURRENCY,
-                TrackingRunner(materializer=successful_materializer),
-                MixedMaterializer(),
-                NOW,
-            )
-        assert prior_state.failures[timed_out.identifier][0].error == "old failure"
-        assert len(prior_state.failures[timed_out.identifier]) == 2
-        assert (
-            not expected_markdown(tmp_path, timed_out)
-            .with_suffix(".fixme.txt")
-            .exists()
-        )
+    result = await convert_batch(
+        Batch(papers=(successful, unavailable), estimated_cost=2),
+        tmp_path,
+        PipelineState(),
+        CONCURRENCY,
+        TrackingRunner(materializer=successful_materializer),
+        MixedMaterializer(),
+        NOW,
+    )
+
+    assert [item.paper for item in result.succeeded] == [successful]
+    assert [item.paper for item in result.failed] == [unavailable]
+    assert f"HTTP {status_code}" in (result.failed[0].error or "")
 
 
 @pytest.mark.asyncio
@@ -964,7 +1192,7 @@ async def test_converter_must_materialize_output(
 
 
 @pytest.mark.asyncio
-async def test_marker_output_is_moved_from_marker_contract_location(
+async def test_docling_output_is_moved_from_its_output_directory(
     tmp_path: Path, state: PipelineState
 ) -> None:
     target = paper("ss:2", input_format="pdf")
@@ -1069,7 +1297,7 @@ async def test_unexpected_task_failure_is_wrapped_as_infrastructure_error(
 
 
 def _kind_for(argv: Sequence[str]) -> str:
-    if argv[0] == "marker_single":
+    if argv[0] == "docling":
         return "pdf"
     if Path(urlsplit(argv[1]).path).suffix == ".html":
         return "html"
@@ -1077,9 +1305,8 @@ def _kind_for(argv: Sequence[str]) -> str:
 
 
 def _write_converter_output(argv: Sequence[str], input_path: Path) -> None:
-    if argv[0] == "marker_single":
-        output_dir = Path(argv[3])
-        output = output_dir / input_path.stem / f"{input_path.stem}.md"
+    if argv[0] == "docling":
+        output = Path(argv[argv.index("--output") + 1]) / f"{input_path.stem}.md"
     else:
         output = Path(
             next(
@@ -1136,6 +1363,7 @@ def arxiv_paper() -> Paper:
 
 
 ARXIV_HTML_URL = "https://arxiv.org/html/2401.12345"
+AR5IV_HTML_URL = "https://ar5iv.labs.arxiv.org/html/2401.12345"
 
 
 @pytest.mark.asyncio
@@ -1152,12 +1380,12 @@ async def test_arxiv_papers_convert_from_arxiv_html_before_their_input(
 ) -> None:
     target = arxiv_paper()
     fixtures = {target.input_url: fixture_for(target)}
+    behaviors = {AR5IV_HTML_URL: "paper_error"}
     if html is not None:
         fixtures[ARXIV_HTML_URL] = FIXTURES / html
-    fake_materializer = FakeMaterializer(
-        fixtures=fixtures,
-        behaviors={} if html is not None else {ARXIV_HTML_URL: "paper_error"},
-    )
+    else:
+        behaviors[ARXIV_HTML_URL] = "paper_error"
+    fake_materializer = FakeMaterializer(fixtures=fixtures, behaviors=behaviors)
     runner = TrackingRunner(materializer=fake_materializer)
 
     result = await convert_batch(
@@ -1177,6 +1405,260 @@ async def test_arxiv_papers_convert_from_arxiv_html_before_their_input(
         # Only the LaTeXML article reaches pandoc, not arXiv's page chrome.
         assert runner.inputs[0].startswith(b'<article class="ltx_document')
         assert b"Report GitHub Issue" not in runner.inputs[0]
+
+
+@pytest.mark.asyncio
+@pytest.mark.parametrize(
+    ("ar5iv", "expected_kind"),
+    [
+        ("ar5iv.html", "html"),
+        ("ar5iv-fatal.html", "pdf"),  # ar5iv marks empty or truncated pages fatal
+    ],
+)
+async def test_arxiv_papers_without_arxiv_html_convert_from_ar5iv(
+    tmp_path: Path, state: PipelineState, ar5iv: str, expected_kind: str
+) -> None:
+    # arXiv stores a version, ar5iv only the latest: its URL has no "v2".
+    target = arxiv_paper().model_copy(update={"arxiv_id": "2401.12345v2"})
+    fake_materializer = FakeMaterializer(
+        fixtures={
+            target.input_url: fixture_for(target),
+            AR5IV_HTML_URL: FIXTURES / ar5iv,
+        },
+        behaviors={f"{ARXIV_HTML_URL}v2": "paper_error"},
+    )
+    runner = TrackingRunner(materializer=fake_materializer)
+
+    result = await convert_batch(
+        Batch(papers=(target,), estimated_cost=1),
+        tmp_path,
+        state,
+        CONCURRENCY,
+        runner,
+        fake_materializer,
+        NOW,
+    )
+
+    assert result.succeeded[0].paper == target
+    assert runner.maximum_active[expected_kind] == 1
+    assert len(runner.inputs) == 1
+    if expected_kind == "html":
+        assert b"Offline ar5iv HTML." in runner.inputs[0]
+
+
+@pytest.mark.asyncio
+async def test_rate_limited_arxiv_html_defers_the_paper_instead_of_falling_back(
+    tmp_path: Path, state: PipelineState
+) -> None:
+    target = arxiv_paper()
+
+    class LimitedMaterializer:
+        async def download(self, url: str) -> bytes:
+            raise AssertionError(url)
+
+        async def materialize(self, paper: Paper, root: Path) -> Path:
+            assert paper.input_url == ARXIV_HTML_URL
+            raise RateLimitedError(
+                f"conversion input HTTP 429: {paper.input_url}",
+                url=paper.input_url,
+            )
+
+    result = await convert_batch(
+        Batch(papers=(target,), estimated_cost=1),
+        tmp_path,
+        state,
+        CONCURRENCY,
+        CommandRunner(),
+        LimitedMaterializer(),
+        NOW,
+    )
+
+    assert [item.paper for item in result.deferred] == [target]
+    assert result.failed == ()
+
+
+@pytest.mark.conversion
+@pytest.mark.asyncio
+async def test_real_converters_turn_a_pdf_and_arxiv_html_into_markdown(
+    tmp_path: Path, state: PipelineState
+) -> None:
+    # No fakes: docling and pandoc run for real, from the locked environment
+    # the nightly uses, so a broken converter install fails here first.
+    from_pdf = paper("doi:pdf", input_format="pdf")
+    from_html = arxiv_paper()
+    real_materializer = FakeMaterializer(
+        fixtures={
+            from_pdf.input_url: FIXTURES / "text.pdf",
+            ARXIV_HTML_URL: FIXTURES / "arxiv_figures.html",
+        },
+        downloads={"https://arxiv.org/html/2401.12345/x1.png": png(64, 32)},
+    )
+
+    result = await convert_batch(
+        Batch(papers=(from_pdf, from_html), estimated_cost=2),
+        tmp_path,
+        state,
+        CONCURRENCY,
+        CommandRunner(),
+        real_materializer,
+        NOW,
+    )
+
+    assert result.failed == ()
+    pdf_markdown = expected_markdown(tmp_path, from_pdf).read_text(encoding="utf-8")
+    assert "Conversion Smoke Test" in pdf_markdown
+    html_markdown = expected_markdown(tmp_path, from_html).read_text(encoding="utf-8")
+    assert "a=b+c \\tag{1}" in html_markdown
+    assert (
+        f"{expected_figures(tmp_path, from_html).name}/figure-1.webp" in html_markdown
+    )
+
+
+def png(width: int, height: int) -> bytes:
+    buffer = io.BytesIO()
+    Image.new("RGB", (width, height), "white").save(buffer, "PNG")
+    return buffer.getvalue()
+
+
+@pytest.mark.asyncio
+async def test_arxiv_html_figures_are_stored_next_to_the_paper_as_webp(
+    tmp_path: Path, state: PipelineState
+) -> None:
+    target = arxiv_paper()
+    fake_materializer = FakeMaterializer(
+        fixtures={ARXIV_HTML_URL: FIXTURES / "arxiv_figures.html"},
+        downloads={"https://arxiv.org/html/2401.12345/x1.png": png(2560, 1280)},
+    )
+    runner = TrackingRunner(materializer=fake_materializer)
+
+    result = await convert_batch(
+        Batch(papers=(target,), estimated_cost=1),
+        tmp_path,
+        state,
+        CONCURRENCY,
+        runner,
+        fake_materializer,
+        NOW,
+    )
+
+    figures = expected_figures(tmp_path, target)
+    assert result.succeeded[0].paper == target
+    assert sorted(path.name for path in figures.iterdir()) == ["figure-1.webp"]
+    with Image.open(figures / "figure-1.webp") as figure:
+        assert (figure.format, figure.size) == ("WEBP", (1024, 512))
+    # pandoc reads the local figure; the undownloadable one is dropped.
+    assert f'src="{figures.name}/figure-1.webp"'.encode() in runner.inputs[0]
+    assert b"missing.png" not in runner.inputs[0]
+
+
+def test_arxiv_lua_filter_writes_equations_as_display_math(tmp_path: Path) -> None:
+    html = FIXTURES / "arxiv_figures.html"
+    markdown = subprocess.run(
+        [
+            pypandoc.get_pandoc_path(),
+            str(html),
+            "--from=html",
+            "--to=gfm-raw_html",
+            f"--lua-filter={Path(convert.__file__).with_name('arxiv_html.lua')}",
+        ],
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout
+
+    assert "``` math\na=b+c \\tag{1}\n```" in markdown
+    assert "|" not in markdown
+    # In-page anchors and arXiv's breadcrumb titles are gone.
+    assert "See Figure 1." in markdown
+    assert "‣" not in markdown
+    assert "Refer to caption" not in markdown
+    assert "data:" not in markdown
+
+
+@pytest.mark.parametrize(
+    "payload",
+    [
+        b"<svg xmlns='http://www.w3.org/2000/svg'/>",  # not a raster image
+        png(64, 64)[:-40],  # truncated download
+    ],
+    ids=["svg", "truncated"],
+)
+def test_undecodable_figures_are_skipped(tmp_path: Path, payload: bytes) -> None:
+    target = tmp_path / "paper.figures" / "figure-1.webp"
+
+    assert not write_figure(payload, target)
+    assert not target.exists()
+
+
+def test_inline_data_figures_are_written_next_to_the_paper(tmp_path: Path) -> None:
+    svg = b"<svg xmlns='http://www.w3.org/2000/svg'/>"
+    markdown = tmp_path / "paper.md"
+    markdown.write_text(
+        f"![logo](data:image/svg+xml;base64,{base64.b64encode(svg).decode()})\n"
+        f"![](data:image/png;base64,{base64.b64encode(png(8, 8)).decode()})\n"
+        "![](data:image/png;base64,AAAA)\n",
+        encoding="utf-8",
+    )
+    figures = tmp_path / "paper.figures"
+
+    localize_inline_figures(markdown, figures)
+
+    assert markdown.read_text(encoding="utf-8") == (
+        "![logo](paper.figures/inline-1.svg)\n![](paper.figures/inline-2.webp)\n\n"
+    )
+    assert (figures / "inline-1.svg").read_bytes() == svg
+
+
+def test_docling_figures_move_next_to_the_paper_and_are_relinked(
+    tmp_path: Path,
+) -> None:
+    # Docling's layout: images in "<name>_artifacts", linked by absolute path.
+    output = tmp_path / "docling" / "paper.md"
+    artifacts = output.with_name("paper_artifacts")
+    artifacts.mkdir(parents=True)
+    (artifacts / "image_000000_aa.png").write_bytes(png(40, 20))
+    (artifacts / "image_000001_bb.png").write_bytes(b"not an image")
+    output.write_text(
+        f"![Image]({artifacts}/image_000000_aa.png)\n\ntext\n\n"
+        f"![Image]({artifacts}/image_000001_bb.png)\n",
+        encoding="utf-8",
+    )
+    figures = tmp_path / "paper.figures"
+
+    localize_pdf_figures(output, figures)
+
+    assert output.read_text(encoding="utf-8") == (
+        "![Image](paper.figures/figure-1.webp)\n\ntext\n\n\n"
+    )
+    assert sorted(path.name for path in figures.iterdir()) == ["figure-1.webp"]
+
+
+def test_requeue_outdated_conversions_removes_only_outdated_papers(
+    tmp_path: Path,
+) -> None:
+    table_math = paper("arxiv:1", input_format="html")
+    remote_image = paper("arxiv:2", input_format="html")
+    current = paper("arxiv:3", input_format="html")
+    pending = paper("arxiv:4", input_format="html")
+    for item, body in [
+        (table_math, "| a |\n\n````math\nx\n``` | (1) |\n"),
+        (remote_image, "![Refer to caption](2401.12345/x1.png)\n"),
+        (current, f"![a]({expected_figures(tmp_path, current).name}/figure-1.webp)\n"),
+    ]:
+        expected_markdown(tmp_path, item).parent.mkdir(parents=True, exist_ok=True)
+        expected_markdown(tmp_path, item).write_text(body, encoding="utf-8")
+    expected_figures(tmp_path, table_math).mkdir()
+
+    removed = requeue_outdated_conversions(
+        tmp_path, [table_math, remote_image, current, pending]
+    )
+
+    assert removed == [
+        expected_markdown(tmp_path, table_math),
+        expected_markdown(tmp_path, remote_image),
+    ]
+    assert not expected_figures(tmp_path, table_math).exists()
+    assert expected_markdown(tmp_path, current).exists()
 
 
 @pytest.mark.asyncio

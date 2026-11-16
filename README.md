@@ -5048,11 +5048,26 @@ stage. Source continuations retain an opaque cursor and its exact UTC fetch
 window across bounded runs under one shared deadline. Conversion failures are
 isolated by paper; infrastructure failures stop the run.
 
-The corpus is built to be browsed by people and LLMs. Every paper in `papers/`
+The corpus is built to be browsed by people and LLMs. [llms.txt](llms.txt)
+describes the layout, and [index/](index/README.md) lists every paper by title,
+one small file per publication year, regenerated with each converted batch so a
+reader never has to load `papers.csv` to find a paper. Every paper in `papers/`
 starts with YAML front matter (identifier, title, authors, published date, URL,
-source, DOI, arXiv ID, and categories), and the index below links each
+source, DOI, arXiv ID, and categories). `papers.csv` lists every paper in
+publication order, and the index below shows its 30 most recent, linking each
 converted paper to its local markdown file. Run `papers-pipeline front-matter`
 to refresh the front matter of every converted paper from `papers.csv`.
+
+Figures are stored next to each paper in `<paper>.figures/`, downscaled to
+1024 px and recompressed as WebP, so the corpus never links to a source that
+could change. arXiv papers convert from arXiv's HTML with a pandoc filter that
+writes numbered equations as display math; when arXiv has no HTML, ar5iv's
+rendering is used unless ar5iv grades it fatal. Every other PDF converts with
+docling, with OCR on so scanned papers work and formula recognition off because
+it takes over a minute per equation on a CPU: display equations in those papers
+appear as `<!-- formula-not-decoded -->`. Run
+`papers-pipeline requeue-outdated` to delete conversions made before figures
+and equations were handled this way; the next nightly runs reconvert them.
 
 ## Configuration
 
@@ -5104,7 +5119,7 @@ cannot express the repository rule; the plugin accepts `Paper` and returns
 
 Fetch request timeouts are 1-120 seconds, retries are 0-5, backoff is 0-30
 seconds, and the shared fetch deadline is 60-7200 seconds. Conversion allows
-1-20 batches per run, 1-100 papers per batch, and a total cost budget of 1-1000. A run stops starting batches after `deadline_seconds` (default 10800, 600-18000) so it always pushes before the nightly step's 330-minute timeout. Each converter may run for 60-3600 seconds
+1-20 batches per run, 1-100 papers per batch, and a total cost budget of 1-1000. At `deadline_seconds` (default 10800, 600-18000) a run stops starting batches and cancels conversions still running, leaving those papers pending without a strike, so it always pushes before the nightly step's 330-minute timeout. Each converter may run for 60-3600 seconds
 before it is terminated. Per-paper HTML and LaTeX costs are 1-100; PDF cost is
 1-1000. HTML and LaTeX concurrency is 1-4.
 PDF concurrency is always exactly 1.
@@ -5112,9 +5127,7 @@ PDF concurrency is always exactly 1.
 ## Run locally
 
 ```bash
-uv sync --locked --extra dev
-uv tool install marker-pdf==1.10.1
-uv pip install --no-deps pypandoc-binary==1.15
+uv sync --locked --extra dev --extra convert
 mkdir -p "$HOME/.local/bin"
 ln -sf "$(uv run python -c 'import pypandoc; print(pypandoc.get_pandoc_path())')" \
   "$HOME/.local/bin/pandoc"
@@ -5141,25 +5154,48 @@ the exact UTC window start/end and consecutive failure attempts. A capped run
 reuses that window until enumeration completes; only the following run creates
 a fresh lookback window. Legacy cursor-only state is discarded rather than
 being resumed against a different window. Count and cost budgets select
-deterministic batches.
+deterministic batches. Each run first converts every pending paper that pandoc
+can handle, setting aside those that need docling, then spends its remaining
+batches on docling; a batch counts toward `max_batches_per_run` only when it
+converted or failed a paper.
 
 A paper failure does not stop peers. A third consecutive scheduled failure
 creates a colocated `.fixme.txt`; fix the input and remove the marker to retry.
-Permanent per-paper download failures (including HTTP 404/410 and invalid input
-URLs) count toward that paper's failure history without cancelling peers.
-Authentication, rate limits, outages, network/timeouts, disk failures, missing
-tools, and resource exhaustion fail the run explicitly.
+Any failure downloading one paper's input (HTTP errors, DNS, connection
+failures, timeouts, invalid URLs) counts toward that paper's failure history
+without cancelling peers. HTTP 429 is the exception: the paper is deferred
+without a strike, its host is not contacted again that run, and a later run
+retries it. Hosts known to block bursts (bioRxiv) are also paced to one request
+at a time. bioRxiv refuses most automated requests at any pace, so a 429 there
+is retried from the refused redirect hop, up to 40 paced attempts per paper,
+before the host is skipped. Source API failures skip that source for the run; disk failures,
+missing tools, and resource exhaustion fail the run explicitly.
 
 ## Formatting
 
 Nightly formatting receives only changed paper files and indexes. Complete
 corpus formatting runs only through the manual sharded workflow.
 
+## Conversion environment
+
+docling and pandoc are locked dependencies in the `convert` extra, so
+`uv.lock` fixes every package a run installs; add or change them with
+`uv add --optional convert`. `.github/scripts/setup-conversion.sh` builds the
+environment for both the nightly and CI's `conversion` job, which then converts
+real fixtures (`uv run pytest -m conversion`). A change that breaks the
+converter therefore fails its pull request, not the next nightly run.
+
 ## Automation and summaries
+
+The nightly workflow pushes every batch as soon as it is committed
+(`papers-pipeline nightly --publish`), so a run that fails or is cut off keeps
+all but its newest batch. A refused push is retried with the next batch, and
+the final push retries five times a minute apart. Without `--publish` the
+command only commits locally.
 
 The nightly Actions summary reports per-source fetched, accepted,
 deduplicated, and rejected counts; inventory, generated, pending, attempted,
-succeeded, failed, and fixme counts; timings; continuation, cap, retry, and
+succeeded, failed, deferred, and fixme counts; timings; continuation, cap, retry, and
 deadline events; and fixme paths.
 
 The weekly template workflow runs Copier against an explicit release,
@@ -5187,7 +5223,11 @@ removed.
 Run the weekly workflow, or wait for its schedule. It resolves an immutable
 release from `will-rice/papers-template`, runs Copier, refreshes the lock,
 validates configuration, runs pre-commit and the offline test suite, and opens
-an update pull request for review. Resolve any `.rej` file as a failed update;
+an update pull request for review. It opens the pull request with the
+`TEMPLATE_UPDATE_TOKEN` Actions secret, a fine-grained personal access token
+with Contents, Pull requests and Workflows read and write access to this
+repository. The job token cannot push workflow-file changes, and pull requests
+it opens do not run CI; the workflow fails while the secret is unset. Resolve any `.rej` file as a failed update;
 never bypass validation or push an update directly to `main`.
 
 ## Ownership boundary
