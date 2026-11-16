@@ -1,0 +1,180 @@
+<svg id="A12.SS1.p3.pic1" class="ltx_picture" height="984.43" overflow="visible" version="1.1" viewbox="0 0 653.15 984.43" width="653.15"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,984.43) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#B3B3B3;" fill="#B3B3B3" fill-opacity="1.0"><path style="stroke:none" d="M 0 5.91 L 0 978.53 C 0 981.79 2.64 984.43 5.91 984.43 L 647.24 984.43 C 650.51 984.43 653.15 981.79 653.15 978.53 L 653.15 5.91 C 653.15 2.64 650.51 0 647.24 0 L 5.91 0 C 2.64 0 0 2.64 0 5.91 Z" /></g><g style="--ltx-fill-color:#FBFBFB;" fill="#FBFBFB" fill-opacity="1.0"><path style="stroke:none" d="M 1.97 5.91 L 1.97 960.32 L 651.18 960.32 L 651.18 5.91 C 651.18 3.73 649.42 1.97 647.24 1.97 L 5.91 1.97 C 3.73 1.97 1.97 3.73 1.97 5.91 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 13.78 968.92)"><foreignobject style="--ltx-fo-width:39.31em;--ltx-fo-height:0.69em;--ltx-fo-depth:0.19em;font-size:10pt;" height="12.3" overflow="visible" transform="matrix(1 0 0 -1 0 9.61)" width="543.94"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A12.SS1.p3.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:39.31em;">
+<span id="A12.SS1.p3.pic1.1.1" class="ltx_p"><span id="A12.SS1.p3.pic1.1.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#FFFFFF;">OfficeQA task prompt and LLM judge prompt</span></span>
+</span></span></span></foreignobject></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 13.78 12.92)"><foreignobject style="--ltx-fo-width:45.21em;--ltx-fo-height:67.9em;--ltx-fo-depth:0.22em;font-size:10pt;" height="942.62" overflow="visible" transform="matrix(1 0 0 -1 0 939.54)" width="625.58"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A12.SS1.p3.pic1.2" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:45.21em;">
+<span id="A12.SS1.p3.pic1.2.1" class="ltx_p"><span id="A12.SS1.p3.pic1.2.1.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.1.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p3.pic1.2.1.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p3.pic1.2.1.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p3.pic1.2.1.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p3.pic1.p1" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p1.1" class="ltx_p"># source: core/evolution_mechanisms/task_source.py:893-922 (_OFFICEQA_USER_PROMPT), 1038-1049 (LightweightOfficeQASource._to_tasks), 775-803 (_HLE_JUDGE_PROMPT), 1051-1071 (score)</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.2" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.2.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.2.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p3.pic1.2.2.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p3.pic1.2.2.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p3.pic1.2.2.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p3.pic1.p2" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p2.1" class="ltx_p"># Used in: OfficeQA (Pro and Full). The task prompt is the chairman’s first message (wrapped in &quot;## Task\n\n{task_text}&quot; like the other benchmarks); the 1-3 source documents are copied into the task workspace under documents/. MemRL retrieval key = the question text only (content-only key).</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.3" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.3.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.3.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p3.pic1.2.4" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.4.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.4.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p4" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p4.1" class="ltx_p">############################################################################</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.5" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.5.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.5.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p5" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p5.1" class="ltx_p">## 1. OfficeQA task prompt (_OFFICEQA_USER_PROMPT.format(question, file_list))</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.6" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.6.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.6.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p6" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p6.1" class="ltx_p">############################################################################</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.7" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.7.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.7.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p7" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p7.1" class="ltx_p">## Question</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.8" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.8.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.8.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p3.pic1.2.9" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.9.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.9.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p9" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p9.1" class="ltx_p">{question}</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.10" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.10.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.10.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p3.pic1.2.11" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.11.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.11.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p11" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p11.1" class="ltx_p">## Source Documents</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.12" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.12.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.12.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p3.pic1.2.13" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.13.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.13.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p13" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p13.1" class="ltx_p">This question is grounded in the following Treasury Bulletin issue(s),</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.14" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.14.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.14.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p14" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p14.1" class="ltx_p">copied into your workspace as plain text (pre-OCR’d, no PDF parsing</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.15" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.15.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.15.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p15" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p15.1" class="ltx_p">needed):</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.16" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.16.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.16.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p3.pic1.2.17" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.17.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.17.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p17" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p17.1" class="ltx_p">{file_list}</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.18" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.18.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.18.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p3.pic1.2.19" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.19.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.19.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p19" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p19.1" class="ltx_p">**IMPORTANT -- these files are large** (tens of thousands of lines each).</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.20" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.20.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.20.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p20" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p20.1" class="ltx_p">Do NOT try to `read_file` an entire file at once. Use `bash` (e.g.</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.21" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.21.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.21.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p21" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p21.1" class="ltx_p">`grep -n &quot;keyword&quot; documents/&lt;file&gt;` or similar) to locate the relevant</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.22" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.22.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.22.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p22" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p22.1" class="ltx_p">section(s) first, then `read_file` with a narrow offset/line range around</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.23" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.23.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.23.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p23" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p23.1" class="ltx_p">each match. Reading selectively leaves you enough budget to actually</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.24" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.24.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.24.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p24" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p24.1" class="ltx_p">answer the question.</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.25" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.25.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.25.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p3.pic1.2.26" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.26.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.26.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p26" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p26.1" class="ltx_p">## Answer Format</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.27" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.27.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.27.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p3.pic1.2.28" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.28.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.28.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p28" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p28.1" class="ltx_p">The question above specifies its OWN required answer format (units,</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.29" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.29.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.29.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p29" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p29.1" class="ltx_p">rounding, ordering, whether to wrap multiple values in brackets, etc.) --</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.30" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.30.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.30.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p30" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p30.1" class="ltx_p">follow it exactly as stated in the question text, not a generic</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.31" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.31.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.31.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p31" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p31.1" class="ltx_p">convention. State your final answer clearly as:</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.32" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.32.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.32.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p32" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p32.1" class="ltx_p">&quot;FINAL ANSWER: &lt;your answer, formatted exactly as the question asks&gt;&quot;</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.33" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.33.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.33.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p3.pic1.2.34" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.34.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.34.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p34" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p34.1" class="ltx_p"># {file_list} = one line per source file: &quot;  - `documents/{file_name}`&quot;</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.35" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.35.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.35.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p3.pic1.2.36" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.36.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.36.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p36" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p36.1" class="ltx_p">############################################################################</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.37" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.37.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.37.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p3.pic1.2.37.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p3.pic1.2.37.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p3.pic1.2.37.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p3.pic1.p37" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p37.1" class="ltx_p">## 2. LLM judge (single user message, judge model openai/gpt-5-mini via OpenRouter, temperature 0.0, max_tokens 1024)</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.38" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.38.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.38.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p38" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p38.1" class="ltx_p">##    Mirrors the HLE reference judge prompt used by MemRL’s hle_runner verbatim.</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.39" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.39.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.39.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p39" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p39.1" class="ltx_p">##    success = the judge’s &quot;correct: yes&quot;; the extracted_final_answer is logged.</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.40" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.40.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.40.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p40" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p40.1" class="ltx_p">############################################################################</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.41" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.41.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.41.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p3.pic1.2.41.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p3.pic1.2.41.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p3.pic1.2.41.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p3.pic1.p41" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p41.1" class="ltx_p">Judge whether the following [response] to [question] is correct or not based on the precise and unambiguous [correct_answer] below.</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.42" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.42.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.42.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p3.pic1.2.43" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.43.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.43.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p43" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p43.1" class="ltx_p">[question]: {question}</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.44" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.44.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.44.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p3.pic1.2.45" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.45.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.45.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p45" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p45.1" class="ltx_p">[response]: {response}</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.46" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.46.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.46.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p3.pic1.2.47" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.47.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.47.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p47" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p47.1" class="ltx_p">Your judgement must be in the format and criteria specified below:</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.48" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.48.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.48.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p3.pic1.2.49" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.49.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.49.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p3.pic1.2.49.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p3.pic1.2.49.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p3.pic1.2.49.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p3.pic1.p49" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p49.1" class="ltx_p">extracted_final_answer: The final exact answer extracted from the [response]. Put the extracted answer as ’None’ if there is no exact, final answer to extract from the response.</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.50" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.50.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.50.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p3.pic1.2.51" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.51.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.51.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p3.pic1.p51" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p51.1" class="ltx_p">[correct_answer]: {correct_answer}</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.52" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.52.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.52.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p3.pic1.2.53" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.53.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.53.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p3.pic1.2.53.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p3.pic1.2.53.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p3.pic1.2.53.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p3.pic1.p53" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p53.1" class="ltx_p">reasoning: Explain why the extracted_final_answer is correct or incorrect based on [correct_answer], focusing only on if there are meaningful differences between [correct_answer] and the extracted_final_answer. Do not comment on any background to the problem, do not attempt to solve the problem, do not argue for any answer different than [correct_answer], focus only on whether the answers match.</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.54" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.54.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.54.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p3.pic1.2.55" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.55.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.55.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p3.pic1.2.55.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p3.pic1.2.55.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p3.pic1.2.55.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p3.pic1.p55" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p55.1" class="ltx_p">correct: Answer ’yes’ if extracted_final_answer matches the [correct_answer] given above, or is within a small margin of error for numerical problems. Answer ’no’ otherwise, i.e. if there is any inconsistency, ambiguity, non-equivalency, or if the extracted answer is incorrect.</span>
+</span></span></span></span>
+<span id="A12.SS1.p3.pic1.2.56" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.56.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.56.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p3.pic1.2.57" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p3.pic1.2.57.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p3.pic1.2.57.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p3.pic1.2.57.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p3.pic1.2.57.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p3.pic1.2.57.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p3.pic1.p57" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p3.pic1.p57.1" class="ltx_p">confidence: The extracted confidence score between 0% and 100% from [response]. Put 100 if there is no confidence score available.</span>
+</span></span></span></span>
+</span></span></span></foreignobject></g></g></svg>

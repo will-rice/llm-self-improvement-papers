@@ -1,0 +1,312 @@
+<svg id="A12.SS1.p2.pic1" class="ltx_picture" height="1633.54" overflow="visible" version="1.1" viewbox="0 0 653.15 1633.54" width="653.15"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,1633.54) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#B3B3B3;" fill="#B3B3B3" fill-opacity="1.0"><path style="stroke:none" d="M 0 5.91 L 0 1627.64 C 0 1630.9 2.64 1633.54 5.91 1633.54 L 647.24 1633.54 C 650.51 1633.54 653.15 1630.9 653.15 1627.64 L 653.15 5.91 C 653.15 2.64 650.51 0 647.24 0 L 5.91 0 C 2.64 0 0 2.64 0 5.91 Z" /></g><g style="--ltx-fill-color:#FBFBFB;" fill="#FBFBFB" fill-opacity="1.0"><path style="stroke:none" d="M 1.97 5.91 L 1.97 1607.9 L 651.18 1607.9 L 651.18 5.91 C 651.18 3.73 649.42 1.97 647.24 1.97 L 5.91 1.97 C 3.73 1.97 1.97 3.73 1.97 5.91 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 13.78 1617.26)"><foreignobject style="--ltx-fo-width:39.31em;--ltx-fo-height:0.75em;--ltx-fo-depth:0.25em;font-size:10pt;" height="13.84" overflow="visible" transform="matrix(1 0 0 -1 0 10.38)" width="543.94"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A12.SS1.p2.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:39.31em;">
+<span id="A12.SS1.p2.pic1.1.1" class="ltx_p"><span id="A12.SS1.p2.pic1.1.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#FFFFFF;">Task prompts (GAIA, LoCoBench)</span></span>
+</span></span></span></foreignobject></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 13.78 12.92)"><foreignobject style="--ltx-fo-width:45.21em;--ltx-fo-height:114.7em;--ltx-fo-depth:0.22em;font-size:10pt;" height="1590.2" overflow="visible" transform="matrix(1 0 0 -1 0 1587.12)" width="625.58"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A12.SS1.p2.pic1.2" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:45.21em;">
+<span id="A12.SS1.p2.pic1.2.1" class="ltx_p"><span id="A12.SS1.p2.pic1.2.1.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.1.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.1.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.1.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p2.pic1.2.1.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p2.pic1.p1" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p1.1" class="ltx_p"># source: core/evolution_mechanisms/task_source.py:520-532 (_GAIA_USER_PROMPT), 628-646 (LightweightGAIASource._to_tasks), 1389-1422 (LightweightLoCoBenchSource._build_task_text), 1424-1438 (LightweightLoCoBenchSource._to_tasks); core/runner.py:591 (chairman’s first user message), 486-529 (_TIME_BUDGET_CONSEQUENCE, time_budget_line); core/agent.py:1162-1199 (per-turn budget message)</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.2" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.2.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.2.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.2.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.2.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p2.pic1.2.2.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p2.pic1.p2" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p2.1" class="ltx_p"># Used in: the first user message of the chairman’s session (task phase), for every training, held-out-gate and final-evaluation session. Teammates do not receive it directly; the chairman forwards work via send_message.</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.3" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.3.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.3.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.4" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.4.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.4.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p4" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p4.1" class="ltx_p">############################################################################</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.5" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.5.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.5.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p5" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p5.1" class="ltx_p">## 0. Wrapper (core/runner.py:591)</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.6" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.6.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.6.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p6" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p6.1" class="ltx_p">############################################################################</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.7" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.7.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.7.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p7" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p7.1" class="ltx_p">## Task</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.8" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.8.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.8.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.9" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.9.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.9.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p9" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p9.1" class="ltx_p">{task_text}</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.10" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.10.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.10.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.11" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.11.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.11.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p11" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p11.1" class="ltx_p">############################################################################</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.12" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.12.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.12.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p12" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p12.1" class="ltx_p">## 1. GAIA {task_text}  (_GAIA_USER_PROMPT.format(level, question))</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.13" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.13.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.13.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p13" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p13.1" class="ltx_p">############################################################################</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.14" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.14.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.14.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p14" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p14.1" class="ltx_p">## Question (Level {level})</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.15" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.15.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.15.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.16" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.16.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.16.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p16" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p16.1" class="ltx_p">{question}</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.17" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.17.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.17.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.18" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.18.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.18.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p18" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p18.1" class="ltx_p">## Answer Format</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.19" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.19.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.19.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.20" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.20.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.20.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.20.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.20.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p2.pic1.2.20.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p2.pic1.p20" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p20.1" class="ltx_p">YOUR FINAL ANSWER should be a number OR as few words as possible OR a comma separated list of numbers and/or strings.</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.21" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.21.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.21.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.21.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.21.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p2.pic1.2.21.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p2.pic1.p21" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p21.1" class="ltx_p">- If asked for a number: don’t use comma to write your number, don’t use units such as $ or percent sign unless specified otherwise.</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.22" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.22.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.22.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.22.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.22.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p2.pic1.2.22.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p2.pic1.p22" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p22.1" class="ltx_p">- If asked for a string: don’t use articles, don’t use abbreviations (e.g. for cities), write digits in plain text unless specified otherwise.</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.23" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.23.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.23.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.23.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.23.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p2.pic1.2.23.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p2.pic1.p23" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p23.1" class="ltx_p">- Example: respond with ’Saint Louis’ instead of ’St. Louis’; respond with ’17’ instead of ’17m’.</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.24" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.24.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.24.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.25" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.25.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.25.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p25" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p25.1" class="ltx_p">State your final answer clearly as: &quot;FINAL ANSWER: &lt;your answer&gt;&quot;</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.26" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.26.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.26.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.27" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.27.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.27.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p27" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p27.1" class="ltx_p"># Scoring: text after the first &quot;final answer:&quot; (case-insensitive) in the chairman’s</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.28" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.28.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.28.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p28" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p28.1" class="ltx_p"># finalize_task output, lower-cased and stripped of non-alphanumerics, must equal the</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.29" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.29.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.29.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.29.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.29.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p2.pic1.2.29.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p2.pic1.p29" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p29.1" class="ltx_p"># equally normalized reference answer. Self-contained GAIA subset only (no attached files);</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.30" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.30.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.30.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p30" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p30.1" class="ltx_p"># each task gets an empty scratch workspace for computation.</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.31" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.31.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.31.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.32" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.32.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.32.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p32" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p32.1" class="ltx_p">############################################################################</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.33" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.33.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.33.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p33" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p33.1" class="ltx_p">## 2. LoCoBench {task_text}  (_build_task_text)</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.34" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.34.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.34.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p34" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p34.1" class="ltx_p">############################################################################</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.35" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.35.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.35.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p35" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p35.1" class="ltx_p">## Task: {title}</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.36" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.36.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.36.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.37" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.37.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.37.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p37" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p37.1" class="ltx_p">**Category**: {task_category, underscores -&gt; spaces, Title Case}</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.38" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.38.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.38.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p38" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p38.1" class="ltx_p">**Difficulty**: {difficulty}</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.39" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.39.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.39.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p39" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p39.1" class="ltx_p">**Language**: {language}</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.40" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.40.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.40.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.41" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.41.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.41.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p41" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p41.1" class="ltx_p">{description}</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.42" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.42.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.42.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.43" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.43.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.43.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p43" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p43.1" class="ltx_p">{task_prompt}</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.44" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.44.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.44.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.45" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.45.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.45.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p45" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p45.1" class="ltx_p">The following source code files are available in your workspace under `context/`:</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.46" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.46.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.46.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.47" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.47.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.47.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p47" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p47.1" class="ltx_p">  - `context/{file_1}`</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.48" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.48.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.48.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p48" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p48.1" class="ltx_p">  - `context/{file_2}`</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.49" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.49.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.49.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p49" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p49.1" class="ltx_p">  ...</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.50" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.50.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.50.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p50" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p50.1" class="ltx_p">  - ... and {n - 50} more files            (only if more than 50 files)</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.51" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.51.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.51.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.52" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.52.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.52.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p52" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p52.1" class="ltx_p">**Workspace location**: `{workspace}`</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.53" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.53.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.53.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p53" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p53.1" class="ltx_p">- Context files: `{workspace}/context/...`</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.54" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.54.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.54.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p54" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p54.1" class="ltx_p">- Write solutions to: `{workspace}/solution/...`</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.55" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.55.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.55.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.56" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.56.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.56.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p56" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p56.1" class="ltx_p">  - {evaluation_criterion_1}</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.57" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.57.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.57.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p57" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p57.1" class="ltx_p">  - {evaluation_criterion_2}</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.58" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.58.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.58.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p58" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p58.1" class="ltx_p">  ...</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.59" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.59.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.59.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.60" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.60.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.60.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p60" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p60.1" class="ltx_p">Write your solution code files into the `solution/` directory using `write_file`</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.61" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.61.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.61.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p61" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p61.1" class="ltx_p">(e.g. `write_file(path=&quot;solution/main.py&quot;, content=&quot;...&quot;)`). Create complete,</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.62" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.62.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.62.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p62" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p62.1" class="ltx_p">working {language} code files that address all requirements.</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.63" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.63.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.63.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.64" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.64.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.64.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p64" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p64.1" class="ltx_p">**IMPORTANT**: You MUST write at least one file to `solution/` before finishing.</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.65" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.65.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.65.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p65" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p65.1" class="ltx_p">An empty solution scores 0.</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.66" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.66.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.66.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.67" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.67.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.67.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p67" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p67.1" class="ltx_p"># Categories used: feature_implementation + cross_file_refactoring (Python).</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.68" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.68.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.68.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.68.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.68.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p2.pic1.2.68.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p2.pic1.p68" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p68.1" class="ltx_p"># Scoring: static-analysis LCBS score of the files in solution/; success iff LCBS &gt;= 3.0 (of 5).</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.69" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.69.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.69.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.69.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.69.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p2.pic1.2.69.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p2.pic1.p69" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p69.1" class="ltx_p"># LoCoBench has no FINAL ANSWER instruction (the output graded is the solution/ directory).</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.70" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.70.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.70.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.71" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.71.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.71.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p71" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p71.1" class="ltx_p">############################################################################</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.72" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.72.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.72.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p72" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p72.1" class="ltx_p">## 3. Per-turn budget message (--show-time-budget)</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.73" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.73.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.73.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p73" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p73.1" class="ltx_p">############################################################################</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.74" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.74.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.74.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p74" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p74.1" class="ltx_p"># Sent to every agent before each LLM call as a trailing user message that is not</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.75" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.75.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.75.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p75" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p75.1" class="ltx_p"># stored in the conversation (so the system-prompt prefix stays cache-stable).</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.76" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.76.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.76.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p76" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p76.1" class="ltx_p"># The step line is always present; the team-message line only for the chairman;</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.77" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.77.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.77.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p77" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p77.1" class="ltx_p"># the time line only with --show-time-budget (AGORA_SHOW_TIME_BUDGET=1).</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.78" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.78.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.78.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.79" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.79.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.79.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p79" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p79.1" class="ltx_p">[Budget status -- automatic, not a message from a teammate]</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.80" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.80.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.80.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p80" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p80.1" class="ltx_p">[Your budget: {remaining_steps} of {max_steps} steps remaining]</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.81" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.81.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.81.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p81" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p81.1" class="ltx_p">[Team budget: {remaining_messages} of {max_messages} messages remaining]</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.82" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.82.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.82.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p82" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p82.1" class="ltx_p">[Time: {M}m {SS}s of {M}m {SS}s remaining {label}] {consequence}</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.83" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.83.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.83.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.84" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.84.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.84.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p84" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p84.1" class="ltx_p">{label}:  &quot;for the task&quot; (task phase)  |  &quot;in this phase&quot; (L1/L2/L3 reflection)</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.85" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.85.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.85.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.86" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.86.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.86.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p86" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p86.1" class="ltx_p">{consequence}, task_execution:</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.87" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.87.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.87.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.87.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.87.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p2.pic1.2.87.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p2.pic1.p87" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p87.1" class="ltx_p">If time runs out before the task is finalized, the task is scored as failed -- work done so far is not graded.</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.88" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.88.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.88.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.89" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.89.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.89.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p89" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p89.1" class="ltx_p">{consequence}, l1_reflection and l2_reflection:</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.90" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.90.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.90.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.90.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.90.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p2.pic1.2.90.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p2.pic1.p90" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p90.1" class="ltx_p">When this phase’s time runs out, it ends for everyone and the session moves to the next phase; anything not yet finalized is not carried over.</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.91" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.91.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.91.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.92" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.92.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.92.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p92" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p92.1" class="ltx_p">{consequence}, l3_reflection:</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.93" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.93.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.93.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.93.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.93.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p2.pic1.2.93.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p2.pic1.p93" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p93.1" class="ltx_p">When this phase’s time runs out, the session ends; anything not yet finalized is not carried over.</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.94" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.94.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.94.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS1.p2.pic1.2.95" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.95.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.95.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS1.p2.pic1.p95" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p95.1" class="ltx_p"># Example (task phase, max_seconds 900):</span>
+</span></span></span></span>
+<span id="A12.SS1.p2.pic1.2.96" class="ltx_p" style="width:452.1pt;"><span id="A12.SS1.p2.pic1.2.96.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS1.p2.pic1.2.96.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.96.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS1.p2.pic1.2.96.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS1.p2.pic1.2.96.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS1.p2.pic1.p96" class="ltx_para ltx_noindent">
+<span id="A12.SS1.p2.pic1.p96.1" class="ltx_p"># [Time: 12m 05s of 15m 00s remaining for the task] If time runs out before the task is finalized, the task is scored as failed -- work done so far is not graded.</span>
+</span></span></span></span>
+</span></span></span></foreignobject></g></g></svg>

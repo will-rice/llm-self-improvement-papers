@@ -1,0 +1,148 @@
+<svg id="A12.SS3.SSS0.Px2.p5.pic1" class="ltx_picture" height="702.16" overflow="visible" version="1.1" viewbox="0 0 653.15 702.16" width="653.15"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,702.16) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#B3B3B3;" fill="#B3B3B3" fill-opacity="1.0"><path style="stroke:none" d="M 0 5.91 L 0 696.25 C 0 699.52 2.64 702.16 5.91 702.16 L 647.24 702.16 C 650.51 702.16 653.15 699.52 653.15 696.25 L 653.15 5.91 C 653.15 2.64 650.51 0 647.24 0 L 5.91 0 C 2.64 0 0 2.64 0 5.91 Z" /></g><g style="--ltx-fill-color:#FBFBFB;" fill="#FBFBFB" fill-opacity="1.0"><path style="stroke:none" d="M 1.97 5.91 L 1.97 678.05 L 651.18 678.05 L 651.18 5.91 C 651.18 3.73 649.42 1.97 647.24 1.97 L 5.91 1.97 C 3.73 1.97 1.97 3.73 1.97 5.91 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 13.78 686.64)"><foreignobject style="--ltx-fo-width:39.31em;--ltx-fo-height:0.69em;--ltx-fo-depth:0.19em;font-size:10pt;" height="12.3" overflow="visible" transform="matrix(1 0 0 -1 0 9.61)" width="543.94"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:39.31em;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.1.1" class="ltx_p"><span id="A12.SS3.SSS0.Px2.p5.pic1.1.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#FFFFFF;">Decision: competition</span></span>
+</span></span></span></foreignobject></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 13.78 12.92)"><foreignobject style="--ltx-fo-width:45.21em;--ltx-fo-height:47.5em;--ltx-fo-depth:0.22em;font-size:10pt;" height="660.34" overflow="visible" transform="matrix(1 0 0 -1 0 657.27)" width="625.58"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:45.21em;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.1" class="ltx_p"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.1.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.1.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS3.SSS0.Px2.p5.pic1.2.1.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS3.SSS0.Px2.p5.pic1.2.1.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS3.SSS0.Px2.p5.pic1.2.1.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p1" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p1.1" class="ltx_p"># source: scripts/train_agora.py:1221-1247,1468-1509 (_L3_DECISION_INSTRUCTIONS, _llm_decide_l3; called from run_l3_gate_single_check:1512-1583)</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.2" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.2.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.2.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p2" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p2.1" class="ltx_p"># condition: competition  (--l3-gate-mode single_check; end of every training step)</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.3" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.3.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.3.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p3" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p3.1" class="ltx_p"># {chairman_name} = the current chairman, i.e. the role holding Tier 1 after the</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.4" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.4.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.4.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p4" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p4.1" class="ltx_p"># previous step’s competition rotation. Before this call, any proposal whose</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.5" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.5.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.5.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p5" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p5.1" class="ltx_p"># pool.yaml would name a different chairman is dropped</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.6" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.6.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.6.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p6" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p6.1" class="ltx_p"># (reason &quot;chairman_set_by_competition_tiers&quot;).</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.7" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.7.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.7.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.8" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.8.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.8.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p8" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p8.1" class="ltx_p">=== PROMPT (user message) ===</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.9" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.9.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.9.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS3.SSS0.Px2.p5.pic1.2.9.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS3.SSS0.Px2.p5.pic1.2.9.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS3.SSS0.Px2.p5.pic1.2.9.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p9" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p9.1" class="ltx_p">You are {chairman_name}, the team’s chairman, holding the role because your contribution scored highest. This step your team collected the structural changes listed below; teammate reviews are attached as reference. You alone decide which to adopt. Weigh the reviews, but the call is yours. Keep or drop each proposal and order the kept ones by priority.</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.10" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.10.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.10.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.11" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.11.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.11.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p11" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p11.1" class="ltx_p">Proposals:</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.12" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.12.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.12.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p12" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p12.1" class="ltx_p">{proposal_list}</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.13" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.13.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.13.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.14" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.14.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.14.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS3.SSS0.Px2.p5.pic1.2.14.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS3.SSS0.Px2.p5.pic1.2.14.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS3.SSS0.Px2.p5.pic1.2.14.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p14" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p14.1" class="ltx_p">Reply with ONLY a JSON object: {&quot;keep&quot;: [indices of proposals to keep], &quot;order&quot;: [the kept indices, highest priority first]}. Example: {&quot;keep&quot;: [2, 0], &quot;order&quot;: [2, 0]}. An empty keep list is allowed.</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.15" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.15.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.15.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.16" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.16.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.16.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p16" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p16.1" class="ltx_p">=== FORMAT OF EACH ENTRY IN {proposal_list} (entries separated by a blank line) ===</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.17" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.17.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.17.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p17" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p17.1" class="ltx_p">[{index}] {unit_label}</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.18" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.18.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.18.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p18" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p18.1" class="ltx_p">  proposed_by: {proposed_by}</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.19" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.19.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.19.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p19" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p19.1" class="ltx_p">  reason: {target_file}: {reason}; {target_file_2}: {reason_2}</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.20" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.20.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.20.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p20" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p20.1" class="ltx_p">  teammate reviews:</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.21" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.21.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.21.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p21" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p21.1" class="ltx_p">    - {teammate_name}: &quot;{challenge_reflection_comment}&quot;</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.22" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.22.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.22.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p22" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p22.1" class="ltx_p">    - {teammate_name}: (no response)</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.23" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.23.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.23.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.24" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.24.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.24.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p24" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p24.1" class="ltx_p">(If a proposal has no reviews at all, the review block is the single line</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.25" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.25.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.25.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p25" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p25.1" class="ltx_p">&quot;  teammate reviews: (none)&quot;.)</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.26" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.26.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.26.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p26" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p26.1" class="ltx_p">{unit_label} is one of: &quot;add &lt;role&gt;&quot; (new role: its config.yaml + prompt.md as one</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.27" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.27.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.27.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS3.SSS0.Px2.p5.pic1.2.27.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A12.SS3.SSS0.Px2.p5.pic1.2.27.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A12.SS3.SSS0.Px2.p5.pic1.2.27.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:431.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p27" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p27.1" class="ltx_p">unit), &quot;remove &lt;role&gt;&quot;, &quot;patch &lt;role&gt;&quot; (config.yaml and/or prompt.md of an existing</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.28" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.28.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.28.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p28" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p28.1" class="ltx_p">role), &quot;patch constitution.md&quot;, &quot;patch pool.yaml&quot;.</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.29" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.29.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.29.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:452.1pt;"></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.30" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.30.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.30.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p30" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p30.1" class="ltx_p">=== CALL / RESPONSE HANDLING ===</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.31" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.31.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.31.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p31" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p31.1" class="ltx_p">One single-turn user message (no system prompt) on the chairman’s own model</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.32" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.32.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.32.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p32" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p32.1" class="ltx_p">(the `model:` of &lt;chairman&gt;/config.yaml), temperature 0.0, max_tokens 300.</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.33" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.33.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.33.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p33" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p33.1" class="ltx_p">Expected response: {&quot;keep&quot;: [...], &quot;order&quot;: [...]} (a bare JSON list is also</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.34" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.34.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.34.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p34" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p34.1" class="ltx_p">accepted and read as keep, in order). If the reply cannot be parsed, every</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.35" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.35.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.35.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p35" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p35.1" class="ltx_p">proposal is kept in arrival order. Kept proposals are then capped in this</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.36" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.36.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.36.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p36" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p36.1" class="ltx_p">order (max 2 add/remove units, max 2 patch groups per step) and tested together</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.37" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.37.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.37.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p37" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p37.1" class="ltx_p">in ONE paired held-out check (current team vs. changed team, same tasks); the</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.38" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.38.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.38.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p38" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p38.1" class="ltx_p">changes are applied unless the changed team is clearly worse (one-sided</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.39" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.39.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.39.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p39" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p39.1" class="ltx_p">binomial test, alpha = 0.3; not applied if either side has fewer than 10</span>
+</span></span></span></span>
+<span id="A12.SS3.SSS0.Px2.p5.pic1.2.40" class="ltx_p" style="width:452.1pt;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.40.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:452.1pt;--ltx-fg-color:#000000;"><span id="A12.SS3.SSS0.Px2.p5.pic1.2.40.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:452.1pt;">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p40" class="ltx_para ltx_noindent">
+<span id="A12.SS3.SSS0.Px2.p5.pic1.p40.1" class="ltx_p">sessions that complete without crashing).</span>
+</span></span></span></span>
+</span></span></span></foreignobject></g></g></svg>

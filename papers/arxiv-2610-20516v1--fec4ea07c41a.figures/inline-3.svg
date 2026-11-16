@@ -1,0 +1,22 @@
+<svg id="A4.SS6.SSS0.Px3.p2.pic1" class="ltx_picture" height="216.6" overflow="visible" version="1.1" viewbox="0 0 653.15 216.6" width="653.15"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,216.6) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#9999FF;" fill="#9999FF" fill-opacity="1.0"><path style="stroke:none" d="M 0 7.5 L 0 209.1 C 0 213.24 3.36 216.6 7.5 216.6 L 645.65 216.6 C 649.79 216.6 653.15 213.24 653.15 209.1 L 653.15 7.5 C 653.15 3.36 649.79 0 645.65 0 L 7.5 0 C 3.36 0 0 3.36 0 7.5 Z" /></g><g style="--ltx-fill-color:#F5F5FF;" fill="#F5F5FF" fill-opacity="1.0"><path style="stroke:none" d="M 1.97 7.5 L 1.97 192.49 L 651.18 192.49 L 651.18 7.5 C 651.18 4.45 648.7 1.97 645.65 1.97 L 7.5 1.97 C 4.45 1.97 1.97 4.45 1.97 7.5 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 14.21 201.09)"><foreignobject style="--ltx-fo-width:39.26em;--ltx-fo-height:0.69em;--ltx-fo-depth:0.19em;font-size:10pt;" height="12.3" overflow="visible" transform="matrix(1 0 0 -1 0 9.61)" width="543.25"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A4.SS6.SSS0.Px3.p2.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:39.26em;">
+<span id="A4.SS6.SSS0.Px3.p2.pic1.1.1" class="ltx_p"><span id="A4.SS6.SSS0.Px3.p2.pic1.1.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">Self-teacher: answer only</span></span>
+</span></span></span></foreignobject></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 14.21 14.9)"><foreignobject style="--ltx-fo-width:43em;--ltx-fo-height:12.15em;--ltx-fo-depth:0.25em;font-size:10pt;" height="171.58" overflow="visible" transform="matrix(1 0 0 -1 0 168.12)" width="595"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span id="A4.SS6.SSS0.Px3.p2.pic1.2" class="ltx_inline-logical-block ltx_minipage ltx_align_bottom" style="width:43em;">
+<span id="A4.SS6.SSS0.Px3.p2.pic1.p1" class="ltx_para ltx_align_left ltx_noindent">
+<span id="A4.SS6.SSS0.Px3.p2.pic1.p1.1" class="ltx_p"><span id="A4.SS6.SSS0.Px3.p2.pic1.p1.1.1" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">Problem: {problem}
+</span></span>
+</span>
+<span id="A4.SS6.SSS0.Px3.p2.pic1.p2" class="ltx_para">
+<span id="A4.SS6.SSS0.Px3.p2.pic1.p2.1" class="ltx_p ltx_align_left"><span id="A4.SS6.SSS0.Px3.p2.pic1.p2.1.1" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">=== Verified Target Begin ===
+<br class="ltx_break">Final answer: {answer}
+<br class="ltx_break">=== Verified Target End ===
+</span></span>
+<span id="A4.SS6.SSS0.Px3.p2.pic1.p2.2" class="ltx_p ltx_align_left"><span id="A4.SS6.SSS0.Px3.p2.pic1.p2.2.1" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">Use the verified target only to check the correctness of the reasoning.
+<br class="ltx_break">The target does not specify a unique solution path.
+<br class="ltx_break">Continue from the current reasoning prefix and preserve any valid approach.
+<br class="ltx_break">Do not mention, quote, or refer to the verified target or its existence.
+</span></span>
+<span id="A4.SS6.SSS0.Px3.p2.pic1.p2.3" class="ltx_p ltx_align_left"><span id="A4.SS6.SSS0.Px3.p2.pic1.p2.3.1" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">Please reason step by step, and put your final answer within
+\boxed{}.
+</span></span>
+</span></span></span></span></foreignobject></g></g></svg>

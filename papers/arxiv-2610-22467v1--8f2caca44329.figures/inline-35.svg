@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="603.07" height="349.78" overflow="visible"><g transform="translate(0,349.78) scale(1,-1)"><g transform="translate(0,0)"><g transform="translate(0,350.42) scale(1,-1)"><foreignobject width="613.96" height="350.42" overflow="visible"><img src="arxiv-2610-22467v1--8f2caca44329.figures/figure-2.webp" id="S3.F8.sf1.pic1.g1" class="ltx_graphics ltx_img_landscape" style="width:100%;height:100%;object-fit:contain" width="628" height="365" alt="Refer to caption"></foreignobject></g></g><g transform="translate(0,238.72)"><g transform="translate(0,13.28) scale(1,-1)"><foreignobject width="45.96" height="9.96" overflow="visible"><math class="ltx_math_unparsed" mode="inline" tex="\pi_{\theta_{0}}(\cdot\mid x)" xml:id="S3.F8.sf1.pic1.m1">
+                  <xmath xml:id="S3.F8.sf1.pic1.m1.1">
+                    <xmapp xml:id="S3.F8.sf1.pic1.m1.1.1">
+                      <xmtok role="SUBSCRIPTOP" scriptpos="post1" xml:id="S3.F8.sf1.pic1.m1.1.1.1"></xmtok>
+                      <xmtok color="#4E6937" font="italic" name="pi" role="UNKNOWN">π</xmtok>
+                      <xmapp color="#4E6937" xml:id="S3.F8.sf1.pic1.m1.1.1.3">
+                        <xmtok role="SUBSCRIPTOP" scriptpos="post2"></xmtok>
+                        <xmtok font="italic" fontsize="70%" name="theta" role="UNKNOWN">θ</xmtok>
+                        <xmtok fontsize="50%" meaning="0" role="NUMBER">0</xmtok>
+                      </xmapp>
+                    </xmapp>
+                    <xmwrap xml:id="S3.F8.sf1.pic1.m1.1.2">
+                      <xmtok color="#4E6937" role="OPEN" stretchy="false">(</xmtok>
+                      <xmtok color="#4E6937" name="cdot" role="MULOP">⋅</xmtok>
+                      <xmtok color="#4E6937" name="mid" role="VERTBAR">∣</xmtok>
+                      <xmtok color="#4E6937" font="italic" role="UNKNOWN">x</xmtok>
+                      <xmtok color="#4E6937" role="CLOSE" stretchy="false">)</xmtok>
+                    </xmwrap>
+                  </xmath>
+                </math></foreignobject></g></g><g transform="translate(345.51,31.41)"><g transform="translate(0,13.28) scale(1,-1)"><foreignobject width="45.16" height="9.96" overflow="visible"><math class="ltx_math_unparsed" mode="inline" tex="\pi_{\theta_{t}}(\cdot\mid x)" xml:id="S3.F8.sf1.pic1.m2">
+                  <xmath xml:id="S3.F8.sf1.pic1.m2.1">
+                    <xmapp xml:id="S3.F8.sf1.pic1.m2.1.1">
+                      <xmtok role="SUBSCRIPTOP" scriptpos="post1" xml:id="S3.F8.sf1.pic1.m2.1.1.1"></xmtok>
+                      <xmtok color="#FF0000" font="italic" name="pi" role="UNKNOWN">π</xmtok>
+                      <xmapp color="#FF0000" xml:id="S3.F8.sf1.pic1.m2.1.1.3">
+                        <xmtok role="SUBSCRIPTOP" scriptpos="post2"></xmtok>
+                        <xmtok font="italic" fontsize="70%" name="theta" role="UNKNOWN">θ</xmtok>
+                        <xmtok font="italic" fontsize="50%" role="UNKNOWN">t</xmtok>
+                      </xmapp>
+                    </xmapp>
+                    <xmwrap xml:id="S3.F8.sf1.pic1.m2.1.2">
+                      <xmtok color="#FF0000" role="OPEN" stretchy="false">(</xmtok>
+                      <xmtok color="#FF0000" name="cdot" role="MULOP">⋅</xmtok>
+                      <xmtok color="#FF0000" name="mid" role="VERTBAR">∣</xmtok>
+                      <xmtok color="#FF0000" font="italic" role="UNKNOWN">x</xmtok>
+                      <xmtok color="#FF0000" role="CLOSE" stretchy="false">)</xmtok>
+                    </xmwrap>
+                  </xmath>
+                </math></foreignobject></g></g><g transform="translate(533.97,345.51)"><g transform="translate(0,13.28) scale(1,-1)"><foreignobject width="48.22" height="9.96" overflow="visible"><math class="ltx_math_unparsed" mode="inline" tex="\pi_{\theta_{T}}(\cdot\mid x)" xml:id="S3.F8.sf1.pic1.m3">
+                  <xmath xml:id="S3.F8.sf1.pic1.m3.1">
+                    <xmapp xml:id="S3.F8.sf1.pic1.m3.1.1">
+                      <xmtok role="SUBSCRIPTOP" scriptpos="post1" xml:id="S3.F8.sf1.pic1.m3.1.1.1"></xmtok>
+                      <xmtok color="#415291" font="italic" name="pi" role="UNKNOWN">π</xmtok>
+                      <xmapp color="#415291" xml:id="S3.F8.sf1.pic1.m3.1.1.3">
+                        <xmtok role="SUBSCRIPTOP" scriptpos="post2"></xmtok>
+                        <xmtok font="italic" fontsize="70%" name="theta" role="UNKNOWN">θ</xmtok>
+                        <xmtok font="italic" fontsize="50%" role="UNKNOWN">T</xmtok>
+                      </xmapp>
+                    </xmapp>
+                    <xmwrap xml:id="S3.F8.sf1.pic1.m3.1.2">
+                      <xmtok color="#415291" role="OPEN" stretchy="false">(</xmtok>
+                      <xmtok color="#415291" name="cdot" role="MULOP">⋅</xmtok>
+                      <xmtok color="#415291" name="mid" role="VERTBAR">∣</xmtok>
+                      <xmtok color="#415291" font="italic" role="UNKNOWN">x</xmtok>
+                      <xmtok color="#415291" role="CLOSE" stretchy="false">)</xmtok>
+                    </xmwrap>
+                  </xmath>
+                </math></foreignobject></g></g></g></svg>

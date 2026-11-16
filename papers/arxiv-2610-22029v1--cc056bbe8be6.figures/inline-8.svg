@@ -1,0 +1,15 @@
+<svg id="A8.SS3.p2.pic1" class="ltx_picture" height="146.09" overflow="visible" version="1.1" viewbox="0 0 550 146.09" width="550"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,146.09) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#A8ADAF;" fill="#A8ADAF" fill-opacity="1.0"><path style="stroke:none" d="M 0 1.94 L 0 144.16 C 0 145.23 0.87 146.09 1.94 146.09 L 548.06 146.09 C 549.13 146.09 550 145.23 550 144.16 L 550 1.94 C 550 0.87 549.13 0 548.06 0 L 1.94 0 C 0.87 0 0 0.87 0 1.94 Z" /></g><g style="--ltx-fill-color:#FFFFFF;" fill="#FFFFFF" fill-opacity="1.0"><path style="stroke:none" d="M 0.55 1.94 L 0.55 124.81 L 549.45 124.81 L 549.45 1.94 C 549.45 1.17 548.83 0.55 548.06 0.55 L 1.94 0.55 C 1.17 0.55 0.55 1.17 0.55 1.94 Z" /></g><g style="--ltx-fill-color:#EEEFEF;" fill="#EEEFEF" fill-opacity="1.0"><path style="stroke:none" d="M 0.55 125.37 L 0.55 144.16 C 0.55 144.92 1.17 145.54 1.94 145.54 L 548.06 145.54 C 548.83 145.54 549.45 144.92 549.45 144.16 L 549.45 125.37 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 12.79 131.99)"><foreignobject style="--ltx-fo-width:37.9em;--ltx-fo-height:0.69em;--ltx-fo-depth:0.19em;font-size:10pt;" height="12.3" overflow="visible" transform="matrix(1 0 0 -1 0 9.61)" width="524.43"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A8.SS3.p2.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:37.9em;">
+<span id="A8.SS3.p2.pic1.1.1" class="ltx_p"><span id="A8.SS3.p2.pic1.1.1.1" class="ltx_text" style="--ltx-fg-color:#5C656A;">Repair-teacher context</span></span>
+</span></span></span></foreignobject></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 12.79 8.64)"><foreignobject style="--ltx-fo-width:36.1em;--ltx-fo-height:7.81em;--ltx-fo-depth:0em;font-size:10pt;" height="108.08" overflow="visible" transform="matrix(1 0 0 -1 0 108.08)" width="499.52"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A8.SS3.p2.pic1.2" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:36.1em;">
+<span id="A8.SS3.p2.pic1.2.1" class="ltx_p ltx_align_left"><span id="A8.SS3.p2.pic1.2.1.1" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">system: Develop a solution with explicit intermediate reasoning. Conclude
+with the resulting answer in <code id="A8.SS3.p2.pic1.2.1.1.1" class="ltx_verbatim">\boxed{}</code>.
+<br class="ltx_break">user: A successful training example is provided below.
+<br class="ltx_break">{qualified_reference_response}
+</span></span>
+<span id="A8.SS3.p2.pic1.2.2" class="ltx_p ltx_align_left"><span id="A8.SS3.p2.pic1.2.2.1" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">Use this example as guidance when solving the following problem:
+<br class="ltx_break">{problem_text}
+<br class="ltx_break">assistant:
+</span></span>
+</span></span></span></foreignobject></g></g></svg>
