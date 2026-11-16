@@ -2,6 +2,9 @@
 
 Standalone paper discovery and conversion for Research papers on LLM self-improvement: self-training, self-refinement, self-play, self-rewarding, and self-evolving language models.
 
+Browse the collection on alphaXiv:
+https://www.alphaxiv.org/shared/folder/01a0d966-30ad-7eb1-8f22-cbcd7f934253
+
 <!-- papers-index:start -->
 
 # Papers
