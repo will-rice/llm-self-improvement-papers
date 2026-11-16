@@ -1,0 +1,60 @@
+<svg id="A6.SS6.SSS4.p1.pic1" class="ltx_picture" height="469.52" overflow="visible" version="1.1" viewbox="0 0 477.38 469.52" width="477.38"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,469.52) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#BFBFBF;" fill="#BFBFBF" fill-opacity="1.0"><path style="stroke:none" d="M 0 5.91 L 0 463.61 C 0 466.87 2.64 469.52 5.91 469.52 L 471.47 469.52 C 474.73 469.52 477.38 466.87 477.38 463.61 L 477.38 5.91 C 477.38 2.64 474.73 0 471.47 0 L 5.91 0 C 2.64 0 0 2.64 0 5.91 Z" /></g><g style="--ltx-fill-color:#F9F9F9;" fill="#F9F9F9" fill-opacity="1.0"><path style="stroke:none" d="M 1.97 5.91 L 1.97 445.4 L 475.41 445.4 L 475.41 5.91 C 475.41 3.73 473.65 1.97 471.47 1.97 L 5.91 1.97 C 3.73 1.97 1.97 3.73 1.97 5.91 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 21.65 454)"><foreignobject style="--ltx-fo-width:31.37em;--ltx-fo-height:0.69em;--ltx-fo-depth:0.19em;font-size:10pt;" height="12.3" overflow="visible" transform="matrix(1 0 0 -1 0 9.61)" width="434.07"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A6.SS6.SSS4.p1.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:31.37em;">
+<span id="A6.SS6.SSS4.p1.pic1.1.1" class="ltx_p"><span id="A6.SS6.SSS4.p1.pic1.1.1.1" class="ltx_text" style="--ltx-fg-color:#FFFFFF;">Commercial Agent +Topo+Test Prompt</span></span>
+</span></span></span></foreignobject></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 21.65 85.73)"><foreignobject style="--ltx-fo-width:33.2em;--ltx-fo-height:25.14em;--ltx-fo-depth:5.2em;font-size:10pt;" height="419.82" overflow="visible" transform="matrix(1 0 0 -1 0 347.87)" width="459.39"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A6.SS6.SSS4.p1.pic1.2" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:33.2em;">
+<span id="A6.SS6.SSS4.p1.pic1.2.1" class="ltx_p"><span id="A6.SS6.SSS4.p1.pic1.2.1.1" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;">Generate documentation for all entities in this module. Use dependency information and test-driven verification.
+</span></span>
+<span id="A6.SS6.SSS4.p1.pic1.2.2" class="ltx_p"><span id="A6.SS6.SSS4.p1.pic1.2.2.1" class="ltx_text ltx_font_typewriter ltx_font_bold" style="font-size:90%;--ltx-fg-color:#000000;">Module:<span id="A6.SS6.SSS4.p1.pic1.2.2.1.1" class="ltx_text ltx_font_medium"> {module_name}
+</span></span></span>
+<span id="A6.SS6.SSS4.p1.pic1.2.3" class="ltx_p"><span id="A6.SS6.SSS4.p1.pic1.2.3.1" class="ltx_text ltx_font_typewriter ltx_font_bold" style="font-size:90%;--ltx-fg-color:#000000;">Dependency Structure (for context):
+<br class="ltx_break"><span id="A6.SS6.SSS4.p1.pic1.2.3.1.1" class="ltx_text ltx_font_medium">The following shows the call dependencies between entities (callee <math id="A6.SS6.SSS4.p1.pic1.m1" class="ltx_Math" alttext="\leftarrow" display="inline" intent=":literal"><semantics><mo style="--ltx-fg-color:#000000;" mathcolor="#000000" stretchy="false">←</mo><annotation encoding="application/x-tex">\leftarrow</annotation></semantics></math> caller):
+<br class="ltx_break">{dependency_graph}
+</span></span></span>
+<span id="A6.SS6.SSS4.p1.pic1.2.4" class="ltx_p"><span id="A6.SS6.SSS4.p1.pic1.2.4.1" class="ltx_text ltx_font_typewriter ltx_font_bold" style="font-size:90%;--ltx-fg-color:#000000;">Entities (signatures and reference code):
+<br class="ltx_break"><span id="A6.SS6.SSS4.p1.pic1.2.4.1.1" class="ltx_text ltx_font_medium">{all_entity_signatures_and_code}
+</span></span></span>
+<span id="A6.SS6.SSS4.p1.pic1.2.5" class="ltx_p"><span id="A6.SS6.SSS4.p1.pic1.2.5.1" class="ltx_text ltx_font_typewriter ltx_font_bold" style="font-size:90%;--ltx-fg-color:#000000;">Workflow:<span id="A6.SS6.SSS4.p1.pic1.2.5.1.1" class="ltx_text ltx_font_medium">
+</span></span></span>
+<span id="A6.I10" class="ltx_enumerate">
+<span id="A6.I10.i1" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">1.</span> 
+<span id="A6.I10.i1.p1" class="ltx_para">
+<span id="A6.I10.i1.p1.1" class="ltx_p"><span id="A6.I10.i1.p1.1.1" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;">Generate documentation for each entity, using dependency context for consistency
+</span></span>
+</span></span>
+<span id="A6.I10.i2" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">2.</span> 
+<span id="A6.I10.i2.p1" class="ltx_para">
+<span id="A6.I10.i2.p1.1" class="ltx_p"><span id="A6.I10.i2.p1.1.1" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;">Generate test cases based on your documentation
+</span></span>
+</span></span>
+<span id="A6.I10.i3" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">3.</span> 
+<span id="A6.I10.i3.p1" class="ltx_para">
+<span id="A6.I10.i3.p1.1" class="ltx_p"><span id="A6.I10.i3.p1.1.1" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;">Use the tests to verify documentation quality
+</span></span>
+</span></span>
+<span id="A6.I10.i4" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">4.</span> 
+<span id="A6.I10.i4.p1" class="ltx_para">
+<span id="A6.I10.i4.p1.1" class="ltx_p"><span id="A6.I10.i4.p1.1.1" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;">Refine documentation if tests reveal ambiguities
+</span></span>
+</span></span>
+</span>
+<span id="A6.SS6.SSS4.p1.pic1.2.6" class="ltx_p"><span id="A6.SS6.SSS4.p1.pic1.2.6.1" class="ltx_text ltx_font_typewriter ltx_font_bold" style="font-size:90%;--ltx-fg-color:#000000;">Requirements:<span id="A6.SS6.SSS4.p1.pic1.2.6.1.1" class="ltx_text ltx_font_medium">
+</span></span></span>
+<span id="A6.I11" class="ltx_itemize">
+<span id="A6.I11.i1" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">•</span> 
+<span id="A6.I11.i1.p1" class="ltx_para">
+<span id="A6.I11.i1.p1.1" class="ltx_p"><span id="A6.I11.i1.p1.1.1" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;">Use dependency information to ensure cross-entity consistency
+</span></span>
+</span></span>
+<span id="A6.I11.i2" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">•</span> 
+<span id="A6.I11.i2.p1" class="ltx_para">
+<span id="A6.I11.i2.p1.1" class="ltx_p"><span id="A6.I11.i2.p1.1.1" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;">Documentation should be testable and verifiable
+</span></span>
+</span></span>
+<span id="A6.I11.i3" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">•</span> 
+<span id="A6.I11.i3.p1" class="ltx_para">
+<span id="A6.I11.i3.p1.1" class="ltx_p"><span id="A6.I11.i3.p1.1.1" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;">Generate comprehensive test cases for self-verification
+</span></span>
+</span></span>
+</span>
+</span></span></span></foreignobject></g></g></svg>

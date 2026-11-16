@@ -1,0 +1,25 @@
+<svg id="A2.SS4.SSS2.Px5.p2.pic1" class="ltx_picture" height="207.65" overflow="visible" version="1.1" viewbox="0 0 550 207.65" width="550"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,207.65) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#CBDDBE;" fill="#CBDDBE" fill-opacity="1.0"><path style="stroke:none" d="M 0 3.6 L 0 204.05 C 0 206.04 1.61 207.65 3.6 207.65 L 546.4 207.65 C 548.39 207.65 550 206.04 550 204.05 L 550 3.6 C 550 1.61 548.39 0 546.4 0 L 3.6 0 C 1.61 0 0 1.61 0 3.6 Z" /></g><g style="--ltx-fill-color:#F8FBF5;" fill="#F8FBF5" fill-opacity="1.0"><path style="stroke:none" d="M 0.83 3.6 L 0.83 185.82 L 549.17 185.82 L 549.17 3.6 C 549.17 2.07 547.93 0.83 546.4 0.83 L 3.6 0.83 C 2.07 0.83 0.83 2.07 0.83 3.6 Z" /></g><g style="--ltx-fill-color:#E4EEDC;" fill="#E4EEDC" fill-opacity="1.0"><path style="stroke:none" d="M 0.83 186.65 L 0.83 204.05 C 0.83 205.58 2.07 206.82 3.6 206.82 L 546.4 206.82 C 547.93 206.82 549.17 205.58 549.17 204.05 L 549.17 186.65 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 13.07 193.28)"><foreignobject style="--ltx-fo-width:32.92em;--ltx-fo-height:0.69em;--ltx-fo-depth:0.19em;font-size:10pt;" height="12.3" overflow="visible" transform="matrix(1 0 0 -1 0 9.61)" width="455.52"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A2.SS4.SSS2.Px5.p2.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:32.92em;">
+<span id="A2.SS4.SSS2.Px5.p2.pic1.1.1" class="ltx_p"><span id="A2.SS4.SSS2.Px5.p2.pic1.1.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#3F5F36;">Test feedback directory structure</span></span>
+</span></span></span></foreignobject></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 13.07 15.14)"><foreignobject style="--ltx-fo-width:37.86em;--ltx-fo-height:11.55em;--ltx-fo-depth:0.25em;font-size:10pt;" class="ltx_minipage" height="163.28" overflow="visible" transform="matrix(1 0 0 -1 0 159.82)" width="36.06em"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><pre id="A2.SS4.SSS2.Px5.p2.pic1.2" class="ltx_verbatim ltx_font_typewriter" style="--ltx-fg-color:#000000;">|-- Feedback_Docs/
+|   |-- modules/
+|   |   ‘-- module_XX/
+|   |       |-- validation.json
+|   |       |-- module_assignment.json
+|   |       |-- coverage_targets.json
+|   |       |-- coverage_summary.md
+|   |       |-- summary.md
+|   |       |-- static_analysis_result/
+|   |       |   |-- status.json
+|   |       |   |-- summary.json
+|   |       |   |-- functions/*.json
+|   |       |   |-- callgraph/*.json
+|   |       |   |-- controlflow/*.json
+|   |       |   ‘-- dataflow/*.json
+|   ‘-- upstream_harvest/
+|       |-- round_context.json
+|       |-- validation.json
+|       |-- module_assignment.json
+|       |-- remaining_upstream_tests.json
+|       ‘-- summary.md
+</pre></span></span></foreignobject></g></g></svg>

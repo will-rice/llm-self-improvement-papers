@@ -1,0 +1,44 @@
+<svg id="A6.SS1.p1.pic1" class="ltx_picture" height="500.65" overflow="visible" version="1.1" viewbox="0 0 477.38 500.65" width="477.38"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,500.65) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#BFBFBF;" fill="#BFBFBF" fill-opacity="1.0"><path style="stroke:none" d="M 0 5.91 L 0 494.74 C 0 498 2.64 500.65 5.91 500.65 L 471.47 500.65 C 474.73 500.65 477.38 498 477.38 494.74 L 477.38 5.91 C 477.38 2.64 474.73 0 471.47 0 L 5.91 0 C 2.64 0 0 2.64 0 5.91 Z" /></g><g style="--ltx-fill-color:#F9F9F9;" fill="#F9F9F9" fill-opacity="1.0"><path style="stroke:none" d="M 1.97 5.91 L 1.97 476.54 L 475.41 476.54 L 475.41 5.91 C 475.41 3.73 473.65 1.97 471.47 1.97 L 5.91 1.97 C 3.73 1.97 1.97 3.73 1.97 5.91 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 21.65 485.13)"><foreignobject style="--ltx-fo-width:31.37em;--ltx-fo-height:0.69em;--ltx-fo-depth:0.19em;font-size:10pt;" height="12.3" overflow="visible" transform="matrix(1 0 0 -1 0 9.61)" width="434.07"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A6.SS1.p1.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:31.37em;">
+<span id="A6.SS1.p1.pic1.1.1" class="ltx_p"><span id="A6.SS1.p1.pic1.1.1.1" class="ltx_text" style="--ltx-fg-color:#FFFFFF;">Diagnosis Prompt Template</span></span>
+</span></span></span></foreignobject></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 21.65 16.55)"><foreignobject style="--ltx-fo-width:33.2em;--ltx-fo-height:32.39em;--ltx-fo-depth:0.2em;font-size:10pt;" height="450.95" overflow="visible" transform="matrix(1 0 0 -1 0 448.19)" width="459.39"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A6.SS1.p1.pic1.2" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:33.2em;">
+<span id="A6.SS1.p1.pic1.2.1" class="ltx_p"><span id="A6.SS1.p1.pic1.2.1.1" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;">You are analyzing test failures to diagnose why an LLM failed to generate correct code.
+</span></span>
+<span id="A6.SS1.p1.pic1.2.2" class="ltx_p"><span id="A6.SS1.p1.pic1.2.2.1" class="ltx_text ltx_font_typewriter ltx_font_bold" style="font-size:90%;--ltx-fg-color:#000000;">Entity Information:
+<br class="ltx_break"><span id="A6.SS1.p1.pic1.2.2.1.1" class="ltx_text ltx_font_medium">- Name: {entity_name}
+<br class="ltx_break">- Type: {entity_type} (function/class/method)
+<br class="ltx_break">- Current Documentation:
+<br class="ltx_break">{current_doc}
+</span></span></span>
+<span id="A6.SS1.p1.pic1.2.3" class="ltx_p"><span id="A6.SS1.p1.pic1.2.3.1" class="ltx_text ltx_font_typewriter ltx_font_bold" style="font-size:90%;--ltx-fg-color:#000000;">Test Failures:
+<br class="ltx_break"><span id="A6.SS1.p1.pic1.2.3.1.1" class="ltx_text ltx_font_medium">The generated code failed the following tests:
+<br class="ltx_break">{error_messages}
+</span></span></span>
+<span id="A6.SS1.p1.pic1.2.4" class="ltx_p"><span id="A6.SS1.p1.pic1.2.4.1" class="ltx_text ltx_font_typewriter ltx_font_bold" style="font-size:90%;--ltx-fg-color:#000000;">Task:
+<br class="ltx_break"><span id="A6.SS1.p1.pic1.2.4.1.1" class="ltx_text ltx_font_medium">Analyze the test failures and diagnose:
+</span></span></span>
+<span id="A6.I1" class="ltx_enumerate">
+<span id="A6.I1.i1" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">1.</span> 
+<span id="A6.I1.i1.p1" class="ltx_para">
+<span id="A6.I1.i1.p1.1" class="ltx_p"><span id="A6.I1.i1.p1.1.1" class="ltx_text ltx_font_typewriter ltx_font_bold" style="font-size:90%;--ltx-fg-color:#000000;">What went wrong?</span><span id="A6.I1.i1.p1.1.2" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;"> Identify the specific errors (type mismatches, incorrect outputs, missing logic, etc.)
+</span></span>
+</span></span>
+<span id="A6.I1.i2" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">2.</span> 
+<span id="A6.I1.i2.p1" class="ltx_para">
+<span id="A6.I1.i2.p1.1" class="ltx_p"><span id="A6.I1.i2.p1.1.1" class="ltx_text ltx_font_typewriter ltx_font_bold" style="font-size:90%;--ltx-fg-color:#000000;">Why did the LLM fail?</span><span id="A6.I1.i2.p1.1.2" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;"> What information is missing or ambiguous in the documentation that caused the LLM to misunderstand the requirements?
+</span></span>
+</span></span>
+<span id="A6.I1.i3" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">3.</span> 
+<span id="A6.I1.i3.p1" class="ltx_para">
+<span id="A6.I1.i3.p1.1" class="ltx_p"><span id="A6.I1.i3.p1.1.1" class="ltx_text ltx_font_typewriter ltx_font_bold" style="font-size:90%;--ltx-fg-color:#000000;">What knowledge gap exists?</span><span id="A6.I1.i3.p1.1.2" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;"> What does the LLM need to know to generate correct code?
+</span></span>
+</span></span>
+</span>
+<span id="A6.SS1.p1.pic1.2.5" class="ltx_p"><span id="A6.SS1.p1.pic1.2.5.1" class="ltx_text ltx_font_typewriter ltx_font_bold" style="font-size:90%;--ltx-fg-color:#000000;">Output:
+<br class="ltx_break"><span id="A6.SS1.p1.pic1.2.5.1.1" class="ltx_text ltx_font_medium">Provide a concise diagnosis in the following format:
+<br class="ltx_break">- Error Type: [brief description]
+<br class="ltx_break">- Root Cause: [what the LLM misunderstood]
+<br class="ltx_break">- Missing Information: [what needs to be clarified]
+</span></span></span>
+</span></span></span></foreignobject></g></g></svg>
