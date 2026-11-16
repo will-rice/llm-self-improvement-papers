@@ -1,3 +1,15 @@
-backfill: {}
+backfill:
+  arxiv:
+    continuation:
+      cursor: eyJjb25zdW1lZCI6MTE5NCwicGFnZSI6Niwic3RhcnQiOjExOTR9
+      window_end: '2026-11-08T12:32:19.877532Z'
+      window_start: '2026-08-10T12:32:19.877532Z'
+    covered_from: '2026-11-08T12:32:19.877532Z'
+  huggingface:
+    continuation:
+      cursor: eyJkYXRlIjoiMjAyNi0wOS0yMSIsInBhZ2UiOjIsInNvdXJjZV9jb25zdW1lZCI6MjAwMX0
+      window_end: '2026-11-08T12:32:19.877532Z'
+      window_start: '2025-11-08T12:32:19.877532Z'
+    covered_from: '2026-11-08T12:32:19.877532Z'
 continuations: {}
 failures: {}
