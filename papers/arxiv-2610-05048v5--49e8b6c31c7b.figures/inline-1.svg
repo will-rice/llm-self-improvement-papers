@@ -1,0 +1,29 @@
+<svg id="A1.SS4.SSS0.Px1.p2.pic1" class="ltx_picture" height="403.67" overflow="visible" version="1.1" viewbox="0 0 550 403.67" width="550"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,403.67) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#B9B9B9;" fill="#B9B9B9" fill-opacity="1.0"><path style="stroke:none" d="M 0 4.63 L 0 399.04 C 0 401.59 2.07 403.67 4.63 403.67 L 545.37 403.67 C 547.93 403.67 550 401.59 550 399.04 L 550 4.63 C 550 2.07 547.93 0 545.37 0 L 4.63 0 C 2.07 0 0 2.07 0 4.63 Z" /></g><g style="--ltx-fill-color:#FBFBFB;" fill="#FBFBFB" fill-opacity="1.0"><path style="stroke:none" d="M 0.69 4.63 L 0.69 382.11 L 549.31 382.11 L 549.31 4.63 C 549.31 2.45 547.55 0.69 545.37 0.69 L 4.63 0.69 C 2.45 0.69 0.69 2.45 0.69 4.63 Z" /></g><g style="--ltx-stroke-color:#B9B9B9;--ltx-fill-color:#B9B9B9;--ltx-fg-color:#B9B9B9;" color="#B9B9B9" fill="#B9B9B9" stroke="#B9B9B9" stroke-dasharray="2.84528pt,2.84528pt" stroke-dashoffset="1.42264pt" stroke-opacity="1.0"><path style="fill:none" d="M 0.69 86.85 L 549.31 86.85" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 14.31 389.43)"><foreignobject style="--ltx-fo-width:32.77em;--ltx-fo-height:0.69em;--ltx-fo-depth:0.19em;font-size:10pt;" height="12.3" overflow="visible" transform="matrix(1 0 0 -1 0 9.61)" width="453.44"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A1.SS4.SSS0.Px1.p2.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:32.77em;">
+<span id="A1.SS4.SSS0.Px1.p2.pic1.1.1" class="ltx_p"><span id="A1.SS4.SSS0.Px1.p2.pic1.1.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#FFFFFF;">EGT teacher prompt</span></span>
+</span></span></span></foreignobject></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 14.31 102.13)"><foreignobject style="--ltx-fo-width:35.89em;--ltx-fo-height:19.35em;--ltx-fo-depth:0.25em;font-size:10pt;" height="271.21" overflow="visible" transform="matrix(1 0 0 -1 0 267.75)" width="496.62"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A1.SS4.SSS0.Px1.p2.pic1.2" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:35.89em;">
+<span id="A1.SS4.SSS0.Px1.p2.pic1.2.1" class="ltx_p ltx_align_left"><span id="A1.SS4.SSS0.Px1.p2.pic1.2.1.1" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">Problem: {current_problem}
+</span></span>
+<span id="A1.SS4.SSS0.Px1.p2.pic1.2.2" class="ltx_p ltx_align_left"><span id="A1.SS4.SSS0.Px1.p2.pic1.2.2.1" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">Here is a reference solution to a DIFFERENT but related problem. It is not the
+problem you must solve, and its final answer is NOT the answer to your problem
+-- use it only as a guide to the strategies and techniques that transfer:
+</span></span>
+<span id="A1.SS4.SSS0.Px1.p2.pic1.2.3" class="ltx_p ltx_align_left"><span id="A1.SS4.SSS0.Px1.p2.pic1.2.3.1" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">=== Reference Solution Begin ===</span></span>
+<span id="A1.SS4.SSS0.Px1.p2.pic1.2.4" class="ltx_p ltx_align_left"><span id="A1.SS4.SSS0.Px1.p2.pic1.2.4.1" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">Related problem: {related_problem}
+</span></span>
+<span id="A1.SS4.SSS0.Px1.p2.pic1.2.5" class="ltx_p ltx_align_left"><span id="A1.SS4.SSS0.Px1.p2.pic1.2.5.1" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">Solution to the related problem:</span></span>
+<span id="A1.SS4.SSS0.Px1.p2.pic1.2.6" class="ltx_p ltx_align_left"><span id="A1.SS4.SSS0.Px1.p2.pic1.2.6.1" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">{related_solution}</span></span>
+<span id="A1.SS4.SSS0.Px1.p2.pic1.2.7" class="ltx_p ltx_align_left"><span id="A1.SS4.SSS0.Px1.p2.pic1.2.7.1" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">=== Reference Solution End ===
+</span></span>
+<span id="A1.SS4.SSS0.Px1.p2.pic1.2.8" class="ltx_p ltx_align_left"><span id="A1.SS4.SSS0.Px1.p2.pic1.2.8.1" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">After reading the reference solution above, make sure you understand the
+reasoning behind each step, then solve the original problem with whatever
+transfers from it.
+</span></span>
+<span id="A1.SS4.SSS0.Px1.p2.pic1.2.9" class="ltx_p ltx_align_left"><span id="A1.SS4.SSS0.Px1.p2.pic1.2.9.1" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">Please reason step by step, and put your final answer within \boxed{}.
+</span></span>
+</span></span></span></foreignobject></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 14.31 15.62)"><foreignobject style="--ltx-fo-width:37.68em;--ltx-fo-height:4.29em;--ltx-fo-depth:0.19em;font-size:10pt;" height="62.11" overflow="visible" transform="matrix(1 0 0 -1 0 59.42)" width="521.39"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A1.SS4.SSS0.Px1.p2.pic1.3" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:37.68em;">
+<span id="A1.SS4.SSS0.Px1.p2.pic1.3.1" class="ltx_p"><span id="A1.SS4.SSS0.Px1.p2.pic1.3.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">Assistant continuation:<span id="A1.SS4.SSS0.Px1.p2.pic1.3.1.1.1" class="ltx_text ltx_font_medium"> <span id="A1.SS4.SSS0.Px1.p2.pic1.3.1.1.1.1" class="ltx_text ltx_font_typewriter">{student_prefix}</span></span></span></span>
+<span id="A1.SS4.SSS0.Px1.p2.pic1.3.2" class="ltx_p"><span id="A1.SS4.SSS0.Px1.p2.pic1.3.2.1" class="ltx_text" style="--ltx-fg-color:#000000;">The teacher scores the next token after this prefix; this line is not part of the user message.</span></span>
+</span></span></span></foreignobject></g></g></svg>
