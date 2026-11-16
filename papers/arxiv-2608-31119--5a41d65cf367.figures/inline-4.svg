@@ -1,0 +1,281 @@
+<svg id="A3.SS2.p4.pic1" class="ltx_picture" height="1500.81" overflow="visible" version="1.1" viewbox="0 0 653.15 1500.81" width="653.15"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,1500.81) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#B3B3B3;" fill="#B3B3B3" fill-opacity="1.0"><path style="stroke:none" d="M 0 16.6 L 0 1484.2 C 0 1493.38 7.43 1500.81 16.6 1500.81 L 636.55 1500.81 C 645.72 1500.81 653.15 1493.38 653.15 1484.2 L 653.15 16.6 C 653.15 7.43 645.72 0 636.55 0 L 16.6 0 C 7.43 0 0 7.43 0 16.6 Z" /></g><g style="--ltx-fill-color:#FEFEFE;" fill="#FEFEFE" fill-opacity="1.0"><path style="stroke:none" d="M 2.77 16.6 L 2.77 1484.2 C 2.77 1491.85 8.96 1498.04 16.6 1498.04 L 636.55 1498.04 C 644.19 1498.04 650.38 1491.85 650.38 1484.2 L 650.38 16.6 C 650.38 8.96 644.19 2.77 636.55 2.77 L 16.6 2.77 C 8.96 2.77 2.77 8.96 2.77 16.6 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 15.01 16.16)"><foreignobject style="--ltx-fo-width:42.89em;--ltx-fo-height:106.21em;--ltx-fo-depth:0.08em;font-size:10pt;" height="1470.81" overflow="visible" transform="matrix(1 0 0 -1 0 1469.66)" width="593.48"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A3.SS2.p4.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:42.89em;">
+<span id="A3.SS2.p4.pic1.1.1" class="ltx_p"><span id="A3.SS2.p4.pic1.1.1.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.1.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.1.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.1.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A3.SS2.p4.pic1.1.1.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A3.SS2.p4.pic1.p1" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p1.1" class="ltx_p">You are tasked with comparing three research plans for the same research scenario. You need to evaluate them based on specific criteria and provide scores. The order they are provided here is randomized.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.2" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.2.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.2.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.3" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.3.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.3.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p3" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p3.1" class="ltx_p"># Research Scenario</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.4" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.4.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.4.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p4" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p4.1" class="ltx_p">{scenario}</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.5" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.5.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.5.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.6" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.6.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.6.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p6" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p6.1" class="ltx_p"># Research Plan A</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.7" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.7.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.7.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p7" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p7.1" class="ltx_p">{plan_a}</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.8" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.8.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.8.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.9" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.9.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.9.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p9" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p9.1" class="ltx_p"># Research Plan B</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.10" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.10.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.10.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p10" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p10.1" class="ltx_p">{plan_b}</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.11" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.11.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.11.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.12" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.12.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.12.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p12" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p12.1" class="ltx_p"># Research Plan C</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.13" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.13.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.13.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p13" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p13.1" class="ltx_p">{plan_c}</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.14" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.14.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.14.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.15" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.15.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.15.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p15" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p15.1" class="ltx_p"># Evaluation Criteria</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.16" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.16.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.16.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p16" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p16.1" class="ltx_p">Evaluate each research plan based on the following criteria:</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.17" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.17.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.17.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.18" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.18.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.18.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p18" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p18.1" class="ltx_p">1. Goal Alignment</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.19" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.19.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.19.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.19.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.19.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A3.SS2.p4.pic1.1.19.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A3.SS2.p4.pic1.p19" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p19.1" class="ltx_p">Which plan better understands and addresses the core research goal? A strong plan should identify the key scientific challenges, formulate relevant research questions or hypotheses, and avoid unnecessary experiments or directions that do not contribute to the stated objective.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.20" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.20.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.20.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.21" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.21.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.21.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p21" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p21.1" class="ltx_p">2. Novel Insight</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.22" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.22.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.22.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.22.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.22.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A3.SS2.p4.pic1.1.22.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A3.SS2.p4.pic1.p22" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p22.1" class="ltx_p">Which plan demonstrates stronger originality and research insight? A strong plan should propose novel hypotheses, perspectives, methodologies, or experimental designs rather than simply applying existing approaches. Novelty should be meaningful and connected to the research goal.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.23" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.23.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.23.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.24" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.24.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.24.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p24" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p24.1" class="ltx_p">3. Scientific Soundness</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.25" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.25.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.25.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.25.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.25.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A3.SS2.p4.pic1.1.25.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A3.SS2.p4.pic1.p25" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p25.1" class="ltx_p">Which plan provides a more rigorous and convincing scientific investigation? A strong plan should have a coherent reasoning chain from hypothesis to methodology to evidence. It should consider appropriate baselines, controls, confounding factors, alternative explanations, and experimental validation strategies.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.26" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.26.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.26.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.27" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.27.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.27.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p27" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p27.1" class="ltx_p">4. Execution Quality</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.28" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.28.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.28.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.28.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.28.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A3.SS2.p4.pic1.1.28.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A3.SS2.p4.pic1.p28" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p28.1" class="ltx_p">Which plan is clearer, more feasible, and better structured for implementation? A strong plan should specify what needs to be done, how it will be done, and why each step is necessary. It should balance ambition and practicality, avoiding unnecessary complexity while retaining essential experiments.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.29" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.29.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.29.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.30" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.30.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.30.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p30" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p30.1" class="ltx_p">5. Expected Research Impact</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.31" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.31.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.31.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.31.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.31.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A3.SS2.p4.pic1.1.31.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A3.SS2.p4.pic1.p31" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p31.1" class="ltx_p">Which plan is more likely to generate meaningful research outcomes if successfully executed? A strong plan should lead to interpretable findings, advance understanding of the research problem, or provide valuable methodological contributions.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.32" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.32.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.32.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.33" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.33.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.33.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p33" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p33.1" class="ltx_p"># Overall Score</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.34" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.34.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.34.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.35" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.35.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.35.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p35" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p35.1" class="ltx_p">Finally, provide an overall score (1-10) for each research plan.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.36" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.36.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.36.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.37" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.37.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.37.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.37.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.37.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A3.SS2.p4.pic1.1.37.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A3.SS2.p4.pic1.p37" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p37.1" class="ltx_p">The score reflects how valuable the plan would be as a research blueprint if assigned to an average graduate student in the relevant field. Consider both scientific quality and practical usefulness.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.38" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.38.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.38.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.39" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.39.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.39.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p39" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p39.1" class="ltx_p">Score guidelines:</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.40" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.40.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.40.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.41" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.41.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.41.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p41" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p41.1" class="ltx_p">10: Exceptional research plan.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.42" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.42.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.42.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.42.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.42.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A3.SS2.p4.pic1.1.42.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A3.SS2.p4.pic1.p42" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p42.1" class="ltx_p">The plan is highly insightful, rigorous, and well-designed. If executed as described, it would likely produce a strong research contribution with minimal additional guidance.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.43" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.43.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.43.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.44" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.44.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.44.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p44" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p44.1" class="ltx_p">9: Excellent research plan.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.45" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.45.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.45.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.45.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.45.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A3.SS2.p4.pic1.1.45.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A3.SS2.p4.pic1.p45" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p45.1" class="ltx_p">The plan has a strong research idea, solid methodology, and clear execution path. Only minor improvements are needed.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.46" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.46.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.46.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.47" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.47.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.47.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p47" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p47.1" class="ltx_p">8: Strong research plan.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.48" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.48.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.48.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.48.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.48.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A3.SS2.p4.pic1.1.48.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A3.SS2.p4.pic1.p48" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p48.1" class="ltx_p">The plan is coherent and useful, with good scientific reasoning. It may contain some limitations in novelty, rigor, or details, but can likely lead to a successful study with moderate refinement.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.49" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.49.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.49.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.50" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.50.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.50.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p50" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p50.1" class="ltx_p">7: Good research plan.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.51" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.51.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.51.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.51.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.51.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A3.SS2.p4.pic1.1.51.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A3.SS2.p4.pic1.p51" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p51.1" class="ltx_p">The plan addresses the research goal appropriately and contains valuable ideas, but has noticeable weaknesses in methodology, clarity, feasibility, or depth.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.52" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.52.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.52.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.53" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.53.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.53.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p53" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p53.1" class="ltx_p">6: Moderately useful research plan.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.54" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.54.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.54.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.54.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.54.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A3.SS2.p4.pic1.1.54.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A3.SS2.p4.pic1.p54" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p54.1" class="ltx_p">The plan provides a reasonable direction but lacks important details, has methodological gaps, or requires substantial additional insight to become a strong study.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.55" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.55.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.55.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.56" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.56.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.56.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p56" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p56.1" class="ltx_p">5: Mixed-quality research plan.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.57" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.57.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.57.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.57.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.57.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A3.SS2.p4.pic1.1.57.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A3.SS2.p4.pic1.p57" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p57.1" class="ltx_p">The plan contains some relevant ideas but also significant weaknesses. It may be partially useful as a reference, but requires major improvement before execution.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.58" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.58.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.58.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.59" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.59.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.59.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p59" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p59.1" class="ltx_p">4: Weak research plan.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.60" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.60.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.60.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.60.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.60.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A3.SS2.p4.pic1.1.60.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A3.SS2.p4.pic1.p60" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p60.1" class="ltx_p">The plan is related to the research goal but has substantial problems in reasoning, methodology, feasibility, or research focus.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.61" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.61.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.61.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.62" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.62.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.62.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p62" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p62.1" class="ltx_p">3: Poor research plan.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.63" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.63.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.63.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.63.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.63.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A3.SS2.p4.pic1.1.63.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A3.SS2.p4.pic1.p63" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p63.1" class="ltx_p">The plan contains major flaws and would likely mislead a researcher if followed without significant correction.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.64" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.64.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.64.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.65" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.65.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.65.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p65" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p65.1" class="ltx_p">2: Very poor research plan.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.66" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.66.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.66.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p66" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p66.1" class="ltx_p">The plan is largely ineffective, with serious conceptual or methodological issues.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.67" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.67.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.67.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.68" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.68.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.68.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p68" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p68.1" class="ltx_p">1: Invalid research plan.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.69" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.69.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.69.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p69" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p69.1" class="ltx_p">The plan is irrelevant to the research goal, fundamentally incorrect, or unusable.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.70" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.70.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.70.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.71" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.71.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.71.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p71" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p71.1" class="ltx_p"># Output Format</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.72" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.72.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.72.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.72.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.72.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A3.SS2.p4.pic1.1.72.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A3.SS2.p4.pic1.p72" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p72.1" class="ltx_p">For each criterion, rank the three plans from best to worst (1 = best, 3 = worst). Ties are allowed.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.73" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.73.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.73.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A3.SS2.p4.pic1.1.74" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.74.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.74.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p74" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p74.1" class="ltx_p">Provide your analysis and judgment in the following XML format:</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.75" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.75.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.75.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p75" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p75.1" class="ltx_p">&lt;evaluation&gt;</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.76" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.76.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.76.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p76" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p76.1" class="ltx_p">    &lt;reasoning&gt;</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.77" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.77.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.77.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.77.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.77.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A3.SS2.p4.pic1.1.77.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A3.SS2.p4.pic1.p77" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p77.1" class="ltx_p">    Think critically and skeptically about all three plans. Consider their weaknesses and strengths. Compare them relative to each other on each criterion.</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.78" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.78.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.78.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p78" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p78.1" class="ltx_p">    &lt;/reasoning&gt;</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.79" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.79.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.79.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p79" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p79.1" class="ltx_p">    &lt;criteria_judgments&gt;</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.80" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.80.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.80.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p80" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p80.1" class="ltx_p">        &lt;goal_alignment&gt;Rank plans A, B, C from best to worst&lt;/goal_alignment&gt;</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.81" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.81.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.81.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p81" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p81.1" class="ltx_p">        &lt;novel_insight&gt;Rank plans A, B, C from best to worst&lt;/novel_insight&gt;</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.82" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.82.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.82.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.82.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.82.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A3.SS2.p4.pic1.1.82.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A3.SS2.p4.pic1.p82" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p82.1" class="ltx_p">        &lt;scientific_soundness&gt;Rank plans A, B, C from best to worst&lt;/scientific_soundness&gt;</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.83" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.83.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.83.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.83.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A3.SS2.p4.pic1.1.83.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A3.SS2.p4.pic1.1.83.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A3.SS2.p4.pic1.p83" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p83.1" class="ltx_p">        &lt;execution_quality&gt;Rank plans A, B, C from best to worst&lt;/execution_quality&gt;</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.84" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.84.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.84.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p84" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p84.1" class="ltx_p">        &lt;expected_impact&gt;Rank plans A, B, C from best to worst&lt;/expected_impact&gt;</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.85" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.85.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.85.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p85" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p85.1" class="ltx_p">    &lt;/criteria_judgments&gt;</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.86" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.86.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.86.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p86" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p86.1" class="ltx_p">    &lt;overall_score_a&gt;Score from 1-10 for Plan A&lt;/overall_score_a&gt;</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.87" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.87.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.87.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p87" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p87.1" class="ltx_p">    &lt;overall_score_b&gt;Score from 1-10 for Plan B&lt;/overall_score_b&gt;</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.88" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.88.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.88.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p88" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p88.1" class="ltx_p">    &lt;overall_score_c&gt;Score from 1-10 for Plan C&lt;/overall_score_c&gt;</span>
+</span></span></span></span>
+<span id="A3.SS2.p4.pic1.1.89" class="ltx_p" style="width:450.3pt;"><span id="A3.SS2.p4.pic1.1.89.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A3.SS2.p4.pic1.1.89.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A3.SS2.p4.pic1.p89" class="ltx_para ltx_noindent">
+<span id="A3.SS2.p4.pic1.p89.1" class="ltx_p">&lt;/evaluation&gt;</span>
+</span></span></span></span>
+</span></span></span></foreignobject></g></g></svg>

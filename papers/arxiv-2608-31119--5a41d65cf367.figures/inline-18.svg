@@ -1,0 +1,122 @@
+<svg id="A4.SS3.p10.pic1" class="ltx_picture" height="603.02" overflow="visible" version="1.1" viewbox="0 0 653.15 603.02" width="653.15"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,603.02) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#B3B3B3;" fill="#B3B3B3" fill-opacity="1.0"><path style="stroke:none" d="M 0 16.6 L 0 586.41 C 0 595.58 7.43 603.02 16.6 603.02 L 636.55 603.02 C 645.72 603.02 653.15 595.58 653.15 586.41 L 653.15 16.6 C 653.15 7.43 645.72 0 636.55 0 L 16.6 0 C 7.43 0 0 7.43 0 16.6 Z" /></g><g style="--ltx-fill-color:#FEFEFE;" fill="#FEFEFE" fill-opacity="1.0"><path style="stroke:none" d="M 2.77 16.6 L 2.77 586.41 C 2.77 594.06 8.96 600.25 16.6 600.25 L 636.55 600.25 C 644.19 600.25 650.38 594.06 650.38 586.41 L 650.38 16.6 C 650.38 8.96 644.19 2.77 636.55 2.77 L 16.6 2.77 C 8.96 2.77 2.77 8.96 2.77 16.6 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 15.01 15.01)"><foreignobject style="--ltx-fo-width:42.89em;--ltx-fo-height:41.41em;--ltx-fo-depth:0em;font-size:10pt;" height="573.01" overflow="visible" transform="matrix(1 0 0 -1 0 573.01)" width="593.48"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A4.SS3.p10.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:42.89em;">
+<span id="A4.SS3.p10.pic1.1.1" class="ltx_p"><span id="A4.SS3.p10.pic1.1.1.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.1.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A4.SS3.p10.pic1.p1" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p1.1" class="ltx_p"># Role</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.2" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.2.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.2.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A4.SS3.p10.pic1.1.2.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A4.SS3.p10.pic1.1.2.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A4.SS3.p10.pic1.1.2.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A4.SS3.p10.pic1.p2" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p2.1" class="ltx_p">You are an expert in scientific methodology and solution evaluation. Your task is to analyze the given experimental design task and reference solution, and generate comprehensive evaluation rubrics to assess the quality of any proposed solution in a binary (True/False) manner.</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.3" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.3.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.3.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A4.SS3.p10.pic1.1.4" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.4.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.4.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A4.SS3.p10.pic1.p4" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p4.1" class="ltx_p"># Experimental Design Task</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.5" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.5.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.5.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A4.SS3.p10.pic1.p5" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p5.1" class="ltx_p">{research_problem}</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.6" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.6.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.6.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A4.SS3.p10.pic1.1.7" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.7.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.7.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A4.SS3.p10.pic1.p7" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p7.1" class="ltx_p"># Reference Solution</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.8" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.8.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.8.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A4.SS3.p10.pic1.p8" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p8.1" class="ltx_p">{reference_solution}</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.9" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.9.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.9.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A4.SS3.p10.pic1.1.10" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.10.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.10.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A4.SS3.p10.pic1.p10" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p10.1" class="ltx_p"># Rubric Design Guidelines</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.11" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.11.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.11.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A4.SS3.p10.pic1.p11" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p11.1" class="ltx_p">Each rubric must be:</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.12" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.12.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.12.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A4.SS3.p10.pic1.p12" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p12.1" class="ltx_p">- **True/False binary**: objectively assessable without subjective interpretation.</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.13" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.13.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.13.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A4.SS3.p10.pic1.p13" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p13.1" class="ltx_p">- **Atomic**: evaluate ONE and only ONE independent concept per rubric.</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.14" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.14.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.14.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A4.SS3.p10.pic1.1.14.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A4.SS3.p10.pic1.1.14.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A4.SS3.p10.pic1.1.14.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A4.SS3.p10.pic1.p14" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p14.1" class="ltx_p">- **Objective**: avoid subjective adjectives (good, detailed, clear, reasonable); use deterministic phrasing (e.g., &quot;Contains formula X&quot;, &quot;Mentions concept Y&quot;).</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.15" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.15.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.15.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A4.SS3.p10.pic1.1.15.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A4.SS3.p10.pic1.1.15.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A4.SS3.p10.pic1.1.15.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A4.SS3.p10.pic1.p15" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p15.1" class="ltx_p">- **Negation-style positively phrased**: e.g., &quot;No logical conflicts are present&quot; rather than &quot;Logical conflicts occurred&quot;.</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.16" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.16.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.16.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A4.SS3.p10.pic1.1.16.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A4.SS3.p10.pic1.1.16.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A4.SS3.p10.pic1.1.16.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A4.SS3.p10.pic1.p16" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p16.1" class="ltx_p">- **Not about final results**: do NOT include rubrics that require executing experiments to verify.</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.17" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.17.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.17.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A4.SS3.p10.pic1.1.17.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A4.SS3.p10.pic1.1.17.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A4.SS3.p10.pic1.1.17.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A4.SS3.p10.pic1.p17" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p17.1" class="ltx_p">- **Not about trivial details**: avoid minor/overly specific details of the reference solution, as multiple valid approaches may exist.</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.18" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.18.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.18.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A4.SS3.p10.pic1.1.18.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A4.SS3.p10.pic1.1.18.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A4.SS3.p10.pic1.1.18.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A4.SS3.p10.pic1.p18" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p18.1" class="ltx_p">- **Non-inferable from the task alone (CRITICAL)**: each rubric must evaluate a specific design decision grounded in the [Reference Solution] that is NOT stated, implied, or predictable from the [Experimental Design Task] alone. Before finalizing each rubric, perform this self-check: &quot;Could a reader who has only read the task description (never the reference solution) already know that a correct answer must satisfy this rubric?&quot; If yes, DISCARD the rubric and design a more discriminating one.</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.19" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.19.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.19.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A4.SS3.p10.pic1.1.19.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A4.SS3.p10.pic1.1.19.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A4.SS3.p10.pic1.1.19.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A4.SS3.p10.pic1.p19" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p19.1" class="ltx_p">- **Not generic methodology**: forbid boilerplate rubrics that any competent experimental design would trivially satisfy (e.g., &quot;The solution includes baseline comparisons&quot;, &quot;The solution uses appropriate evaluation metrics&quot;, &quot;The solution controls for confounding variables&quot;). Every rubric must name a concrete, discriminating design element (a specific baseline category, a specific dataset property, a specific ablation, a specific control) whose necessity cannot be guessed without knowing the reference solution.</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.20" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.20.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.20.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A4.SS3.p10.pic1.1.21" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.21.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.21.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A4.SS3.p10.pic1.p21" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p21.1" class="ltx_p">Construct rubrics focusing solely on the **Experimental Design** dimension:</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.22" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.22.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.22.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A4.SS3.p10.pic1.1.23" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.23.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.23.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A4.SS3.p10.pic1.1.23.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A4.SS3.p10.pic1.1.23.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A4.SS3.p10.pic1.1.23.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A4.SS3.p10.pic1.p23" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p23.1" class="ltx_p">Assess whether the solution proposes a sound and well-justified experimental setup, including appropriate baselines, datasets, evaluation metrics, variable controls, handling of confounds, and reproducibility considerations.</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.24" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.24.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.24.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A4.SS3.p10.pic1.1.25" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.25.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.25.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A4.SS3.p10.pic1.1.25.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A4.SS3.p10.pic1.1.25.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A4.SS3.p10.pic1.1.25.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A4.SS3.p10.pic1.p25" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p25.1" class="ltx_p">Prioritize rubrics that target the **core experimental design choices and key validation steps** - discard trivial or peripheral aspects. Fewer high-impact rubrics are better than many shallow ones.</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.26" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.26.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.26.1.1" class="ltx_inline-logical-block ltx_parbox ltx_pruned_first ltx_align_top" style="width:450.3pt;"></span></span></span>
+<span id="A4.SS3.p10.pic1.1.27" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.27.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.27.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A4.SS3.p10.pic1.p27" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p27.1" class="ltx_p"># Output Requirements</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.28" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.28.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.28.1.1" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A4.SS3.p10.pic1.1.28.1.2" class="ltx_text ltx_inline-block" style="width:0.0pt;"> </span><span id="A4.SS3.p10.pic1.1.28.1.3" class="ltx_text ltx_inline-block" style="width:21.0pt;"> </span><span id="A4.SS3.p10.pic1.1.28.1.4" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:429.3pt;">
+<span id="A4.SS3.p10.pic1.p28" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p28.1" class="ltx_p">Generate exactly 10 rubrics. Avoid overly specific numerical settings (e.g., learning rates, batch sizes, epochs). Provide strictly valid JSON.</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.29" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.29.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.29.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A4.SS3.p10.pic1.p29" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p29.1" class="ltx_p">Wrap the output JSON array in ```json ``` code blocks, formatted as:</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.30" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.30.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.30.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A4.SS3.p10.pic1.p30" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p30.1" class="ltx_p">```json</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.31" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.31.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.31.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A4.SS3.p10.pic1.p31" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p31.1" class="ltx_p">[</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.32" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.32.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.32.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A4.SS3.p10.pic1.p32" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p32.1" class="ltx_p">  {{&quot;id&quot;: 1, &quot;description&quot;: &quot;...&quot;}},</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.33" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.33.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.33.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A4.SS3.p10.pic1.p33" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p33.1" class="ltx_p">  {{&quot;id&quot;: 2, &quot;description&quot;: &quot;...&quot;}}</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.34" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.34.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.34.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A4.SS3.p10.pic1.p34" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p34.1" class="ltx_p">]</span>
+</span></span></span></span>
+<span id="A4.SS3.p10.pic1.1.35" class="ltx_p" style="width:450.3pt;"><span id="A4.SS3.p10.pic1.1.35.1" class="ltx_text ltx_verbatim ltx_font_typewriter ltx_inline-block" style="width:450.3pt;--ltx-fg-color:#000000;"><span id="A4.SS3.p10.pic1.1.35.1.1" class="ltx_inline-logical-block ltx_parbox ltx_align_top" style="width:450.3pt;">
+<span id="A4.SS3.p10.pic1.p35" class="ltx_para ltx_noindent">
+<span id="A4.SS3.p10.pic1.p35.1" class="ltx_p">```</span>
+</span></span></span></span>
+</span></span></span></foreignobject></g></g></svg>

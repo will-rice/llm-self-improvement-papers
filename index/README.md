@@ -1,8 +1,8 @@
 # Title index
 
-2193 papers by publication year, newest first. Each year lists one paper per line: date, title, and a link to its markdown, or to its source when it is not converted.
+2200 papers by publication year, newest first. Each year lists one paper per line: date, title, and a link to its markdown, or to its source when it is not converted.
 
-- [2026](2026.md): 1279 papers
+- [2026](2026.md): 1286 papers
 - [2025](2025.md): 522 papers
 - [2024](2024.md): 284 papers
 - [2023](2023.md): 87 papers
