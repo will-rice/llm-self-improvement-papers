@@ -25,6 +25,7 @@ for first_character in "OoYyNn":
     ]
 
 WORKFLOWS = Path(".github/workflows")
+CHECKOUT_TIMEOUT_MINUTES = 10
 SCRIPTS = Path(".github/scripts")
 PINNED_ACTION = re.compile(r"^[^@\s]+@[0-9a-f]{40}$")
 DIRTY_PATHS = (
@@ -62,6 +63,10 @@ def test_actions_are_sha_pinned_and_jobs_and_steps_have_timeouts() -> None:
                 assert isinstance(step.get("timeout-minutes"), int)
                 if "uses" in step:
                     assert PINNED_ACTION.fullmatch(step["uses"])
+                # A full-history clone of a large corpus can take minutes.
+                if step.get("uses", "").startswith("actions/checkout@"):
+                    assert step["timeout-minutes"] == CHECKOUT_TIMEOUT_MINUTES
+                    assert job["timeout-minutes"] > CHECKOUT_TIMEOUT_MINUTES
 
 
 def test_ci_triggers_and_permissions_are_read_only() -> None:
@@ -77,17 +82,39 @@ def test_all_python_workflows_use_locked_dependencies() -> None:
     for name in ("ci.yml", "nightly.yml", "format-corpus.yml"):
         text = (WORKFLOWS / name).read_text(encoding="utf-8")
         assert "uv==" in text
-        assert "uv sync --locked" in text
+        assert "uv sync --locked" in text or "setup-conversion.sh" in text
+        assert "uv tool install" not in text
+        assert "uv pip install" not in text
 
 
-def test_nightly_provisions_pinned_conversion_and_formatting_tools() -> None:
-    text = (WORKFLOWS / "nightly.yml").read_text(encoding="utf-8")
-    assert "marker-pdf==1.10.1" in text
-    assert "pypandoc-binary==1.15" in text
-    assert "prettier@3.6.2" in text
-    assert "pypandoc.get_pandoc_path()" in text
-    assert '"$HOME/.local/bin" >> "$GITHUB_PATH"' in text
-    assert text.index("marker-pdf==1.10.1") < text.index("nightly.sh")
+def test_conversion_environment_comes_from_the_lock() -> None:
+    # docling and pandoc are locked dependencies: an install that resolves
+    # anything at run time can break overnight when a dependency releases.
+    script = (SCRIPTS / "setup-conversion.sh").read_text(encoding="utf-8")
+    assert 'uv sync --locked --extra convert "$@"' in script
+    assert "uv tool install" not in script
+    assert "uv pip install" not in script
+    assert "uv run docling-tools models download layout tableformer rapidocr" in script
+    assert "DOCLING_ARTIFACTS_PATH=" in script
+    assert "prettier@3.6.2" in script
+    assert "pypandoc.get_pandoc_path()" in script
+    assert '"$HOME/.local/bin" >> "$GITHUB_PATH"' in script
+    assert (SCRIPTS / "setup-conversion.sh").stat().st_mode & stat.S_IXUSR
+
+
+def test_ci_proves_the_nightly_conversion_environment() -> None:
+    # The nightly and CI build the environment with the same script, and CI
+    # then converts real fixtures with it.
+    nightly = workflow("nightly.yml")["jobs"]["update"]["steps"]
+    conversion = workflow("ci.yml")["jobs"]["conversion"]["steps"]
+    setup = ".github/scripts/setup-conversion.sh"
+    nightly_runs = [step.get("run", "") for step in nightly]
+    assert setup in nightly_runs
+    assert nightly_runs.index(setup) < nightly_runs.index(".github/scripts/nightly.sh")
+    assert [step.get("run", "") for step in conversion][-2:] == [
+        f"{setup} --extra dev",
+        "uv run pytest -m conversion",
+    ]
 
 
 def test_nightly_has_non_overlapping_mutation_concurrency() -> None:
@@ -219,6 +246,7 @@ def _nightly_scenario(
     *,
     dirty_path: str | None,
     concurrent_push: bool = False,
+    rejected_pushes: int = 0,
 ) -> tuple[int, int]:
     origin = tmp_path / "origin.git"
     work = tmp_path / "work"
@@ -235,6 +263,18 @@ def _nightly_scenario(
     _git(work, "commit", "-q", "-m", "initial")
     _git(work, "remote", "add", "origin", str(origin))
     _git(work, "push", "-q", "-u", "origin", "main")
+    # Reject the next pushes the way a brief GitHub outage does.
+    hook = origin / "hooks" / "pre-receive"
+    hook.write_text(
+        "#!/usr/bin/env bash\n"
+        # Builtins only: the script under test runs with a minimal PATH.
+        "count=0\n"
+        f'if [[ -f "{origin}/attempts" ]]; then read -r count < "{origin}/attempts"; fi\n'
+        f'echo "$((count + 1))" > "{origin}/attempts"\n'
+        f'if ((count < {rejected_pushes})); then echo "Internal Server Error" >&2; exit 1; fi\n',
+        encoding="utf-8",
+    )
+    hook.chmod(hook.stat().st_mode | stat.S_IXUSR)
 
     concurrent_command = ""
     if concurrent_push:
@@ -272,6 +312,10 @@ def _nightly_scenario(
         encoding="utf-8",
     )
     uv.chmod(uv.stat().st_mode | stat.S_IXUSR)
+    # Retries wait between attempts; the test does not need to.
+    sleep = fake_bin / "sleep"
+    sleep.write_text("#!/usr/bin/env bash\n", encoding="utf-8")
+    sleep.chmod(sleep.stat().st_mode | stat.S_IXUSR)
     script = SCRIPTS / "nightly.sh"
     git_executable = shutil.which("git")
     bash_executable = shutil.which("bash")
@@ -319,6 +363,29 @@ def test_nightly_pushes_consistent_commits_with_clean_or_ignored_cache(
     assert remote_count == 2
 
 
+@pytest.mark.parametrize(
+    ("rejected_pushes", "expected_commits"),
+    [
+        (2, 2),  # a short outage: a later attempt publishes the batch
+        (99, 1),  # the remote never recovers: the run fails without publishing
+    ],
+)
+def test_nightly_retries_a_rejected_push(
+    tmp_path: Path, rejected_pushes: int, expected_commits: int
+) -> None:
+    status, remote_count = _nightly_scenario(
+        tmp_path, dirty_path=None, rejected_pushes=rejected_pushes
+    )
+    assert status != 0
+    assert remote_count == expected_commits
+
+
+def test_nightly_script_publishes_every_batch_and_retries_the_final_push() -> None:
+    script = (SCRIPTS / "nightly.sh").read_text(encoding="utf-8")
+    assert "papers-pipeline nightly --config papers.yml --publish" in script
+    assert "PUSH_ATTEMPTS=5" in script
+
+
 def test_nightly_script_is_executable() -> None:
     script = SCRIPTS / "nightly.sh"
     assert script.stat().st_mode & stat.S_IXUSR
@@ -350,6 +417,17 @@ def test_template_update_opens_pr_and_never_pushes_main() -> None:
     publish = data["jobs"]["publish"]
     assert publish["needs"] == "validate"
     assert publish["if"] == "needs.validate.outputs.updated == 'true'"
+
+
+def test_template_update_runs_copier_without_the_corpus() -> None:
+    # Copier passes every skip-if-exists file to one git command; with the
+    # corpus in the tree that overflows and drops the repository's changes.
+    script = (SCRIPTS / "template-update.sh").read_text(encoding="utf-8")
+    remove = script.index("git rm -r --quiet --cached papers")
+    update = script.index("uv run copier update")
+    restore = script.index("restore_corpus\ntrap - EXIT")
+    assert remove < update < restore
+    assert "trap restore_corpus EXIT" in script[:update]
 
 
 def test_pr_workflows_remove_downloaded_patches_and_constrain_staging() -> None:
@@ -384,15 +462,17 @@ def test_template_update_withholds_write_credentials_until_pr_step() -> None:
     )
 
     publish = data["jobs"]["publish"]
-    assert publish["permissions"] == {
-        "contents": "write",
-        "pull-requests": "write",
+    assert publish["permissions"] == {"contents": "read"}
+    token_check = publish["steps"][0]
+    assert token_check["env"] == {
+        "TEMPLATE_UPDATE_TOKEN": "${{ secrets.TEMPLATE_UPDATE_TOKEN }}"
     }
+    assert "exit 1" in token_check["run"]
     pull_request_step = publish["steps"][-1]
-    assert pull_request_step["with"]["token"] == "${{ github.token }}"
+    assert pull_request_step["with"]["token"] == "${{ secrets.TEMPLATE_UPDATE_TOKEN }}"
     assert all(
         "GH_TOKEN" not in step.get("env", {}) and "token" not in step.get("with", {})
-        for step in publish["steps"][:-1]
+        for step in publish["steps"][1:-1]
     )
 
     checkout_steps = [

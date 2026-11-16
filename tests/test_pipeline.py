@@ -14,7 +14,12 @@ from papers_pipeline.convert import (
     CommandRunner,
     InputMaterializer,
 )
-from papers_pipeline.errors import ConfigError, InfrastructureError, PaperError
+from papers_pipeline.errors import (
+    ConfigError,
+    InfrastructureError,
+    PaperError,
+    RateLimitedError,
+)
 from papers_pipeline.git import GitRepository
 from papers_pipeline.config import FetchConfig
 from papers_pipeline.http import RequestClient
@@ -79,6 +84,9 @@ class FakeMaterializer(InputMaterializer):
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text("<p>paper</p>", encoding="utf-8")
         return path
+
+    async def download(self, url: str) -> bytes:
+        raise PaperError(f"conversion input HTTP 404: {url}")
 
 
 class FakeRunner(CommandRunner):
@@ -225,12 +233,10 @@ async def test_preflight_fails_before_fetch_or_mutation(tmp_path: Path) -> None:
     git = RecordingGit()
     deps = dependencies(adapter, FakeRunner(), git)
     deps = dataclasses.replace(
-        deps, tool_lookup=lambda name: None if name == "marker_single" else name
+        deps, tool_lookup=lambda name: None if name == "docling" else name
     )
 
-    with pytest.raises(
-        InfrastructureError, match="missing required tools: marker_single"
-    ):
+    with pytest.raises(InfrastructureError, match="missing required tools: docling"):
         await run_nightly(paths, deps)
 
     assert adapter.calls == 0
@@ -416,6 +422,110 @@ async def test_failed_paper_is_attempted_only_once_across_batches(
 
 
 @pytest.mark.asyncio
+async def test_deferred_batches_do_not_consume_the_batch_budget(
+    tmp_path: Path,
+) -> None:
+    paths = make_paths(tmp_path, max_batches=1, max_papers=1)
+    git = RecordingGit()
+    runner = FakeRunner()
+
+    class RateLimitedHostMaterializer(FakeMaterializer):
+        async def materialize(self, paper: Any, root: Path) -> Path:
+            if paper.identifier.endswith(":a"):
+                raise RateLimitedError(
+                    f"conversion input HTTP 429: {paper.input_url}",
+                    url=paper.input_url,
+                )
+            return await super().materialize(paper, root)
+
+    deps = dataclasses.replace(
+        dependencies(FakeAdapter([record("a"), record("b"), record("c")]), runner, git),
+        materializer=RateLimitedHostMaterializer(),
+    )
+
+    summary = await run_nightly(paths, deps)
+
+    conversion_inputs = [
+        Path(call[1]).stem.split(":", 1)[-1]
+        for call in runner.calls
+        if call[0] == "pandoc"
+    ]
+    assert conversion_inputs == ["b"]
+    assert summary.deferred == 1
+    assert summary.succeeded == 1
+    assert git.messages[-1] == "chore: convert paper batch 2"
+
+
+@pytest.mark.asyncio
+async def test_each_batch_is_published_and_a_failed_publish_does_not_stop_the_run(
+    tmp_path: Path,
+) -> None:
+    paths = make_paths(tmp_path, max_batches=2, max_papers=1)
+    git = RecordingGit()
+    published_after: list[str] = []
+
+    def publish() -> bool:
+        published_after.append(git.messages[-1])
+        return len(published_after) > 1  # the first push is refused
+
+    deps = dataclasses.replace(
+        dependencies(FakeAdapter([record("a"), record("b")]), FakeRunner(), git),
+        publish=publish,
+    )
+
+    summary = await run_nightly(paths, deps)
+
+    assert published_after == [
+        "chore: convert paper batch 1",
+        "chore: convert paper batch 2",
+    ]
+    assert summary.succeeded == 2
+    assert [event for event in summary.events if "publish" in event] == [
+        "publish failed after batch 1; a later push includes it"
+    ]
+
+
+@pytest.mark.asyncio
+async def test_title_index_is_committed_with_the_batch_that_changes_it(
+    tmp_path: Path,
+) -> None:
+    paths = make_paths(tmp_path)
+    git = RecordingGit()
+
+    await run_nightly(
+        paths, dependencies(FakeAdapter([record("a")]), FakeRunner(), git)
+    )
+
+    overview = tmp_path / "index" / "README.md"
+    year = tmp_path / "index" / f"{NOW.year}.md"
+    assert "(../papers/" in year.read_text(encoding="utf-8")
+    batch_paths = git.paths[git.messages.index("chore: convert paper batch 1")]
+    assert {overview, year} <= set(batch_paths)
+
+
+@pytest.mark.asyncio
+async def test_pandoc_papers_convert_before_papers_that_need_docling(
+    tmp_path: Path,
+) -> None:
+    paths = make_paths(tmp_path, max_batches=1, max_papers=1)
+    git = RecordingGit()
+    runner = FakeRunner()
+    # "a" sorts first but needs docling; the single budgeted batch goes to "b".
+    pdf = record("a").model_copy(
+        update={"input_format": "pdf", "input_url": "https://example.test/a.pdf"}
+    )
+
+    summary = await run_nightly(
+        paths, dependencies(FakeAdapter([pdf, record("b")]), runner, git)
+    )
+
+    assert [call[0] for call in runner.calls if call[0] != "prettier"] == ["pandoc"]
+    assert Path(next(c for c in runner.calls if c[0] == "pandoc")[1]).stem == "arxiv:b"
+    assert summary.succeeded == 1
+    assert summary.pending == 1
+
+
+@pytest.mark.asyncio
 async def test_conversion_stops_starting_batches_after_its_deadline(
     tmp_path: Path,
 ) -> None:
@@ -453,6 +563,8 @@ async def test_formats_only_outputs_and_index_changed_by_batch(
     prettier_call = next(call for call in runner.calls if call[0] == "prettier")
     assert set(prettier_call[2:]) == {
         str(tmp_path / "README.md"),
+        str(tmp_path / "index" / "README.md"),
+        str(tmp_path / "index" / f"{NOW.year}.md"),
         str(next((tmp_path / "papers").glob("*.md"))),
     }
     assert str(paths.inventory) not in prettier_call
@@ -660,6 +772,10 @@ def test_nightly_cli_builds_real_dependency_graph(
     assert isinstance(captured[0].git, GitRepository)
     assert isinstance(captured[0].runner, CommandRunner)
     assert captured[0].materializer.__class__.__name__ == "DownloadingMaterializer"
+    # Pushing is opt-in: only the nightly workflow passes --publish.
+    assert captured[0].publish is None
+    assert cli.app(["nightly", "--config", str(paths.config), "--publish"]) == 0
+    assert captured[1].publish is not None
 
 
 @pytest.mark.parametrize(("succeeded", "expected"), [(1, "true"), (0, "false")])
