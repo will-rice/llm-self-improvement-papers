@@ -3,6 +3,7 @@ name = "llm-self-improvement-papers"
 version = "0.1.0"
 requires-python = ">=3.12,<3.13"
 dependencies = [
+  "fastembed>=0.9.1,<0.10",
   "httpx>=0.28,<0.29",
   "httpx2>=2.5,<3",
   "mcp>=2.2,<3",

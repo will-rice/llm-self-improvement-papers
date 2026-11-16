@@ -1,9 +1,3 @@
-backfill:
-  arxiv:
-    continuation: null
-    covered_from: '2022-01-01T00:00:00Z'
-  huggingface:
-    continuation: null
-    covered_from: '2023-05-04T00:00:00Z'
+backfill: {}
 continuations: {}
 failures: {}

@@ -13,7 +13,7 @@ adapters:
     max_pages: 10
     max_results: 2000
     filters:
-      search_query: "(cat:cs.CL OR cat:cs.LG OR cat:cs.AI) AND (all:\"self-improvement\" OR all:\"self-improving\" OR all:\"self-improve\" OR all:\"self-refine\" OR all:\"self-refinement\" OR all:\"self-correction\" OR all:\"self-correcting\" OR all:\"self-play\" OR all:\"self-rewarding\" OR all:\"self-training\" OR all:\"self-evolving\" OR all:\"self-evolution\" OR all:\"self-reflection\" OR all:\"self-critique\" OR all:\"self-instruct\" OR all:\"self-taught\" OR all:\"self-generated data\" OR all:\"self-verification\" OR all:\"self-feedback\" OR all:\"self-alignment\" OR all:\"self-distillation\" OR all:\"recursive self-improvement\")"
+      search_query: "(cat:cs.CL OR cat:cs.LG OR cat:cs.AI) AND (all:\"self-improvement\" OR all:\"self-improving\" OR all:\"self-improve\" OR all:\"self-refine\" OR all:\"self-refinement\" OR all:\"self-correction\" OR all:\"self-correcting\" OR all:\"self-play\" OR all:\"self-rewarding\" OR all:\"self-training\" OR all:\"self-evolving\" OR all:\"self-evolution\" OR all:\"self-reflection\" OR all:\"self-critique\" OR all:\"self-instruct\" OR all:\"self-taught\" OR all:\"self-generated data\" OR all:\"self-verification\" OR all:\"self-feedback\" OR all:\"self-alignment\" OR all:\"self-distillation\" OR all:\"recursive self-improvement\" OR all:\"verbal reinforcement\" OR all:\"self-debugging\" OR all:\"learning to evolve\" OR all:\"contrastive distillation\" OR all:\"self-truthifying\" OR all:\"self-planning\" OR all:\"self-edits\")"
   - name: huggingface
     enabled: true
     secret_env: null
