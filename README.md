@@ -9,13 +9,14 @@ https://www.alphaxiv.org/shared/folder/01a0d966-30ad-7eb1-8f22-cbcd7f934253
 
 # Papers
 
-The 30 most recent of 2200 papers. Every paper is listed in [papers.csv](papers.csv) and converted under [papers/](papers/).
+The 30 most recent of 2209 papers. Every paper is listed in [papers.csv](papers.csv) and converted under [papers/](papers/).
 
 | Published                 | Identifier         | Title                                                                                                                                                           | Source      |
 | ------------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
 | 2026-11-13T16:16:03+00:00 | arxiv:2611.18370v1 | [f-Divergence Self-Play for Tabular Anomaly Detection via Large Language Models](papers/arxiv-2611-18370v1--407629ed5959.md)                                    | arxiv       |
 | 2026-11-12T07:18:30+00:00 | arxiv:2611.16409v1 | [Experience-Handoff Reinforcement Learning for Recursive Self-Improvement](https://arxiv.org/abs/2611.16409v1)                                                  | arxiv       |
 | 2026-11-12T02:57:08+00:00 | arxiv:2611.16206v1 | [Turning Multi-Agent Communication into Token-Level Credit with On Policy Self Distillation](papers/arxiv-2611-16206v1--ee35779f0c71.md)                        | arxiv       |
+| 2026-11-12T00:00:00+00:00 | arxiv:2611.16378   | [Evidence-Governed Adoption of Self-Generated Updates in Autonomous AI Agents](papers/arxiv-2611-16378--ff0e32fafb64.md)                                        | huggingface |
 | 2026-11-11T19:00:41+00:00 | arxiv:2611.15885v1 | [Reward-Driven Collider Physics Challenges for Self-Improving Agentic AI via Reinforcement Learning](papers/arxiv-2611-15885v1--8ec1a68e62fa.md)                | arxiv       |
 | 2026-11-11T16:38:54+00:00 | arxiv:2611.15700v1 | [AskALCF: A Self-Improving Agentic System for Intelligent HPC User Support](papers/arxiv-2611-15700v1--491fcf2eb707.md)                                         | arxiv       |
 | 2026-11-11T02:55:14+00:00 | arxiv:2611.14949v1 | [RSI-PDEbench: A Benchmark for Self-Improving Agents in PDE Solving](papers/arxiv-2611-14949v1--ea591fb73619.md)                                                | arxiv       |
@@ -42,7 +43,6 @@ The 30 most recent of 2200 papers. Every paper is listed in [papers.csv](papers.
 | 2026-11-06T16:34:02+00:00 | arxiv:2611.10089v1 | [META-IR: Meta-Introspective Reasoning for Adaptive Safety Alignment in LLM](papers/arxiv-2611-10089v1--40b63ae2c977.md)                                        | arxiv       |
 | 2026-11-06T09:36:00+00:00 | arxiv:2611.09218v1 | [BOXBOX: Recursive Harness Self-Improvement for Long-Running Performance Optimization](papers/arxiv-2611-09218v1--c870aee99237.md)                              | arxiv       |
 | 2026-11-06T09:05:00+00:00 | arxiv:2611.10063v1 | [Done Is Not Correct: Measuring Silent Failures and Self-Verification Calibration When LLM Agents Take CAD Actions](papers/arxiv-2611-10063v1--3653a2ff9672.md) | arxiv       |
-| 2026-11-06T03:51:20+00:00 | arxiv:2611.08946v1 | [Flex-RSI: Benchmarking Recursive Self-Improvement of Frontier Agents](papers/arxiv-2611-08946v1--1dcddafe4c51.md)                                              | arxiv       |
 
 <!-- papers-index:end -->
 

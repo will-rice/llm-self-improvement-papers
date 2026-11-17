@@ -1,0 +1,58 @@
+<svg id="A4.F6.pic1" class="ltx_picture ltx_centering" height="584.96" overflow="visible" version="1.1" viewbox="0 0 653.15 584.96" width="653.15"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,584.96) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#404040;" fill="#404040" fill-opacity="1.0"><path style="stroke:none" d="M 0 5.91 L 0 579.06 C 0 582.32 2.64 584.96 5.91 584.96 L 647.24 584.96 C 650.51 584.96 653.15 582.32 653.15 579.06 L 653.15 5.91 C 653.15 2.64 650.51 0 647.24 0 L 5.91 0 C 2.64 0 0 2.64 0 5.91 Z" /></g><g style="--ltx-fill-color:#F2F2F2;" fill="#F2F2F2" fill-opacity="1.0"><path style="stroke:none" d="M 1.97 5.91 L 1.97 560.85 L 651.18 560.85 L 651.18 5.91 C 651.18 3.73 649.42 1.97 647.24 1.97 L 5.91 1.97 C 3.73 1.97 1.97 3.73 1.97 5.91 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 21.65 569.45)"><foreignobject style="--ltx-fo-width:44.07em;--ltx-fo-height:0.69em;--ltx-fo-depth:0.19em;font-size:10pt;" height="12.3" overflow="visible" transform="matrix(1 0 0 -1 0 9.61)" width="609.8"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A4.F6.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:44.07em;">
+<span id="A4.F6.pic1.1.1" class="ltx_p"><span id="A4.F6.pic1.1.1.1" class="ltx_text" style="--ltx-fg-color:#FFFFFF;">Fault Localizer Prompt</span></span>
+</span></span></span></foreignobject></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 21.65 222.64)"><foreignobject style="--ltx-fo-width:44.07em;--ltx-fo-height:23.59em;--ltx-fo-depth:15.09em;font-size:10pt;" height="535.27" overflow="visible" transform="matrix(1 0 0 -1 0 326.4)" width="609.8"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A4.F6.pic1.2" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:44.07em;">
+<span id="A4.F6.pic1.2.1" class="ltx_p"><span id="A4.F6.pic1.2.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">Task.<span id="A4.F6.pic1.2.1.1.1" class="ltx_text ltx_font_medium">
+Analyze a failed trajectory, extract a candidate fault chain, and return one
+primary fault step for this round.</span></span></span>
+<span id="A4.F6.pic1.2.2" class="ltx_p"><span id="A4.F6.pic1.2.2.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">Input fields.<span id="A4.F6.pic1.2.2.1.1" class="ltx_text ltx_font_medium">
+Task description, trajectory summary, recent critical steps, and fault-type
+definitions.</span></span></span>
+<span id="A4.F6.pic1.2.3" class="ltx_p"><span id="A4.F6.pic1.2.3.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">Instructions.<span id="A4.F6.pic1.2.3.1.1" class="ltx_text"></span></span></span>
+<span id="A4.I2" class="ltx_itemize ltx_leftmargin_flush">
+<span id="A4.I2.i1" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">•</span> 
+<span id="A4.I2.i1.p1" class="ltx_para">
+<span id="A4.I2.i1.p1.1" class="ltx_p"><span id="A4.I2.i1.p1.1.1" class="ltx_text" style="--ltx-fg-color:#000000;">Extract 2–4 candidate fault steps that are most likely to explain the
+failure, ranked by evidence strength.</span></span>
+</span></span>
+<span id="A4.I2.i2" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">•</span> 
+<span id="A4.I2.i2.p1" class="ltx_para">
+<span id="A4.I2.i2.p1.1" class="ltx_p"><span id="A4.I2.i2.p1.1.1" class="ltx_text" style="--ltx-fg-color:#000000;">Select one primary step </span><math id="A4.I2.i2.p1.m1" class="ltx_Math" alttext="t^{\ast}" display="inline" intent=":literal"><semantics><msup><mi style="--ltx-fg-color:#000000;" mathcolor="#000000">t</mi><mo style="--ltx-fg-color:#000000;" mathcolor="#000000">∗</mo></msup><annotation encoding="application/x-tex">t^{\ast}</annotation></semantics></math><span id="A4.I2.i2.p1.1.2" class="ltx_text" style="--ltx-fg-color:#000000;"> from the candidate chain for the
+current revision attempt.</span></span>
+</span></span>
+<span id="A4.I2.i3" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">•</span> 
+<span id="A4.I2.i3.p1" class="ltx_para">
+<span id="A4.I2.i3.p1.1" class="ltx_p"><span id="A4.I2.i3.p1.1.1" class="ltx_text" style="--ltx-fg-color:#000000;">Distinguish </span><span id="A4.I2.i3.p1.1.2" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">skill_wrong</span><span id="A4.I2.i3.p1.1.3" class="ltx_text" style="--ltx-fg-color:#000000;"> (an existing skill misguided the
+agent) and </span><span id="A4.I2.i3.p1.1.4" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">skill_missing</span><span id="A4.I2.i3.p1.1.5" class="ltx_text" style="--ltx-fg-color:#000000;"> (no existing skill covered the situation).</span></span>
+</span></span>
+<span id="A4.I2.i4" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">•</span> 
+<span id="A4.I2.i4.p1" class="ltx_para">
+<span id="A4.I2.i4.p1.1" class="ltx_p"><span id="A4.I2.i4.p1.1.1" class="ltx_text" style="--ltx-fg-color:#000000;">If repetitive ineffective actions appear, include loop-prevention
+guidance in the improvement principle.</span></span>
+</span></span>
+</span>
+<span id="A4.F6.pic1.2.4" class="ltx_p"><span id="A4.F6.pic1.2.4.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">Output format (strict).<span id="A4.F6.pic1.2.4.1.1" class="ltx_text"></span></span></span>
+<span id="A4.I3" class="ltx_itemize ltx_leftmargin_flush">
+<span id="A4.I3.i1" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">•</span> 
+<span id="A4.I3.i1.p1" class="ltx_para">
+<span id="A4.I3.i1.p1.1" class="ltx_p"><span id="A4.I3.i1.p1.1.1" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">fault_chain</span><span id="A4.I3.i1.p1.1.2" class="ltx_text" style="--ltx-fg-color:#000000;">: ranked step ids (1-based), e.g., [5,7,9]</span></span>
+</span></span>
+<span id="A4.I3.i2" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">•</span> 
+<span id="A4.I3.i2.p1" class="ltx_para">
+<span id="A4.I3.i2.p1.1" class="ltx_p"><span id="A4.I3.i2.p1.1.1" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">t_star</span><span id="A4.I3.i2.p1.1.2" class="ltx_text" style="--ltx-fg-color:#000000;">: primary step selected from </span><span id="A4.I3.i2.p1.1.3" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">fault_chain</span></span>
+</span></span>
+<span id="A4.I3.i3" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">•</span> 
+<span id="A4.I3.i3.p1" class="ltx_para">
+<span id="A4.I3.i3.p1.1" class="ltx_p"><span id="A4.I3.i3.p1.1.1" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">improvement_principle</span><span id="A4.I3.i3.p1.1.2" class="ltx_text" style="--ltx-fg-color:#000000;">: one concise correction statement</span></span>
+</span></span>
+<span id="A4.I3.i4" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">•</span> 
+<span id="A4.I3.i4.p1" class="ltx_para">
+<span id="A4.I3.i4.p1.1" class="ltx_p"><span id="A4.I3.i4.p1.1.1" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">fault_type</span><span id="A4.I3.i4.p1.1.2" class="ltx_text" style="--ltx-fg-color:#000000;">: one of predefined classes</span></span>
+</span></span>
+<span id="A4.I3.i5" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">•</span> 
+<span id="A4.I3.i5.p1" class="ltx_para">
+<span id="A4.I3.i5.p1.1" class="ltx_p"><span id="A4.I3.i5.p1.1.1" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">reason</span><span id="A4.I3.i5.p1.1.2" class="ltx_text" style="--ltx-fg-color:#000000;">: brief evidence-grounded explanation</span></span>
+</span></span>
+</span>
+</span></span></span></foreignobject></g></g></svg>
