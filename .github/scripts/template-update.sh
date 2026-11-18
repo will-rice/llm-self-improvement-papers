@@ -50,6 +50,10 @@ fi
 # papers.csv, so it is not a change Copier should merge: its diff against the
 # old template conflicts with any template edit near the markers. Update with
 # the section the old release rendered, then put the generated one back.
+# uv.lock is generated from pyproject.toml too: a repository's own
+# dependencies rewrite much of it, so its diff conflicts with any template
+# change to the lock. Update from the lock the old release rendered; `uv lock`
+# below re-resolves it against the merged pyproject.toml.
 base_commit="$(git rev-parse HEAD)"
 git_dir="$(git rev-parse --absolute-git-dir)"
 corpus_backup="$git_dir/template-update-corpus"
@@ -86,19 +90,20 @@ src_path="$(
   awk '$1 == "_src_path:" { value=$2; gsub(/^["'\''"]|["'\''"]$/, "", value); print value; exit }' \
     "$answers_file"
 )"
-uv run copier copy --vcs-ref "$current_ref" --data-file "$answers_file" \
+uv run --no-project copier copy --vcs-ref "$current_ref" --data-file "$answers_file" \
   --defaults --quiet "$src_path" "$old_render"
 splice_index "$old_render/README.md"
-git add README.md
+cp "$old_render/uv.lock" uv.lock
+git add README.md uv.lock
 if [[ -d papers ]]; then
   mv papers "$corpus_backup"
   git rm -r --quiet --cached papers
 fi
 git -c user.name=template-update -c user.email=template-update@localhost \
   commit --quiet --no-verify --allow-empty \
-  -m "temp: update template without the corpus or generated index"
+  -m "temp: update template without the corpus or generated files"
 
-uv run copier update \
+uv run --no-project copier update \
   --answers-file .copier-answers.yml \
   --vcs-ref "$template_ref" \
   --defaults \
