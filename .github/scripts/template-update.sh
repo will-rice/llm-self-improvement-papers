@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# Copier rewrites this file during the update while bash is still running
+# it, and bash reads a script as it goes. One compound command is parsed
+# whole before any of it runs, so the rewrite cannot change what executes.
+{
 template_ref="${TEMPLATE_REF-}"
 release_pattern='^v?[0-9]+\.[0-9]+\.[0-9]+$'
 if [[ ! "$template_ref" =~ $release_pattern ]]; then
@@ -129,3 +133,5 @@ uv run pytest
 if [[ -n "${GITHUB_OUTPUT-}" ]]; then
   echo "updated=true" >> "$GITHUB_OUTPUT"
 fi
+exit
+}
