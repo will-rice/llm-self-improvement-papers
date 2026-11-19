@@ -1,0 +1,24 @@
+<svg id="A8.SS5.p3.pic1" class="ltx_picture" height="326.94" overflow="visible" version="1.1" viewbox="0 0 650 326.94" width="650"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,326.94) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#009900;" fill="#009900" fill-opacity="1.0"><path style="stroke:none" d="M 0 5.91 L 0 321.04 C 0 324.3 2.64 326.94 5.91 326.94 L 644.09 326.94 C 647.36 326.94 650 324.3 650 321.04 L 650 5.91 C 650 2.64 647.36 0 644.09 0 L 5.91 0 C 2.64 0 0 2.64 0 5.91 Z" /></g><g style="--ltx-fill-color:#F2FFF2;" fill="#F2FFF2" fill-opacity="1.0"><path style="stroke:none" d="M 1.97 5.91 L 1.97 302.68 L 648.03 302.68 L 648.03 5.91 C 648.03 3.73 646.27 1.97 644.09 1.97 L 5.91 1.97 C 3.73 1.97 1.97 3.73 1.97 5.91 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 21.65 311.7)"><foreignobject style="--ltx-fo-width:41.17em;--ltx-fo-height:0.68em;--ltx-fo-depth:0.23em;font-size:10pt;" height="12.45" overflow="visible" transform="matrix(1 0 0 -1 0 9.34)" width="569.68"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A8.SS5.p3.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:41.17em;">
+<span id="A8.SS5.p3.pic1.1.1" class="ltx_p"><span id="A8.SS5.p3.pic1.1.1.1" class="ltx_text ltx_font_bold" style="font-size:90%;--ltx-fg-color:#FFFFFF;">Pairwise-Selected Solution (idx=3): Correct ✓</span></span>
+</span></span></span></foreignobject></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 21.65 16.55)"><foreignobject style="--ltx-fo-width:46.4em;--ltx-fo-height:19.83em;--ltx-fo-depth:0.2em;font-size:10pt;" height="277.09" overflow="visible" transform="matrix(1 0 0 -1 0 274.32)" width="642.05"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A8.SS5.p3.pic1.2" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:46.4em;">
+<span id="A8.SS5.p3.pic1.2.1" class="ltx_p"><span id="A8.SS5.p3.pic1.2.1.1" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;">def solve():
+<br class="ltx_break"> n = int(input())
+<br class="ltx_break"> a = list(map(int, input().split()))
+<br class="ltx_break"> # Precompute prefix/suffix distinct counts
+<br class="ltx_break"> prefix = [0] * (n + 1); seen = set()
+<br class="ltx_break"> for i in range(n):
+<br class="ltx_break">  seen.add(a[i]); prefix[i+1] = len(seen)
+<br class="ltx_break"> suffix = [0] * (n + 1); seen = set()
+<br class="ltx_break"> for i in range(n-1, -1, -1):
+<br class="ltx_break">  seen.add(a[i]); suffix[i] = len(seen)
+<br class="ltx_break"> # Enumerate all split positions with O(N</span>ˆ<span id="A8.SS5.p3.pic1.2.1.2" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;">2) middle segment
+<br class="ltx_break"> max_sum = 0
+<br class="ltx_break"> for i in range(n - 2):
+<br class="ltx_break">  for j in range(i+1, n-1):
+<br class="ltx_break">   mid_seen = set(a[i+1:j+1])
+<br class="ltx_break">   max_sum = max(max_sum, prefix[i+1] + len(mid_seen) + suffix[j+1])
+<br class="ltx_break"> print(max_sum)
+</span></span>
+</span></span></span></foreignobject></g></g></svg>

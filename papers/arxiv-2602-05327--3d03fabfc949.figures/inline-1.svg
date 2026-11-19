@@ -1,0 +1,159 @@
+<svg id="A1.SS3.p2.pic1" class="ltx_picture" height="2761" overflow="visible" version="1.1" viewbox="0 0 653.15 2761" width="653.15"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,2761) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#000000;" fill="#000000" fill-opacity="1.0"><path style="stroke:none" d="M 0 0 L 0 2761 L 653.15 2761 L 653.15 0 Z" /></g><g style="--ltx-fill-color:#F2F2F2;" fill="#F2F2F2" fill-opacity="1.0"><path style="stroke:none" d="M 1.38 1.38 L 1.38 2738.17 L 651.77 2738.17 L 651.77 1.38 Z" /></g><g style="--ltx-fill-color:#000000;" fill="#000000" fill-opacity="1.0"><path style="stroke:none" d="M 1.38 2739.56 L 1.38 2759.61 L 651.77 2759.61 L 651.77 2739.56 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 21.07 2746.18)"><foreignobject style="--ltx-fo-width:38.4em;--ltx-fo-height:0.69em;--ltx-fo-depth:0.19em;font-size:10pt;" height="12.18" overflow="visible" transform="matrix(1 0 0 -1 0 9.49)" width="531.35"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A1.SS3.p2.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:38.4em;">
+<span id="A1.SS3.p2.pic1.1.1" class="ltx_p"><span id="A1.SS3.p2.pic1.1.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#FFFFFF;">Qwen3-4B-Instruct</span></span>
+</span></span></span></foreignobject></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 21.07 15.89)"><foreignobject style="--ltx-fo-width:44.16em;--ltx-fo-height:195.89em;--ltx-fo-depth:0.19em;font-size:10pt;" height="2713.2" overflow="visible" transform="matrix(1 0 0 -1 0 2710.51)" width="611.05"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A1.SS3.p2.pic1.2" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:44.16em;">
+<span id="A1.SS3.p2.pic1.2.1" class="ltx_p"><span id="A1.SS3.p2.pic1.2.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#0000FF;">System Prompt:</span><span id="A1.SS3.p2.pic1.2.1.2" class="ltx_text" style="--ltx-fg-color:#000000;"> 
+<br class="ltx_break">You are an intelligent 2048 game player. Briefly analyze the board state and provide your reasoning process and move decision.</span></span>
+<span id="A1.SS3.p2.pic1.2.2" class="ltx_p"><span id="A1.SS3.p2.pic1.2.2.1" class="ltx_text" style="--ltx-fg-color:#000000;">Response format:</span></span>
+<span id="A1.SS3.p2.pic1.2.3" class="ltx_p"><span id="A1.SS3.p2.pic1.2.3.1" class="ltx_text" style="--ltx-fg-color:#000000;">thought: [your analysis and reasoning process]</span></span>
+<span id="A1.SS3.p2.pic1.2.4" class="ltx_p"><span id="A1.SS3.p2.pic1.2.4.1" class="ltx_text" style="--ltx-fg-color:#000000;">move: [up/down/left/right]</span></span>
+<span id="A1.SS3.p2.pic1.2.5" class="ltx_p"><span id="A1.SS3.p2.pic1.2.5.1" class="ltx_text" style="--ltx-fg-color:#000000;">Strategy tips:
+- Keep the highest tile in a corner
+- Prioritize creating merge opportunities and empty spaces
+- Consider chain reactions after each move</span></span>
+<span id="A1.SS3.p2.pic1.2.6" class="ltx_p"><span id="A1.SS3.p2.pic1.2.6.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#0000FF;">User Prompt:</span><span id="A1.SS3.p2.pic1.2.6.2" class="ltx_text" style="--ltx-fg-color:#000000;"> 
+<br class="ltx_break">Current 2048 board state:
+{‘board’: ‘[ 128 8 4 2]\n[ 8 4 . .]\n[ 4 . . .]\n[ 2 . . 2]’}</span></span>
+<span id="A1.SS3.p2.pic1.2.7" class="ltx_p"><span id="A1.SS3.p2.pic1.2.7.1" class="ltx_text" style="--ltx-fg-color:#000000;">Briefly analyze the board and provide your move decision.</span></span>
+<span id="A1.SS3.p2.pic1.2.8" class="ltx_p"><span id="A1.SS3.p2.pic1.2.8.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#0000FF;">Response:</span><span id="A1.SS3.p2.pic1.2.8.2" class="ltx_text" style="--ltx-fg-color:#000000;"> 
+<br class="ltx_break">thought: The board has a 128 in the top-left corner, which is a strong position to keep. The 8 and 4 tiles are already aligned in a way that could potentially merge if we create a path. The empty spaces (denoted by ’.’) are mostly on the right and bottom, suggesting we should focus on expanding from the left and top to create merge opportunities. A left move would push the 128, 8, 4, 2 to the left, but that might not help. A down move could allow the 2 at the bottom-right to merge with the 2 on the bottom-left, but that’s only 2+2=4. However, a better move is to move down — this will create a space in the top row and allow the 8 and 4 to potentially align with the 128 in the future. But actually, the best move is to move **left**, which will shift the top row left and allow the 8 and 4 to align with the 128, creating a path for merging. However, the 8 and 4 are already to the right of 128 — so moving left will push them leftward, possibly creating a merge with 128. But 128 is already at the corner. Actually, moving **left** will cause the 128 to stay, and the 8 and 4 to shift left, possibly creating a merge between 8 and 4 into 16, then 16 and 128 into 256. But currently, the 8 and 4 are not adjacent. After checking positions:</span></span>
+<span id="A1.SS3.p2.pic1.2.9" class="ltx_p"><span id="A1.SS3.p2.pic1.2.9.1" class="ltx_text" style="--ltx-fg-color:#000000;">- Row 0: [128, 8, 4, 2]
+- Row 1: [8, 4, ., .]
+- Row 2: [4, ., ., .]
+- Row 3: [2, ., ., 2]</span></span>
+<span id="A1.SS3.p2.pic1.2.10" class="ltx_p"><span id="A1.SS3.p2.pic1.2.10.1" class="ltx_text" style="--ltx-fg-color:#000000;">A left move will shift all tiles left, so row 0 becomes [128, 8, 4, 2] → [128, 8, 4, 2] (no change since already left-aligned), row 1 → [8, 4, ., .], row 2 → [4, ., ., .], row 3 → [2, ., ., 2] → [2, ., ., 2] (no change). So no merge.</span></span>
+<span id="A1.SS3.p2.pic1.2.11" class="ltx_p"><span id="A1.SS3.p2.pic1.2.11.1" class="ltx_text" style="--ltx-fg-color:#000000;">A down move: pushes each row down. Row 0: [128,8,4,2] → [.,.,.,.] → then new row 0 becomes [.,.,.,.] and the rest shift down. But actually, down move will push tiles down, so:</span></span>
+<span id="A1.SS3.p2.pic1.2.12" class="ltx_p"><span id="A1.SS3.p2.pic1.2.12.1" class="ltx_text" style="--ltx-fg-color:#000000;">- Row 0: [128,8,4,2] → moves down → row 1: [8,4,.,.] → row 2: [4,.,.,.] → row 3: [2,.,.,2] → then new row 0 becomes [128,8,4,2] → no, actually in 2048, tiles fall down and merge.</span></span>
+<span id="A1.SS3.p2.pic1.2.13" class="ltx_p"><span id="A1.SS3.p2.pic1.2.13.1" class="ltx_text" style="--ltx-fg-color:#000000;">Actually, correct logic: when moving down, each column collapses down. So:</span></span>
+<span id="A1.SS3.p2.pic1.2.14" class="ltx_p"><span id="A1.SS3.p2.pic1.2.14.1" class="ltx_text" style="--ltx-fg-color:#000000;">Column 0: 128, 8, 4, 2 → becomes [128,8,4,2] → after falling, it’s [128,8,4,2] → no merge because not adjacent.</span></span>
+<span id="A1.SS3.p2.pic1.2.15" class="ltx_p"><span id="A1.SS3.p2.pic1.2.15.1" class="ltx_text" style="--ltx-fg-color:#000000;">Column 1: 8,4,.,. → becomes [8,4,.,.] → then 8 and 4 can merge? No, not adjacent.</span></span>
+<span id="A1.SS3.p2.pic1.2.16" class="ltx_p"><span id="A1.SS3.p2.pic1.2.16.1" class="ltx_text" style="--ltx-fg-color:#000000;">Wait — in 2048, when moving down, tiles fall down and merge if adjacent in the same column.</span></span>
+<span id="A1.SS3.p2.pic1.2.17" class="ltx_p"><span id="A1.SS3.p2.pic1.2.17.1" class="ltx_text" style="--ltx-fg-color:#000000;">So column 0: 128,8,4,2 → all different → no merge.</span></span>
+<span id="A1.SS3.p2.pic1.2.18" class="ltx_p"><span id="A1.SS3.p2.pic1.2.18.1" class="ltx_text" style="--ltx-fg-color:#000000;">Column 1: 8,4,.,. → becomes [8,4,.,.] → no merge.</span></span>
+<span id="A1.SS3.p2.pic1.2.19" class="ltx_p"><span id="A1.SS3.p2.pic1.2.19.1" class="ltx_text" style="--ltx-fg-color:#000000;">Column 2: 4,.,.,. → becomes [4,.,.,.] → no merge.</span></span>
+<span id="A1.SS3.p2.pic1.2.20" class="ltx_p"><span id="A1.SS3.p2.pic1.2.20.1" class="ltx_text" style="--ltx-fg-color:#000000;">Column 3: 2,.,.,2 → becomes [2,.,.,2] → no merge.</span></span>
+<span id="A1.SS3.p2.pic1.2.21" class="ltx_p"><span id="A1.SS3.p2.pic1.2.21.1" class="ltx_text" style="--ltx-fg-color:#000000;">No merges.</span></span>
+<span id="A1.SS3.p2.pic1.2.22" class="ltx_p"><span id="A1.SS3.p2.pic1.2.22.1" class="ltx_text" style="--ltx-fg-color:#000000;">Now try **right** move: tiles shift right.</span></span>
+<span id="A1.SS3.p2.pic1.2.23" class="ltx_p"><span id="A1.SS3.p2.pic1.2.23.1" class="ltx_text" style="--ltx-fg-color:#000000;">Row 0: [128,8,4,2] → stays same (already right-aligned)</span></span>
+<span id="A1.SS3.p2.pic1.2.24" class="ltx_p"><span id="A1.SS3.p2.pic1.2.24.1" class="ltx_text" style="--ltx-fg-color:#000000;">Row 1: [8,4,.,.] → becomes [.,.,8,4]</span></span>
+<span id="A1.SS3.p2.pic1.2.25" class="ltx_p"><span id="A1.SS3.p2.pic1.2.25.1" class="ltx_text" style="--ltx-fg-color:#000000;">Row 2: [4,.,.,.] → becomes [.,.,.,4]</span></span>
+<span id="A1.SS3.p2.pic1.2.26" class="ltx_p"><span id="A1.SS3.p2.pic1.2.26.1" class="ltx_text" style="--ltx-fg-color:#000000;">Row 3: [2,.,.,2] → becomes [.,.,.,2]</span></span>
+<span id="A1.SS3.p2.pic1.2.27" class="ltx_p"><span id="A1.SS3.p2.pic1.2.27.1" class="ltx_text" style="--ltx-fg-color:#000000;">No merges.</span></span>
+<span id="A1.SS3.p2.pic1.2.28" class="ltx_p"><span id="A1.SS3.p2.pic1.2.28.1" class="ltx_text" style="--ltx-fg-color:#000000;">Now **up** move: tiles fall up.</span></span>
+<span id="A1.SS3.p2.pic1.2.29" class="ltx_p"><span id="A1.SS3.p2.pic1.2.29.1" class="ltx_text" style="--ltx-fg-color:#000000;">Column 0: 128,8,4,2 → becomes [128,8,4,2] → no merge.</span></span>
+<span id="A1.SS3.p2.pic1.2.30" class="ltx_p"><span id="A1.SS3.p2.pic1.2.30.1" class="ltx_text" style="--ltx-fg-color:#000000;">Column 1: 8,4,.,. → becomes [8,4,.,.] → no merge.</span></span>
+<span id="A1.SS3.p2.pic1.2.31" class="ltx_p"><span id="A1.SS3.p2.pic1.2.31.1" class="ltx_text" style="--ltx-fg-color:#000000;">Column 2: 4,.,.,. → becomes [4,.,.,.] → no merge.</span></span>
+<span id="A1.SS3.p2.pic1.2.32" class="ltx_p"><span id="A1.SS3.p2.pic1.2.32.1" class="ltx_text" style="--ltx-fg-color:#000000;">Column 3: 2,.,.,2 → becomes [2,.,.,2] → no merge.</span></span>
+<span id="A1.SS3.p2.pic1.2.33" class="ltx_p"><span id="A1.SS3.p2.pic1.2.33.1" class="ltx_text" style="--ltx-fg-color:#000000;">Still no merges.</span></span>
+<span id="A1.SS3.p2.pic1.2.34" class="ltx_p"><span id="A1.SS3.p2.pic1.2.34.1" class="ltx_text" style="--ltx-fg-color:#000000;">But the key is to create a merge path. The 128 is in the corner — good. The 8 and 4 in row 0 can merge into 16 if they are adjacent. Currently, 8 and 4 are adjacent — 8 and 4 → can merge? Only if they are equal. 8 and 4 are not equal. So no.</span></span>
+<span id="A1.SS3.p2.pic1.2.35" class="ltx_p"><span id="A1.SS3.p2.pic1.2.35.1" class="ltx_text" style="--ltx-fg-color:#000000;">But if we move **left**, the 8 and 4 in row 0 will shift left — but they are already left of 128. So no.</span></span>
+<span id="A1.SS3.p2.pic1.2.36" class="ltx_p"><span id="A1.SS3.p2.pic1.2.36.1" class="ltx_text" style="--ltx-fg-color:#000000;">Wait — perhaps the best move is **down** to create space in the top row for future merges.</span></span>
+<span id="A1.SS3.p2.pic1.2.37" class="ltx_p"><span id="A1.SS3.p2.pic1.2.37.1" class="ltx_text" style="--ltx-fg-color:#000000;">But actually, the most promising is to move **left** to push the 8 and 4 toward the 128 — but they are already next to it.</span></span>
+<span id="A1.SS3.p2.pic1.2.38" class="ltx_p"><span id="A1.SS3.p2.pic1.2.38.1" class="ltx_text" style="--ltx-fg-color:#000000;">Wait — row 0: [128, 8, 4, 2] — so 128 is at index 0, then 8 at 1, 4 at 2, 2 at 3.</span></span>
+<span id="A1.SS3.p2.pic1.2.39" class="ltx_p"><span id="A1.SS3.p2.pic1.2.39.1" class="ltx_text" style="--ltx-fg-color:#000000;">If we move left, all tiles shift left — so row 0 becomes [128,8,4,2] → no change.</span></span>
+<span id="A1.SS3.p2.pic1.2.40" class="ltx_p"><span id="A1.SS3.p2.pic1.2.40.1" class="ltx_text" style="--ltx-fg-color:#000000;">But row 1: [8,4,.,.] → becomes [8,4,.,.] → no change.</span></span>
+<span id="A1.SS3.p2.pic1.2.41" class="ltx_p"><span id="A1.SS3.p2.pic1.2.41.1" class="ltx_text" style="--ltx-fg-color:#000000;">Row 2: [4,.,.,.] → becomes [4,.,.,.]</span></span>
+<span id="A1.SS3.p2.pic1.2.42" class="ltx_p"><span id="A1.SS3.p2.pic1.2.42.1" class="ltx_text" style="--ltx-fg-color:#000000;">Row 3: [2,.,.,2] → becomes [2,.,.,2]</span></span>
+<span id="A1.SS3.p2.pic1.2.43" class="ltx_p"><span id="A1.SS3.p2.pic1.2.43.1" class="ltx_text" style="--ltx-fg-color:#000000;">No merges.</span></span>
+<span id="A1.SS3.p2.pic1.2.44" class="ltx_p"><span id="A1.SS3.p2.pic1.2.44.1" class="ltx_text" style="--ltx-fg-color:#000000;">But what if we move **down**? Then the tiles fall down, and we might create a new alignment.</span></span>
+<span id="A1.SS3.p2.pic1.2.45" class="ltx_p"><span id="A1.SS3.p2.pic1.2.45.1" class="ltx_text" style="--ltx-fg-color:#000000;">After down move:</span></span>
+<span id="A1.SS3.p2.pic1.2.46" class="ltx_p"><span id="A1.SS3.p2.pic1.2.46.1" class="ltx_text" style="--ltx-fg-color:#000000;">- Column 0: 128,8,4,2 → becomes [128,8,4,2] → no merge
+- Column 1: 8,4,.,. → becomes [8,4,.,.] → no merge
+- Column 2: 4,.,.,. → becomes [4,.,.,.] → no merge
+- Column 3: 2,.,.,2 → becomes [2,.,.,2] → no merge</span></span>
+<span id="A1.SS3.p2.pic1.2.47" class="ltx_p"><span id="A1.SS3.p2.pic1.2.47.1" class="ltx_text" style="--ltx-fg-color:#000000;">Still no.</span></span>
+<span id="A1.SS3.p2.pic1.2.48" class="ltx_p"><span id="A1.SS3.p2.pic1.2.48.1" class="ltx_text" style="--ltx-fg-color:#000000;">Wait — perhaps the best move is to move **right** to create space on the right for future tiles.</span></span>
+<span id="A1.SS3.p2.pic1.2.49" class="ltx_p"><span id="A1.SS3.p2.pic1.2.49.1" class="ltx_text" style="--ltx-fg-color:#000000;">But the real opportunity: the 8 in row 0, col 1 and 8 in row 1, col 0 — not aligned.</span></span>
+<span id="A1.SS3.p2.pic1.2.50" class="ltx_p"><span id="A1.SS3.p2.pic1.2.50.1" class="ltx_text" style="--ltx-fg-color:#000000;">Alternatively, consider that 4 in row 0 col 2 and 4 in row 1 col 1 — not adjacent.</span></span>
+<span id="A1.SS3.p2.pic1.2.51" class="ltx_p"><span id="A1.SS3.p2.pic1.2.51.1" class="ltx_text" style="--ltx-fg-color:#000000;">But after a **left** move, the 8 and 4 in row 0 are still not adjacent to 128.</span></span>
+<span id="A1.SS3.p2.pic1.2.52" class="ltx_p"><span id="A1.SS3.p2.pic1.2.52.1" class="ltx_text" style="--ltx-fg-color:#000000;">Wait — 128 is at (0,0), 8 at (0,1), so they are adjacent — but 128 and 8 are not equal — cannot merge.</span></span>
+<span id="A1.SS3.p2.pic1.2.53" class="ltx_p"><span id="A1.SS3.p2.pic1.2.53.1" class="ltx_text" style="--ltx-fg-color:#000000;">So no merge.</span></span>
+<span id="A1.SS3.p2.pic1.2.54" class="ltx_p"><span id="A1.SS3.p2.pic1.2.54.1" class="ltx_text" style="--ltx-fg-color:#000000;">The only possible merge is if two 4s or two 8s come together.</span></span>
+<span id="A1.SS3.p2.pic1.2.55" class="ltx_p"><span id="A1.SS3.p2.pic1.2.55.1" class="ltx_text" style="--ltx-fg-color:#000000;">Currently, we have:
+- 128, 8, 4, 2 in row 0
+- 8, 4 in row 1
+- 4 in row 2
+- 2, 2 in row 3</span></span>
+<span id="A1.SS3.p2.pic1.2.56" class="ltx_p"><span id="A1.SS3.p2.pic1.2.56.1" class="ltx_text" style="--ltx-fg-color:#000000;">So 8 appears at (0,1), (1,0) — not adjacent
+4 appears at (0,2), (1,1), (2,0) — not adjacent
+2 appears at (0,3), (3,0), (3,3)</span></span>
+<span id="A1.SS3.p2.pic1.2.57" class="ltx_p"><span id="A1.SS3.p2.pic1.2.57.1" class="ltx_text" style="--ltx-fg-color:#000000;">So no adjacent duplicates.</span></span>
+<span id="A1.SS3.p2.pic1.2.58" class="ltx_p"><span id="A1.SS3.p2.pic1.2.58.1" class="ltx_text" style="--ltx-fg-color:#000000;">But if we move **down**, we create space at the top, and the 2 at (3,3) might fall into (2,3), etc.</span></span>
+<span id="A1.SS3.p2.pic1.2.59" class="ltx_p"><span id="A1.SS3.p2.pic1.2.59.1" class="ltx_text" style="--ltx-fg-color:#000000;">But still, no merge.</span></span>
+<span id="A1.SS3.p2.pic1.2.60" class="ltx_p"><span id="A1.SS3.p2.pic1.2.60.1" class="ltx_text" style="--ltx-fg-color:#000000;">Best strategy: create a path to merge two 4s or two 8s.</span></span>
+<span id="A1.SS3.p2.pic1.2.61" class="ltx_p"><span id="A1.SS3.p2.pic1.2.61.1" class="ltx_text" style="--ltx-fg-color:#000000;">Currently, the 4 at (0,2) and (1,1) are diagonal — not adjacent.</span></span>
+<span id="A1.SS3.p2.pic1.2.62" class="ltx_p"><span id="A1.SS3.p2.pic1.2.62.1" class="ltx_text" style="--ltx-fg-color:#000000;">The 4 at (2,0) is isolated.</span></span>
+<span id="A1.SS3.p2.pic1.2.63" class="ltx_p"><span id="A1.SS3.p2.pic1.2.63.1" class="ltx_text" style="--ltx-fg-color:#000000;">The 8 at (0,1) and (1,0) are diagonal.</span></span>
+<span id="A1.SS3.p2.pic1.2.64" class="ltx_p"><span id="A1.SS3.p2.pic1.2.64.1" class="ltx_text" style="--ltx-fg-color:#000000;">So no merge possible.</span></span>
+<span id="A1.SS3.p2.pic1.2.65" class="ltx_p"><span id="A1.SS3.p2.pic1.2.65.1" class="ltx_text" style="--ltx-fg-color:#000000;">But the board is not dead — we can still make progress.</span></span>
+<span id="A1.SS3.p2.pic1.2.66" class="ltx_p"><span id="A1.SS3.p2.pic1.2.66.1" class="ltx_text" style="--ltx-fg-color:#000000;">Best move: **down** — to create space in the top row for future tiles to fall into.</span></span>
+<span id="A1.SS3.p2.pic1.2.67" class="ltx_p"><span id="A1.SS3.p2.pic1.2.67.1" class="ltx_text" style="--ltx-fg-color:#000000;">Alternatively, **left** — but no change.</span></span>
+<span id="A1.SS3.p2.pic1.2.68" class="ltx_p"><span id="A1.SS3.p2.pic1.2.68.1" class="ltx_text" style="--ltx-fg-color:#000000;">Wait — in 2048, when you move, tiles fall and merge if adjacent and equal.</span></span>
+<span id="A1.SS3.p2.pic1.2.69" class="ltx_p"><span id="A1.SS3.p2.pic1.2.69.1" class="ltx_text" style="--ltx-fg-color:#000000;">So if we move **down**, the tiles fall down, so:</span></span>
+<span id="A1.SS3.p2.pic1.2.70" class="ltx_p"><span id="A1.SS3.p2.pic1.2.70.1" class="ltx_text" style="--ltx-fg-color:#000000;">- Column 0: 128,8,4,2 → after falling down, it becomes [128,8,4,2] — no merge
+- Column 1: 8,4,.,. → becomes [8,4,.,.] — no merge
+- Column 2: 4,.,.,. → becomes [4,.,.,.] — no merge
+- Column 3: 2,.,.,2 → becomes [2,.,.,2] — no merge</span></span>
+<span id="A1.SS3.p2.pic1.2.71" class="ltx_p"><span id="A1.SS3.p2.pic1.2.71.1" class="ltx_text" style="--ltx-fg-color:#000000;">No merge.</span></span>
+<span id="A1.SS3.p2.pic1.2.72" class="ltx_p"><span id="A1.SS3.p2.pic1.2.72.1" class="ltx_text" style="--ltx-fg-color:#000000;">But if we move **right**, tiles shift right:</span></span>
+<span id="A1.SS3.p2.pic1.2.73" class="ltx_p"><span id="A1.SS3.p2.pic1.2.73.1" class="ltx_text" style="--ltx-fg-color:#000000;">- Row 0: [128,8,4,2] → becomes [.,.,.,.] — no, wait: shifting right means each row shifts right, so empty spaces are filled on left.</span></span>
+<span id="A1.SS3.p2.pic1.2.74" class="ltx_p"><span id="A1.SS3.p2.pic1.2.74.1" class="ltx_text" style="--ltx-fg-color:#000000;">So row 0: [128,8,4,2] → becomes [.,.,.,.] — no, actually in 2048, when you move right, tiles fall to the right.</span></span>
+<span id="A1.SS3.p2.pic1.2.75" class="ltx_p"><span id="A1.SS3.p2.pic1.2.75.1" class="ltx_text" style="--ltx-fg-color:#000000;">So row 0: [128,8,4,2] → already at right — stays.</span></span>
+<span id="A1.SS3.p2.pic1.2.76" class="ltx_p"><span id="A1.SS3.p2.pic1.2.76.1" class="ltx_text" style="--ltx-fg-color:#000000;">Row 1: [8,4,.,.] → becomes [.,.,8,4]</span></span>
+<span id="A1.SS3.p2.pic1.2.77" class="ltx_p"><span id="A1.SS3.p2.pic1.2.77.1" class="ltx_text" style="--ltx-fg-color:#000000;">Row 2: [4,.,.,.] → becomes [.,.,.,4]</span></span>
+<span id="A1.SS3.p2.pic1.2.78" class="ltx_p"><span id="A1.SS3.p2.pic1.2.78.1" class="ltx_text" style="--ltx-fg-color:#000000;">Row 3: [2,.,.,2] → becomes [.,.,.,2]</span></span>
+<span id="A1.SS3.p2.pic1.2.79" class="ltx_p"><span id="A1.SS3.p2.pic1.2.79.1" class="ltx_text" style="--ltx-fg-color:#000000;">Now, in column 3: we have 2 (from row0), 4 (row1), 4 (row2), 2 (row3) — no, row0 col3 is 2, row1 col3 is 4, row2 col3 is 4, row3 col3 is 2 — so column 3: [2,4,4,2] → after falling right, it becomes [.,.,.,2] → no, after right move, each row shifts right, so:</span></span>
+<span id="A1.SS3.p2.pic1.2.80" class="ltx_p"><span id="A1.SS3.p2.pic1.2.80.1" class="ltx_text" style="--ltx-fg-color:#000000;">After right move:
+- Row 0: [128,8,4,2] → stays
+- Row 1: [.,.,8,4]
+- Row 2: [.,.,.,4]
+- Row 3: [.,.,.,2]</span></span>
+<span id="A1.SS3.p2.pic1.2.81" class="ltx_p"><span id="A1.SS3.p2.pic1.2.81.1" class="ltx_text" style="--ltx-fg-color:#000000;">So column 3: [2,4,4,2] — but after shift, they are at the right — so in column 3: row0:2, row1:4, row2:4, row3:2 — now, in the same column, row1 and row2 both have 4 — so they are adjacent vertically.</span></span>
+<span id="A1.SS3.p2.pic1.2.82" class="ltx_p"><span id="A1.SS3.p2.pic1.2.82.1" class="ltx_text" style="--ltx-fg-color:#000000;">After the right move, the board becomes:</span></span>
+<span id="A1.SS3.p2.pic1.2.83" class="ltx_p"><span id="A1.SS3.p2.pic1.2.83.1" class="ltx_text" style="--ltx-fg-color:#000000;">[128,8,4,2]
+[.,.,8,4]
+[.,.,.,4]
+[.,.,.,2]</span></span>
+<span id="A1.SS3.p2.pic1.2.84" class="ltx_p"><span id="A1.SS3.p2.pic1.2.84.1" class="ltx_text" style="--ltx-fg-color:#000000;">Now, in column 3: row1 has 4, row2 has 4 — they are adjacent vertically — so they will merge into 8 when the move is applied.</span></span>
+<span id="A1.SS3.p2.pic1.2.85" class="ltx_p"><span id="A1.SS3.p2.pic1.2.85.1" class="ltx_text" style="--ltx-fg-color:#000000;">But only if the move is **down** — no, after a right move, the tiles are shifted, and then if there’s a merge, it happens in the same move.</span></span>
+<span id="A1.SS3.p2.pic1.2.86" class="ltx_p"><span id="A1.SS3.p2.pic1.2.86.1" class="ltx_text" style="--ltx-fg-color:#000000;">In the right move, tiles fall to the right, and merge if adjacent and equal.</span></span>
+<span id="A1.SS3.p2.pic1.2.87" class="ltx_p"><span id="A1.SS3.p2.pic1.2.87.1" class="ltx_text" style="--ltx-fg-color:#000000;">So in column 3: row1 has 4, row2 has 4 — they are in the same column, adjacent — so they merge into 8.</span></span>
+<span id="A1.SS3.p2.pic1.2.88" class="ltx_p"><span id="A1.SS3.p2.pic1.2.88.1" class="ltx_text" style="--ltx-fg-color:#000000;">So after right move:</span></span>
+<span id="A1.SS3.p2.pic1.2.89" class="ltx_p"><span id="A1.SS3.p2.pic1.2.89.1" class="ltx_text" style="--ltx-fg-color:#000000;">- Column 3: row1 and row2 both have 4 → merge into 8 at row1 or row2?</span></span>
+<span id="A1.SS3.p2.pic1.2.90" class="ltx_p"><span id="A1.SS3.p2.pic1.2.90.1" class="ltx_text" style="--ltx-fg-color:#000000;">In 2048, when merging, the larger tile stays and the smaller is removed.</span></span>
+<span id="A1.SS3.p2.pic1.2.91" class="ltx_p"><span id="A1.SS3.p2.pic1.2.91.1" class="ltx_text" style="--ltx-fg-color:#000000;">So in column 3: [2,4,4,2] → after right move, the 4 and 4 merge into 8, and the 2s remain.</span></span>
+<span id="A1.SS3.p2.pic1.2.92" class="ltx_p"><span id="A1.SS3.p2.pic1.2.92.1" class="ltx_text" style="--ltx-fg-color:#000000;">But in the same column, after shifting right, the values are:</span></span>
+<span id="A1.SS3.p2.pic1.2.93" class="ltx_p"><span id="A1.SS3.p2.pic1.2.93.1" class="ltx_text" style="--ltx-fg-color:#000000;">- Row0: col3 = 2
+- Row1: col3 = 4
+- Row2: col3 = 4
+- Row3: col3 = 2</span></span>
+<span id="A1.SS3.p2.pic1.2.94" class="ltx_p"><span id="A1.SS3.p2.pic1.2.94.1" class="ltx_text" style="--ltx-fg-color:#000000;">After right move, tiles fall to the right — so they are already at the right.</span></span>
+<span id="A1.SS3.p2.pic1.2.95" class="ltx_p"><span id="A1.SS3.p2.pic1.2.95.1" class="ltx_text" style="--ltx-fg-color:#000000;">Then, in column 3, row1 and row2 have 4 — they are adjacent — so they merge into 8.</span></span>
+<span id="A1.SS3.p2.pic1.2.96" class="ltx_p"><span id="A1.SS3.p2.pic1.2.96.1" class="ltx_text" style="--ltx-fg-color:#000000;">So the new board after right move:</span></span>
+<span id="A1.SS3.p2.pic1.2.97" class="ltx_p"><span id="A1.SS3.p2.pic1.2.97.1" class="ltx_text" style="--ltx-fg-color:#000000;">- Row0: [128,8,4,2]
+- Row1: [.,.,.,8] (after merge, the 4 and 4 become 8 at row1 or row2?)
+- Actually, in column 3: row1 and row2 both have 4 → they merge into one 8 at row1 or row2? Usually, the lower one wins, or the one that is in the middle.</span></span>
+<span id="A1.SS3.p2.pic1.2.98" class="ltx_p"><span id="A1.SS3.p2.pic1.2.98.1" class="ltx_text" style="--ltx-fg-color:#000000;">Standard rule: tiles merge when adjacent and equal, and the value doubles.</span></span>
+<span id="A1.SS3.p2.pic1.2.99" class="ltx_p"><span id="A1.SS3.p2.pic1.2.99.1" class="ltx_text" style="--ltx-fg-color:#000000;">So in column 3: row1 and row2 have 4 — they merge into 8 at row1 (or row2) — say row1 gets 8, row2 becomes empty.</span></span>
+<span id="A1.SS3.p2.pic1.2.100" class="ltx_p"><span id="A1.SS3.p2.pic1.2.100.1" class="ltx_text" style="--ltx-fg-color:#000000;">So after merge:</span></span>
+<span id="A1.SS3.p2.pic1.2.101" class="ltx_p"><span id="A1.SS3.p2.pic1.2.101.1" class="ltx_text" style="--ltx-fg-color:#000000;">- Row0: [128,8,4,2]
+- Row1: [.,.,.,8]
+- Row2: [.,.,.,.] (since row2 col3 was 4, now gone)
+- Row3: [.,.,.,2]</span></span>
+<span id="A1.SS3.p2.pic1.2.102" class="ltx_p"><span id="A1.SS3.p2.pic1.2.102.1" class="ltx_text" style="--ltx-fg-color:#000000;">And a new tile appears somewhere — usually in a random empty cell.</span></span>
+<span id="A1.SS3.p2.pic1.2.103" class="ltx_p"><span id="A1.SS3.p2.pic1.2.103.1" class="ltx_text" style="--ltx-fg-color:#000000;">But the key point is that a merge occurs — creating a 8 from two 4s.</span></span>
+<span id="A1.SS3.p2.pic1.2.104" class="ltx_p"><span id="A1.SS3.p2.pic1.2.104.1" class="ltx_text" style="--ltx-fg-color:#000000;">So a **right** move creates a merge.</span></span>
+<span id="A1.SS3.p2.pic1.2.105" class="ltx_p"><span id="A1.SS3.p2.pic1.2.105.1" class="ltx_text" style="--ltx-fg-color:#000000;">Similarly, a down move might not.</span></span>
+<span id="A1.SS3.p2.pic1.2.106" class="ltx_p"><span id="A1.SS3.p2.pic1.2.106.1" class="ltx_text" style="--ltx-fg-color:#000000;">But in this case, right move creates a merge.</span></span>
+<span id="A1.SS3.p2.pic1.2.107" class="ltx_p"><span id="A1.SS3.p2.pic1.2.107.1" class="ltx_text" style="--ltx-fg-color:#000000;">Also, the 128 is in the corner — good.</span></span>
+<span id="A1.SS3.p2.pic1.2.108" class="ltx_p"><span id="A1.SS3.p2.pic1.2.108.1" class="ltx_text" style="--ltx-fg-color:#000000;">So the best move is **right** to create a merge of two 4s into 8.</span></span>
+<span id="A1.SS3.p2.pic1.2.109" class="ltx_p"><span id="A1.SS3.p2.pic1.2.109.1" class="ltx_text" style="--ltx-fg-color:#000000;">Therefore, move: right</span></span>
+<span id="A1.SS3.p2.pic1.2.110" class="ltx_p"><span id="A1.SS3.p2.pic1.2.110.1" class="ltx_text" style="--ltx-fg-color:#000000;">But wait — in the original board, row1 col3 and row2 col3 are both empty — after right move, row1 col3 and row2 col3 are filled with 4 and 4 — yes, from the original row1: [8,4,.,.] → after right move, becomes [.,.,8,4] — so row1 col3 = 4</span></span>
+<span id="A1.SS3.p2.pic1.2.111" class="ltx_p"><span id="A1.SS3.p2.pic1.2.111.1" class="ltx_text" style="--ltx-fg-color:#000000;">Row2: [4,.,.,.] → becomes [.,.,.,4] — row2 col3 = 4</span></span>
+<span id="A1.SS3.p2.pic1.2.112" class="ltx_p"><span id="A1.SS3.p2.pic1.2.112.1" class="ltx_text" style="--ltx-fg-color:#000000;">So yes, in column 3, row1 and row2 have 4 — adjacent — merge into 8.</span></span>
+<span id="A1.SS3.p2.pic1.2.113" class="ltx_p"><span id="A1.SS3.p2.pic1.2.113.1" class="ltx_text" style="--ltx-fg-color:#000000;">So merge occurs.</span></span>
+<span id="A1.SS3.p2.pic1.2.114" class="ltx_p"><span id="A1.SS3.p2.pic1.2.114.1" class="ltx_text" style="--ltx-fg-color:#000000;">Thus, this is a valid and productive move.</span></span>
+<span id="A1.SS3.p2.pic1.2.115" class="ltx_p"><span id="A1.SS3.p2.pic1.2.115.1" class="ltx_text" style="--ltx-fg-color:#000000;">Therefore, the best move is **right**.</span></span>
+<span id="A1.SS3.p2.pic1.2.116" class="ltx_p"><span id="A1.SS3.p2.pic1.2.116.1" class="ltx_text" style="--ltx-fg-color:#000000;">move: right</span></span>
+</span></span></span></foreignobject></g></g></svg>
