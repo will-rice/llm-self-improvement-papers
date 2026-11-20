@@ -1,0 +1,61 @@
+<svg id="A6.T14.pic1" class="ltx_picture" height="880.04" overflow="visible" version="1.1" viewbox="0 0 653.15 880.04" width="653.15"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,880.04) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#404040;" fill="#404040" fill-opacity="1.0"><path style="stroke:none" d="M 0 5.91 L 0 874.13 C 0 877.39 2.64 880.04 5.91 880.04 L 647.24 880.04 C 650.51 880.04 653.15 877.39 653.15 874.13 L 653.15 5.91 C 653.15 2.64 650.51 0 647.24 0 L 5.91 0 C 2.64 0 0 2.64 0 5.91 Z" /></g><g style="--ltx-fill-color:#F9F9F9;" fill="#F9F9F9" fill-opacity="1.0"><path style="stroke:none" d="M 1.97 5.91 L 1.97 854.39 L 651.18 854.39 L 651.18 5.91 C 651.18 3.73 649.42 1.97 647.24 1.97 L 5.91 1.97 C 3.73 1.97 1.97 3.73 1.97 5.91 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 21.65 863.75)"><foreignobject style="--ltx-fo-width:44.07em;--ltx-fo-height:0.75em;--ltx-fo-depth:0.25em;font-size:10pt;" height="13.84" overflow="visible" transform="matrix(1 0 0 -1 0 10.38)" width="609.8"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A6.T14.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:44.07em;">
+<span id="A6.T14.pic1.1.1" class="ltx_p"><span id="A6.T14.pic1.1.1.1" class="ltx_text" style="--ltx-fg-color:#FFFFFF;">Step 2: Semantic Reverse-Engineering (Question Synthesis)</span></span>
+</span></span></span></foreignobject></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 21.65 17.24)"><foreignobject style="--ltx-fo-width:44.07em;--ltx-fo-height:59.65em;--ltx-fo-depth:0.25em;font-size:10pt;" height="828.81" overflow="visible" transform="matrix(1 0 0 -1 0 825.35)" width="609.8"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A6.T14.pic1.2" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:44.07em;">
+<span id="A6.T14.pic1.2.1" class="ltx_p"><span id="A6.T14.pic1.2.1.1" class="ltx_text" style="--ltx-fg-color:#000000;">## Role 
+<br class="ltx_break">You are an expert in <span id="A6.T14.pic1.2.1.1.1" class="ltx_text ltx_font_bold">Reverse-Engineering</span> complex code logic into natural, high-level business or scientific inquiries.</span></span>
+<span id="A6.T14.pic1.2.2" class="ltx_p"><span id="A6.T14.pic1.2.2.1" class="ltx_text" style="--ltx-fg-color:#000000;">## Objective 
+<br class="ltx_break">Your task is to formulate the <span id="A6.T14.pic1.2.2.1.1" class="ltx_text ltx_font_bold">Analytical Question</span> that would prompt a human to write exactly the provided Solution Script based on the Original Visualization Code.</span></span>
+<span id="A6.T14.pic1.2.3" class="ltx_p"><span id="A6.T14.pic1.2.3.1" class="ltx_text" style="--ltx-fg-color:#000000;">## Instructions</span></span>
+<span id="A6.T14.pic1.2.4" class="ltx_p"><span id="A6.T14.pic1.2.4.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">Phase 1: Logic Analysis<span id="A6.T14.pic1.2.4.1.1" class="ltx_text ltx_font_medium"> 
+<br class="ltx_break">Analyze the &quot;Solution Script&quot; to understand <span id="A6.T14.pic1.2.4.1.1.1" class="ltx_text ltx_font_italic">what</span> is being calculated. Look at the variable names to determine the </span>INTENT<span id="A6.T14.pic1.2.4.1.2" class="ltx_text ltx_font_medium">.</span></span></span>
+<span id="A6.T14.pic1.2.5" class="ltx_p"><span id="A6.T14.pic1.2.5.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">Phase 2: Question Formulation<span id="A6.T14.pic1.2.5.1.1" class="ltx_text ltx_font_medium"> 
+<br class="ltx_break">Write the question that requires this exact logic to solve.</span></span></span>
+<span id="A6.T14.pic1.2.6" class="ltx_p"><span id="A6.T14.pic1.2.6.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">Constraint A: Explicit Target (Crucial)<span id="A6.T14.pic1.2.6.1.1" class="ltx_text"></span></span></span>
+<span id="A6.I8" class="ltx_itemize">
+<span id="A6.I8.i1" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">•</span> 
+<span id="A6.I8.i1.p1" class="ltx_para">
+<span id="A6.I8.i1.p1.1" class="ltx_p"><span id="A6.I8.i1.p1.1.1" class="ltx_text" style="--ltx-fg-color:#000000;">The question must ask for a specific number OR a specific entity.</span></span>
+</span></span>
+<span id="A6.I8.i2" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">•</span> 
+<span id="A6.I8.i2.p1" class="ltx_para">
+<span id="A6.I8.i2.p1.1" class="ltx_p"><span id="A6.I8.i2.p1.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">Avoid Vague Phrasing</span><span id="A6.I8.i2.p1.1.2" class="ltx_text" style="--ltx-fg-color:#000000;">: Ask for the specific metric calculated.</span></span>
+</span></span>
+</span>
+<span id="A6.T14.pic1.2.7" class="ltx_p"><span id="A6.T14.pic1.2.7.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">Constraint B: Strict Logic Mapping<span id="A6.T14.pic1.2.7.1.1" class="ltx_text"></span></span></span>
+<span id="A6.I9" class="ltx_itemize">
+<span id="A6.I9.i1" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">•</span> 
+<span id="A6.I9.i1.p1" class="ltx_para">
+<span id="A6.I9.i1.p1.1" class="ltx_p"><span id="A6.I9.i1.p1.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">The Code IS The Answer</span><span id="A6.I9.i1.p1.1.2" class="ltx_text" style="--ltx-fg-color:#000000;">: Ensure the provided Python script is the </span><span id="A6.I9.i1.p1.1.3" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">exact, step-by-step solution</span><span id="A6.I9.i1.p1.1.4" class="ltx_text" style="--ltx-fg-color:#000000;"> to your question.</span></span>
+</span></span>
+</span>
+<span id="A6.T14.pic1.2.8" class="ltx_p"><span id="A6.T14.pic1.2.8.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">Constraint C: Semantic Abstraction (Most Important)<span id="A6.T14.pic1.2.8.1.1" class="ltx_text"></span></span></span>
+<span id="A6.I10" class="ltx_itemize">
+<span id="A6.I10.i1" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">•</span> 
+<span id="A6.I10.i1.p1" class="ltx_para">
+<span id="A6.I10.i1.p1.1" class="ltx_p"><span id="A6.I10.i1.p1.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">PROHIBITION</span><span id="A6.I10.i1.p1.1.2" class="ltx_text" style="--ltx-fg-color:#000000;">: Do NOT describe mechanical steps (e.g., &quot;Add list A and B&quot;).</span></span>
+</span></span>
+<span id="A6.I10.i2" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">•</span> 
+<span id="A6.I10.i2.p1" class="ltx_para">
+<span id="A6.I10.i2.p1.1" class="ltx_p"><span id="A6.I10.i2.p1.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">REQUIREMENT</span><span id="A6.I10.i2.p1.1.2" class="ltx_text" style="--ltx-fg-color:#000000;">: Describe the </span><span id="A6.I10.i2.p1.1.3" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">INTENT</span><span id="A6.I10.i2.p1.1.4" class="ltx_text" style="--ltx-fg-color:#000000;"> and </span><span id="A6.I10.i2.p1.1.5" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">DOMAIN MEANING</span><span id="A6.I10.i2.p1.1.6" class="ltx_text" style="--ltx-fg-color:#000000;"> (e.g., &quot;Calculate the profit margin&quot;).</span></span>
+</span></span>
+</span>
+<span id="A6.T14.pic1.2.9" class="ltx_p"><span id="A6.T14.pic1.2.9.1" class="ltx_text" style="--ltx-fg-color:#000000;">## Output Format
+Structure your response strictly as follows:</span></span>
+<span id="A6.I11" class="ltx_enumerate">
+<span id="A6.I11.i1" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">1.</span> 
+<span id="A6.I11.i1.p1" class="ltx_para">
+<span id="A6.I11.i1.p1.1" class="ltx_p"><span id="A6.I11.i1.p1.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">Logic interpretation</span><span id="A6.I11.i1.p1.1.2" class="ltx_text" style="--ltx-fg-color:#000000;">: Briefly explain the semantic meaning of the Python script.</span></span>
+</span></span>
+<span id="A6.I11.i2" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">2.</span> 
+<span id="A6.I11.i2.p1" class="ltx_para">
+<span id="A6.I11.i2.p1.1" class="ltx_p"><span id="A6.I11.i2.p1.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">The Analytical Question</span><span id="A6.I11.i2.p1.1.2" class="ltx_text" style="--ltx-fg-color:#000000;">: The abstract, scenario-based question wrapped in </span><span id="A6.I11.i2.p1.1.3" class="ltx_text ltx_font_typewriter" style="--ltx-fg-color:#000000;">&lt;question&gt;... &lt;/question&gt;</span><span id="A6.I11.i2.p1.1.4" class="ltx_text" style="--ltx-fg-color:#000000;">.</span></span>
+</span></span>
+</span>
+<span id="A6.T14.pic1.2.10" class="ltx_p"><span id="A6.T14.pic1.2.10.1" class="ltx_text" style="--ltx-fg-color:#000000;">## Input Data 
+<br class="ltx_break"><span id="A6.T14.pic1.2.10.1.1" class="ltx_text ltx_font_bold">1. Original Visualization Code:</span> 
+<br class="ltx_break"><span id="A6.T14.pic1.2.10.1.2" class="ltx_text ltx_font_typewriter">{chart code}</span></span></span>
+<span id="A6.T14.pic1.2.11" class="ltx_p"><span id="A6.T14.pic1.2.11.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">2. The Solution Script (The Answer Logic):<span id="A6.T14.pic1.2.11.1.1" class="ltx_text ltx_font_medium"> 
+<br class="ltx_break"><span id="A6.T14.pic1.2.11.1.1.1" class="ltx_text ltx_font_typewriter">{generated_python_code}</span></span></span></span>
+</span></span></span></foreignobject></g></g></svg>

@@ -9,11 +9,13 @@ https://www.alphaxiv.org/shared/folder/01a0d966-30ad-7eb1-8f22-cbcd7f934253
 
 # Papers
 
-The 30 most recent of 2229 papers. Every paper is listed in [papers.csv](papers.csv) and converted under [papers/](papers/).
+The 30 most recent of 2237 papers. Every paper is listed in [papers.csv](papers.csv) and converted under [papers/](papers/).
 
 | Published                 | Identifier         | Title                                                                                                                                                      | Source      |
 | ------------------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| 2026-11-18T00:00:00+00:00 | arxiv:2611.24651   | [Piccolo: Co-Evolving Decision Models and Data through Recursive Self-Improvement](papers/arxiv-2611-24651--e7e4eebff5a7.md)                               | huggingface |
 | 2026-11-17T00:00:00+00:00 | arxiv:2611.23219   | [Do LLM Agents Still Need to Be Told How to Self-Improve?](papers/arxiv-2611-23219--2ec9f3d53f7f.md)                                                       | huggingface |
+| 2026-11-17T00:00:00+00:00 | arxiv:2611.23068   | [The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements](papers/arxiv-2611-23068--0859ac539857.md)                                   | huggingface |
 | 2026-11-17T00:00:00+00:00 | arxiv:2611.21152   | [From Repositories to Training Environments: Scaling Long-Horizon Coding Agents with Environment Evolution Loop](papers/arxiv-2611-21152--f0f34601b707.md) | huggingface |
 | 2026-11-13T16:16:03+00:00 | arxiv:2611.18370v1 | [f-Divergence Self-Play for Tabular Anomaly Detection via Large Language Models](papers/arxiv-2611-18370v1--407629ed5959.md)                               | arxiv       |
 | 2026-11-13T00:00:00+00:00 | arxiv:2611.18856   | [Self-Improvement Memory Enables Continual Recursive Self-Improvement](papers/arxiv-2611-18856--ee155001ae9f.md)                                           | huggingface |
@@ -41,8 +43,6 @@ The 30 most recent of 2229 papers. Every paper is listed in [papers.csv](papers.
 | 2026-11-07T15:12:01+00:00 | arxiv:2611.10787v1 | [Trustworthy Recursive Self-Improvement with Statistical Guarantees](papers/arxiv-2611-10787v1--0a589c6c2d42.md)                                           | arxiv       |
 | 2026-11-07T14:11:16+00:00 | arxiv:2611.10748v1 | [REINS: A Self-Evolving Agent Harness for Real-Time Trajectory Planning](papers/arxiv-2611-10748v1--41f1cc49b373.md)                                       | arxiv       |
 | 2026-11-07T13:45:52+00:00 | arxiv:2611.10734v1 | [Tiny Evidence Region Localization with Selective Contrastive On-Policy Self-Distillation](papers/arxiv-2611-10734v1--4cf4e8ba2e8b.md)                     | arxiv       |
-| 2026-11-07T07:17:53+00:00 | arxiv:2611.10542v1 | [When Experience Becomes a Backdoor: Poisoning Self-Evolving LLM Agents via Failure-Aware Task Optimization](papers/arxiv-2611-10542v1--b398257df552.md)   | arxiv       |
-| 2026-11-06T23:06:07+00:00 | arxiv:2611.10305v1 | [Plug-and-Play Verifier for Decoupling Process Reward in Stabilizing Long-Horizon Agentic Reasoning](https://arxiv.org/abs/2611.10305v1)                   | arxiv       |
 
 <!-- papers-index:end -->
 
