@@ -1,0 +1,27 @@
+<svg id="A1.SS1.p4.pic1" class="ltx_picture" height="473.28" overflow="visible" version="1.1" viewbox="0 0 550 473.28" width="550"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,473.28) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#E5396F;" fill="#E5396F" fill-opacity="1.0"><path style="stroke:none" d="M 0 7.61 L 0 465.67 C 0 469.87 3.41 473.28 7.61 473.28 L 542.39 473.28 C 546.59 473.28 550 469.87 550 465.67 L 550 7.61 C 550 3.41 546.59 0 542.39 0 L 7.61 0 C 3.41 0 0 3.41 0 7.61 Z" /></g><g style="--ltx-fill-color:#F2F2F2;" fill="#F2F2F2" fill-opacity="1.0"><path style="stroke:none" d="M 0.69 7.61 L 0.69 451.72 L 549.31 451.72 L 549.31 7.61 C 549.31 3.79 546.21 0.69 542.39 0.69 L 7.61 0.69 C 3.79 0.69 0.69 3.79 0.69 7.61 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 20.38 459.04)"><foreignobject style="--ltx-fo-width:32em;--ltx-fo-height:0.69em;--ltx-fo-depth:0.19em;font-size:10pt;" height="12.3" overflow="visible" transform="matrix(1 0 0 -1 0 9.61)" width="442.79"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A1.SS1.p4.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:32em;">
+<span id="A1.SS1.p4.pic1.1.1" class="ltx_p"><span id="A1.SS1.p4.pic1.1.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#FFFFFF;">Instruct Generation Prompt: CoSyn-400K</span></span>
+</span></span></span></foreignobject></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 20.38 15.19)"><foreignobject style="--ltx-fo-width:36.8em;--ltx-fo-height:30.69em;--ltx-fo-depth:0.19em;font-size:10pt;" height="427.41" overflow="visible" transform="matrix(1 0 0 -1 0 424.72)" width="509.21"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A1.SS1.p4.pic1.2" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:36.8em;">
+<span id="A1.SS1.p4.pic1.2.1" class="ltx_p"><span id="A1.SS1.p4.pic1.2.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">Model: GPT-4.1
+<br class="ltx_break"></span></span>
+<span id="A1.SS1.p4.pic1.2.2" class="ltx_p"><span id="A1.SS1.p4.pic1.2.2.1" class="ltx_text" style="--ltx-fg-color:#000000;"># <span id="A1.SS1.p4.pic1.2.2.1.1" class="ltx_text ltx_font_typewriter">FOR NONE DATA-DRIVEN LANGUAGES</span> 
+<br class="ltx_break"># <span id="A1.SS1.p4.pic1.2.2.1.2" class="ltx_text ltx_font_typewriter">LANGUAGE</span>= [<span id="A1.SS1.p4.pic1.2.2.1.3" class="ltx_text ltx_font_typewriter">Asymptote</span>, <span id="A1.SS1.p4.pic1.2.2.1.4" class="ltx_text ltx_font_typewriter">SVG</span>]
+<br class="ltx_break"></span></span>
+<span id="A1.SS1.p4.pic1.2.3" class="ltx_p"><span id="A1.SS1.p4.pic1.2.3.1" class="ltx_text" style="--ltx-fg-color:#000000;">You are given a <span id="A1.SS1.p4.pic1.2.3.1.1" class="ltx_text ltx_font_typewriter">{LANGUAGE}</span> code snippet that renders an image. A rendered image of the resulting output is provided at the end. Your task is to infer and clearly describe the purpose and structure of this image.
+<br class="ltx_break"></span></span>
+<span id="A1.SS1.p4.pic1.2.4" class="ltx_p"><span id="A1.SS1.p4.pic1.2.4.1" class="ltx_text" style="--ltx-fg-color:#000000;">Break your response into the following four parts:
+<br class="ltx_break">1. Setup (state the <span id="A1.SS1.p4.pic1.2.4.1.1" class="ltx_text ltx_font_typewriter">{LANGUAGE}</span> and its rendering context).
+<br class="ltx_break">2. Visual Elements (summarize the visible components of the image).
+<br class="ltx_break">3. Output Description (omit language constructs; start with “Generate…” or “Create…”, and describe the image conceptually).
+<br class="ltx_break">4. Style Description (describe appearance and layout without naming language constructs).
+<br class="ltx_break"></span></span>
+<span id="A1.SS1.p4.pic1.2.5" class="ltx_p"><span id="A1.SS1.p4.pic1.2.5.1" class="ltx_text" style="--ltx-fg-color:#000000;">Each part must start on a new line, numbered 1 through 4.
+<br class="ltx_break">Use plain text only; no markdown.
+<br class="ltx_break"></span></span>
+<span id="A1.SS1.p4.pic1.2.6" class="ltx_p"><span id="A1.SS1.p4.pic1.2.6.1" class="ltx_text" style="--ltx-fg-color:#000000;">Code:
+<br class="ltx_break"><span id="A1.SS1.p4.pic1.2.6.1.1" class="ltx_text ltx_font_typewriter">{code}
+<br class="ltx_break"></span></span></span>
+<span id="A1.SS1.p4.pic1.2.7" class="ltx_p"><span id="A1.SS1.p4.pic1.2.7.1" class="ltx_text" style="--ltx-fg-color:#000000;">Image:
+<br class="ltx_break"></span></span>
+</span></span></span></foreignobject></g></g></svg>

@@ -1,0 +1,189 @@
+<svg id="A5.pic2" class="ltx_picture ltx_centering" height="1422.41" overflow="visible" version="1.1" viewbox="0 0 653.15 1422.41" width="653.15"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,1422.41) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#FF002B;" fill="#FF002B" fill-opacity="1.0"><path style="stroke:none" d="M 0 5.91 L 0 1416.5 C 0 1419.76 2.64 1422.41 5.91 1422.41 L 647.24 1422.41 C 650.51 1422.41 653.15 1419.76 653.15 1416.5 L 653.15 5.91 C 653.15 2.64 650.51 0 647.24 0 L 5.91 0 C 2.64 0 0 2.64 0 5.91 Z" /></g><g style="--ltx-fill-color:#FFFBF4;" fill="#FFFBF4" fill-opacity="1.0"><path style="stroke:none" d="M 1.97 5.91 L 1.97 1399.53 L 651.18 1399.53 L 651.18 5.91 C 651.18 3.73 649.42 1.97 647.24 1.97 L 5.91 1.97 C 3.73 1.97 1.97 3.73 1.97 5.91 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 21.65 1407.85)"><foreignobject style="--ltx-fo-width:41.38em;--ltx-fo-height:0.63em;--ltx-fo-depth:0.18em;font-size:10pt;" height="11.07" overflow="visible" transform="matrix(1 0 0 -1 0 8.65)" width="572.58"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A5.pic2.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:41.38em;">
+<span id="A5.pic2.1.1" class="ltx_p"><span id="A5.pic2.1.1.1" class="ltx_text ltx_font_bold" style="font-size:90%;--ltx-fg-color:#FFFFFF;">Free-form Question Challenger Prompt</span></span>
+</span></span></span></foreignobject></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 21.65 16.55)"><foreignobject style="--ltx-fo-width:44.07em;--ltx-fo-height:99.1em;--ltx-fo-depth:0.2em;font-size:10pt;" height="1373.95" overflow="visible" transform="matrix(1 0 0 -1 0 1371.19)" width="609.8"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A5.pic2.2" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:44.07em;">
+<span id="A5.pic2.2.1" class="ltx_p"><span id="A5.pic2.2.1.1" class="ltx_text" style="--ltx-fg-color:#000000;">Your task is to create CHALLENGING free-form questions from a document that require deep understanding and complex reasoning.
+
+<br class="ltx_break">
+<br class="ltx_break">## Text
+[BEGINNING OF THE DOCUMENT]
+{text}
+[END OF THE DOCUMENT]
+
+<br class="ltx_break">
+<br class="ltx_break">## Answer Type
+You must generate a question with answer type: answer_type
+
+<br class="ltx_break">
+<br class="ltx_break">## Instructions
+
+<br class="ltx_break">
+<br class="ltx_break">### Step 1: Complex Information Extraction for answer_type
+**PRIORITY: Focus on information that requires synthesis and multi-step reasoning**
+Based on the answer type answer_type, scan the text and identify:
+
+<br class="ltx_break">
+<br class="ltx_break">**For Integer/Float answers:**
+* Multi-variable calculations spanning different sections
+* Sequential computations where each step depends on previous results
+* Counting problems requiring careful categorization
+* Rate/ratio/percentage problems with multiple components
+* Optimization problems with constraints
+* Statistical calculations requiring data aggregation
+
+<br class="ltx_break">
+<br class="ltx_break">**For Expression answers:**
+* Relationships between multiple variables that form equations
+* Patterns that can be generalized into formulas
+* Systems of equations from different constraints
+* Derivative relationships or functional dependencies
+* Algebraic expressions combining multiple principles
+* Recursive or iterative formulas
+
+<br class="ltx_break">
+<br class="ltx_break">**For String answers (MUST BE CONCISE):**
+* Single words or short phrases (1-3 words maximum)
+* Technical terms, names, or identifiers
+* Categories or classifications (single term only)
+* Named entities (person, place, concept, method name)
+* Units, symbols, or abbreviated forms
+* AVOID: Long descriptions, sentences, or explanations
+* Examples: ”Newton”, ”TCP/IP”, ”gradient descent”, ”Paris”, ”O(n log n)”
+
+<br class="ltx_break">
+<br class="ltx_break">**For Boolean answers:**
+* Complex logical conditions with multiple clauses
+* Statements requiring verification across multiple facts
+* Comparative claims needing multi-point analysis
+* Existence or uniqueness proofs
+* Conditional truths depending on context
+* Negations requiring comprehensive checking
+
+<br class="ltx_break">
+<br class="ltx_break">**AVOID**:
+* Direct lookups or single-fact answers
+* Simple arithmetic or basic calculations
+* Definitions stated verbatim in text
+* Trivial yes/no questions
+
+<br class="ltx_break">
+<br class="ltx_break">### Step 2: Difficulty Enhancement Strategy
+**EXPLICITLY STATE YOUR HARDENING PROCESS**
+Before generating the question, document your strategy:
+1. What simple version would be too easy?
+2. What complexity layers will you add?
+3. Which document sections must be synthesized?
+4. What intermediate steps are required?
+5. How will you prevent shortcut solutions?
+6. What makes this require deep understanding?
+
+<br class="ltx_break">
+<br class="ltx_break">Document this in ‘”hardening_process”‘.
+
+<br class="ltx_break">
+<br class="ltx_break">### Step 3: Advanced Question Generation for answer_type
+Create a question that:
+* Requires connecting 3+ concepts from different parts
+* Cannot be answered by simple lookup or keyword matching
+* Forces multi-step reasoning to reach the answer
+* Tests understanding of relationships, not memorization
+* May involve applying principles to modified scenarios
+* Requires precise interpretation for the specific answer type
+
+<br class="ltx_break">
+<br class="ltx_break">**CRITICAL - Self-Contained Requirements**:
+* Questions must be 100* NEVER use: ”according to the text”, ”in the document”, ”as mentioned”, etc.
+* Write as if for a formal exam with no reference material
+* Include all necessary context and definitions
+* Specify units, formats, or constraints clearly
+
+<br class="ltx_break">
+<br class="ltx_break">### Step 4: Answer Precision for answer_type
+**CRITICAL - Answer Format Requirements**:
+
+<br class="ltx_break">
+<br class="ltx_break">**Integer answers:**
+* Must be whole numbers only
+* Specify units if applicable (e.g., ”in meters”, ”number of items”)
+* No decimals, fractions, or ranges
+* CORRECT JSON: ”answer”: 42 or ”answer”: ”42”
+* WRONG JSON: ”answer”: [42] or ”answer”: ”value”: 42
+
+<br class="ltx_break">
+<br class="ltx_break">**Float answers:**
+* Specify precision required (e.g., ”to 2 decimal places”)
+* Include units if applicable
+* Use decimal notation, not fractions
+* Example: 3.14, not ”<math id="A5.pic2.m1" class="ltx_Math" alttext="\pi" display="inline" intent=":literal"><semantics><mi style="--ltx-fg-color:#000000;" mathcolor="#000000">π</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math>” or ”<math id="A5.pic2.m2" class="ltx_Math" alttext="22/7" display="inline" intent=":literal"><semantics><mrow><mn style="--ltx-fg-color:#000000;" mathcolor="#000000">22</mn><mo style="--ltx-fg-color:#000000;" mathcolor="#000000">/</mo><mn style="--ltx-fg-color:#000000;" mathcolor="#000000">7</mn></mrow><annotation encoding="application/x-tex">22/7</annotation></semantics></math>”
+
+<br class="ltx_break">
+<br class="ltx_break">**Expression answers:**
+* Use standard mathematical notation
+* Variables must be clearly defined
+* Simplify to canonical form
+* CORRECT JSON: ”answer”: ”2*x2̂ + 3*x - 5”
+* WRONG JSON: ”answer”: [”2*x2̂ + 3*x - 5”] or ”answer”: ”expr”: ”2*x2̂”
+
+<br class="ltx_break">
+<br class="ltx_break">**String answers:**
+* Specify exact format expected
+* Case sensitivity requirements
+* No extra punctuation or quotes
+* CORRECT JSON: ”answer”: ”Newton’s Third Law”
+* WRONG JSON: ”answer”: [”Newton’s Third Law”] or ”answer”: ”text”: ”Newton”
+
+<br class="ltx_break">
+<br class="ltx_break">**List answers:**
+* Specify ordering (alphabetical, chronological, by magnitude)
+* Delimiter format (comma-separated, JSON array)
+* Whether duplicates are allowed
+* Example: [”apple”, ”banana”, ”cherry”] for JSON format
+
+<br class="ltx_break">
+<br class="ltx_break">**Boolean answers:**
+* Must be exactly ”true” or ”false” (lowercase)
+* No ”yes/no”, ”T/F”, or other variations
+* Clear truth conditions
+* Example: true, not ”True” or ”yes”
+
+<br class="ltx_break">
+<br class="ltx_break">### Step 5: Solution Verification Process
+**SOLVE YOUR OWN QUESTION STEP-BY-STEP**
+Work through the complete solution:
+1. Identify all required information pieces
+2. Show each calculation or reasoning step
+3. Handle any edge cases or special conditions
+4. Arrive at the final answer in the correct format
+5. Verify the answer matches the specified type exactly
+6. Estimate solving time (should be ¿1 minute for hard questions)
+
+<br class="ltx_break">
+<br class="ltx_break">Document your solution in ‘”step_by_step_solution”‘.
+
+<br class="ltx_break">
+<br class="ltx_break">### Step 6: Difficulty Calibration
+Rate your question’s difficulty and justify:
+
+<br class="ltx_break">
+<br class="ltx_break">**MEDIUM (2-3 steps, 1-2 minutes):**
+* Requires combining 2-3 document sections
+* Clear path once relationships identified
+* Some calculation or reasoning required
+
+<br class="ltx_break">
+<br class="ltx_break">**HARD (4-5 steps, 2-3 minutes):**
+* Synthesizes 4+ concepts
+* Multiple valid approaches possible
+* Requires careful analysis to avoid errors
+
+<br class="ltx_break">
+<br class="ltx_break">**EXTRA HARD (6+ steps, 3+ minutes):**
+* Complex system with many interactions
+* Counter-intuitive results possible
+* Requires deep understanding of principles
+
+<br class="ltx_break">
+<br class="ltx_break">Document reasoning in ‘”difficulty_justification”‘.
+…</span></span>
+</span></span></span></foreignobject></g></g></svg>

@@ -1,0 +1,23 @@
+<svg id="A1.SS3.p6.pic1" class="ltx_picture" height="439.96" overflow="visible" version="1.1" viewbox="0 0 550 439.96" width="550"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,439.96) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#C23531;" fill="#C23531" fill-opacity="1.0"><path style="stroke:none" d="M 0 7.61 L 0 432.35 C 0 436.55 3.41 439.96 7.61 439.96 L 542.39 439.96 C 546.59 439.96 550 436.55 550 432.35 L 550 7.61 C 550 3.41 546.59 0 542.39 0 L 7.61 0 C 3.41 0 0 3.41 0 7.61 Z" /></g><g style="--ltx-fill-color:#F2F2F2;" fill="#F2F2F2" fill-opacity="1.0"><path style="stroke:none" d="M 0.69 7.61 L 0.69 418.51 L 549.31 418.51 L 549.31 7.61 C 549.31 3.79 546.21 0.69 542.39 0.69 L 7.61 0.69 C 3.79 0.69 0.69 3.79 0.69 7.61 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 20.38 425.83)"><foreignobject style="--ltx-fo-width:32em;--ltx-fo-height:0.69em;--ltx-fo-depth:0.19em;font-size:10pt;" height="12.18" overflow="visible" transform="matrix(1 0 0 -1 0 9.49)" width="442.79"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A1.SS3.p6.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:32em;">
+<span id="A1.SS3.p6.pic1.1.1" class="ltx_p"><span id="A1.SS3.p6.pic1.1.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#FFFFFF;">Asymptote Instruct</span></span>
+</span></span></span></foreignobject></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 20.38 15.19)"><foreignobject style="--ltx-fo-width:36.8em;--ltx-fo-height:28.29em;--ltx-fo-depth:0.19em;font-size:10pt;" height="394.21" overflow="visible" transform="matrix(1 0 0 -1 0 391.51)" width="509.21"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A1.SS3.p6.pic1.2" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:36.8em;">
+<span id="A1.SS3.p6.pic1.2.1" class="ltx_p"><span id="A1.SS3.p6.pic1.2.1.1" class="ltx_text" style="--ltx-fg-color:#000000;"># <span id="A1.SS3.p6.pic1.2.1.1.1" class="ltx_text ltx_font_typewriter">SYSTEM PROMPT</span>:
+<br class="ltx_break">You are a helpful programming assistant proficient in Asymptote. All answers must be enclosed in a block “‘asymptote
+SOME CODE“‘ containing one complete Asymptote specification. Example minimal spec: “‘asymptote</span></span><pre id="A1.SS3.p6.pic1.2.2" class="ltx_verbatim ltx_font_typewriter" style="--ltx-fg-color:#000000;">
+import graph;
+size(100);
+draw((0,0)--(1,1));
+</pre>
+<span id="A1.SS3.p6.pic1.2.3" class="ltx_p"><span id="A1.SS3.p6.pic1.2.3.1" class="ltx_text" style="--ltx-fg-color:#000000;">“‘ 
+<br class="ltx_break"></span></span>
+<span id="A1.SS3.p6.pic1.2.4" class="ltx_p"><span id="A1.SS3.p6.pic1.2.4.1" class="ltx_text" style="--ltx-fg-color:#000000;"># <span id="A1.SS3.p6.pic1.2.4.1.1" class="ltx_text ltx_font_typewriter">SETUP INSTRUCT</span>:
+<br class="ltx_break">Setup. Use Asymptote syntax only and produce exactly one valid Asymptote definition. Do not output explanations, comments outside the code block, or code in other languages or formats. Do not split the diagram into multiple blocks. Ensure the code can be rendered directly by Asymptote. 
+<br class="ltx_break"></span></span>
+<span id="A1.SS3.p6.pic1.2.5" class="ltx_p"><span id="A1.SS3.p6.pic1.2.5.1" class="ltx_text" style="--ltx-fg-color:#000000;"># <span id="A1.SS3.p6.pic1.2.5.1.1" class="ltx_text ltx_font_typewriter">PLOT INSTRUCT</span>:
+<br class="ltx_break">Write an Asymptote according to the following instructions. Do not include explanations or natural language outside the code block. Ensure that the Asymptote is self-contained, syntactically correct Asymptote code, and does not rely on external data or libraries. Use shapes and attributes exactly as provided in the instructions. 
+<br class="ltx_break"></span></span>
+<span id="A1.SS3.p6.pic1.2.6" class="ltx_p"><span id="A1.SS3.p6.pic1.2.6.1" class="ltx_text" style="--ltx-fg-color:#000000;"># <span id="A1.SS3.p6.pic1.2.6.1.1" class="ltx_text ltx_font_typewriter">DATA INSTRUCT</span>:
+<br class="ltx_break">Data description. Please use the provided data definition code to construct the plot. Do not modify this code or create data by yourself. Use the variables defined in this code directly when building the plot. The data definition code is as follows:</span></span>
+</span></span></span></foreignobject></g></g></svg>
