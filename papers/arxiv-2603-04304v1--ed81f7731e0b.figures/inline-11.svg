@@ -1,0 +1,31 @@
+<svg id="A6.SS2.SSS2.p1.pic1" class="ltx_picture" height="440.75" overflow="visible" version="1.1" viewbox="0 0 650 440.75" width="650"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,440.75) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#4CAF93;" fill="#4CAF93" fill-opacity="1.0"><path style="stroke:none" d="M 0 5.91 L 0 434.84 C 0 438.11 2.64 440.75 5.91 440.75 L 644.09 440.75 C 647.36 440.75 650 438.11 650 434.84 L 650 5.91 C 650 2.64 647.36 0 644.09 0 L 5.91 0 C 2.64 0 0 2.64 0 5.91 Z" /></g><g style="--ltx-fill-color:#F5F8FA;" fill="#F5F8FA" fill-opacity="1.0"><path style="stroke:none" d="M 1.97 5.91 L 1.97 417.87 L 648.03 417.87 L 648.03 5.91 C 648.03 3.73 646.27 1.97 644.09 1.97 L 5.91 1.97 C 3.73 1.97 1.97 3.73 1.97 5.91 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 21.65 426.2)"><foreignobject style="--ltx-fo-width:41.17em;--ltx-fo-height:0.63em;--ltx-fo-depth:0.18em;font-size:10pt;" height="11.07" overflow="visible" transform="matrix(1 0 0 -1 0 8.65)" width="569.68"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A6.SS2.SSS2.p1.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:41.17em;">
+<span id="A6.SS2.SSS2.p1.pic1.1.1" class="ltx_p"><span id="A6.SS2.SSS2.p1.pic1.1.1.1" class="ltx_text ltx_font_bold" style="font-size:90%;--ltx-fg-color:#FFFFFF;">Pairwise Math Verification Prompt</span></span>
+</span></span></span></foreignobject></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 21.65 16.55)"><foreignobject style="--ltx-fo-width:46.4em;--ltx-fo-height:28.15em;--ltx-fo-depth:0.2em;font-size:10pt;" height="392.28" overflow="visible" transform="matrix(1 0 0 -1 0 389.52)" width="642.05"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A6.SS2.SSS2.p1.pic1.2" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:46.4em;">
+<span id="A6.SS2.SSS2.p1.pic1.2.1" class="ltx_p"><span id="A6.SS2.SSS2.p1.pic1.2.1.1" class="ltx_text ltx_font_typewriter" style="font-size:90%;--ltx-fg-color:#000000;">You are an expert math contest grader. Compare two submissions and rate correctness based solely on the final answer.
+<br class="ltx_break" style="--ltx-break-space:4.7pt;">
+<span id="A6.SS2.SSS2.p1.pic1.2.1.1.1" class="ltx_text ltx_font_bold">**Evaluation Guidelines:**
+<br class="ltx_break"></span>- Extract each submission’s final answer. Use any provided reasoning only to help you assess whether the stated final answer is trustworthy. Do not award credit for method quality or rigor.
+<br class="ltx_break">- Carefully analyze the problem statement and the submissions to assess whether each final answer is correct. Grade only the final answer.
+<br class="ltx_break" style="--ltx-break-space:4.7pt;">
+<span id="A6.SS2.SSS2.p1.pic1.2.1.1.2" class="ltx_text ltx_font_bold">**Problem**
+<br class="ltx_break"></span>{problem}
+<br class="ltx_break" style="--ltx-break-space:4.7pt;">
+<span id="A6.SS2.SSS2.p1.pic1.2.1.1.3" class="ltx_text ltx_font_bold">**Solution A**
+<br class="ltx_break"></span>{sol_A}
+<br class="ltx_break" style="--ltx-break-space:4.7pt;">
+<span id="A6.SS2.SSS2.p1.pic1.2.1.1.4" class="ltx_text ltx_font_bold">**Solution B**
+<br class="ltx_break"></span>{sol_B}
+<br class="ltx_break" style="--ltx-break-space:4.7pt;">
+<span id="A6.SS2.SSS2.p1.pic1.2.1.1.5" class="ltx_text ltx_font_bold">**Output Format:**
+<br class="ltx_break"></span>First, provide your reasoning (what checks you performed). Then, on separate new lines, give ratings using the EXACT tags below. Add no other text after the tags.
+<br class="ltx_break">&lt;rating_A&gt;INTEGER_1_TO_10&lt;/rating_A&gt;
+<br class="ltx_break">&lt;rating_B&gt;INTEGER_1_TO_10&lt;/rating_B&gt;
+<br class="ltx_break" style="--ltx-break-space:4.7pt;">
+<span id="A6.SS2.SSS2.p1.pic1.2.1.1.6" class="ltx_text ltx_font_bold">**Rating Rules:**
+<br class="ltx_break"></span>- Rate correctness on a 1-10 scale (10 = certainly correct, 8 = very likely correct, 5 = uncertain/borderline, 3 = likely incorrect, 1 = certainly incorrect).
+<br class="ltx_break">- Higher rating wins. Equal ratings imply a tie.
+<br class="ltx_break">Please provide your analysis now.
+</span></span>
+</span></span></span></foreignobject></g></g></svg>
