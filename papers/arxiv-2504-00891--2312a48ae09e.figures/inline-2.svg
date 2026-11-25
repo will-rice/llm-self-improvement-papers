@@ -1,0 +1,38 @@
+<svg id="A1.SS2.p2.pic1" class="ltx_picture" height="594.88" overflow="visible" version="1.1" viewbox="0 0 676.77 594.88" width="676.77"><g style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,594.88) matrix(1 0 0 -1 0 0)"><g style="--ltx-fill-color:#404040;" fill="#404040" fill-opacity="1.0"><path style="stroke:none" d="M 0 5.91 L 0 588.97 C 0 592.23 2.64 594.88 5.91 594.88 L 670.87 594.88 C 674.13 594.88 676.77 592.23 676.77 588.97 L 676.77 5.91 C 676.77 2.64 674.13 0 670.87 0 L 5.91 0 C 2.64 0 0 2.64 0 5.91 Z" /></g><g style="--ltx-fill-color:#F2F2F2;" fill="#F2F2F2" fill-opacity="1.0"><path style="stroke:none" d="M 1.97 5.91 L 1.97 570.77 L 674.8 570.77 L 674.8 5.91 C 674.8 3.73 673.04 1.97 670.87 1.97 L 5.91 1.97 C 3.73 1.97 1.97 3.73 1.97 5.91 Z" /></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 21.65 579.36)"><foreignobject style="--ltx-fo-width:39.81em;--ltx-fo-height:0.69em;--ltx-fo-depth:0.19em;font-size:10pt;" height="12.3" overflow="visible" transform="matrix(1 0 0 -1 0 9.61)" width="550.86"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A1.SS2.p2.pic1.1" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:39.81em;">
+<span id="A1.SS2.p2.pic1.1.1" class="ltx_p"><span id="A1.SS2.p2.pic1.1.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#FFFFFF;">Prompt for CoT and code rationale generation</span></span>
+</span></span></span></foreignobject></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 21.65 17.24)"><foreignobject style="--ltx-fo-width:45.78em;--ltx-fo-height:39.15em;--ltx-fo-depth:0.25em;font-size:10pt;" height="545.18" overflow="visible" transform="matrix(1 0 0 -1 0 541.73)" width="633.47"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content">
+<span id="A1.SS2.p2.pic1.2" class="ltx_inline-block ltx_minipage ltx_align_bottom" style="width:45.78em;">
+<span id="A1.SS2.p2.pic1.2.1" class="ltx_p"><span id="A1.SS2.p2.pic1.2.1.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">[System]:<span id="A1.SS2.p2.pic1.2.1.1.1" class="ltx_text ltx_font_medium"> 
+<br class="ltx_break">You are a math teacher. Your task is to review and critique the paragraphs in solution step by step with python code. 
+<br class="ltx_break"></span></span></span>
+<span id="A1.SS2.p2.pic1.2.2" class="ltx_p"><span id="A1.SS2.p2.pic1.2.2.1" class="ltx_text ltx_font_bold" style="--ltx-fg-color:#000000;">[User]:<span id="A1.SS2.p2.pic1.2.2.1.1" class="ltx_text ltx_font_medium"> 
+<br class="ltx_break">The following is the math problem and a solution (split into paragraphs, enclosed with tags and indexed from 1): 
+<br class="ltx_break"></span></span></span>
+<span id="A1.SS2.p2.pic1.2.3" class="ltx_p"><span id="A1.SS2.p2.pic1.2.3.1" class="ltx_text" style="--ltx-fg-color:#000000;">[Math Problem] 
+<br class="ltx_break"></span></span>
+<span id="A1.SS2.p2.pic1.2.4" class="ltx_p"><span id="A1.SS2.p2.pic1.2.4.1" class="ltx_text" style="--ltx-fg-color:#000000;">{problem} 
+<br class="ltx_break"></span></span>
+<span id="A1.SS2.p2.pic1.2.5" class="ltx_p"><span id="A1.SS2.p2.pic1.2.5.1" class="ltx_text" style="--ltx-fg-color:#000000;">[Solution] 
+<br class="ltx_break"></span></span>
+<span id="A1.SS2.p2.pic1.2.6" class="ltx_p"><span id="A1.SS2.p2.pic1.2.6.1" class="ltx_text" style="--ltx-fg-color:#000000;">&lt;paragraph_1&gt;
+<br class="ltx_break">{solution_section_1} 
+<br class="ltx_break">&lt;/paragraph_1&gt;
+<br class="ltx_break"></span></span>
+<span id="A1.SS2.p2.pic1.2.7" class="ltx_p"><span id="A1.SS2.p2.pic1.2.7.1" class="ltx_text" style="--ltx-fg-color:#000000;">… 
+<br class="ltx_break"></span></span>
+<span id="A1.SS2.p2.pic1.2.8" class="ltx_p"><span id="A1.SS2.p2.pic1.2.8.1" class="ltx_text" style="--ltx-fg-color:#000000;">&lt;paragraph_n&gt;
+<br class="ltx_break">{solution_section_n} 
+<br class="ltx_break">&lt;/paragraph_n&gt;
+<br class="ltx_break"></span></span>
+<span id="A1.SS2.p2.pic1.2.9" class="ltx_p"><span id="A1.SS2.p2.pic1.2.9.1" class="ltx_text" style="--ltx-fg-color:#000000;">Your task is to verify the correctness of paragraph in the solution. Split your verification by <code id="A1.SS2.p2.pic1.2.9.1.1" class="ltx_verbatim ltx_font_typewriter">`### Paragraph {{ID}}`</code>. 
+<br class="ltx_break"></span></span>
+<span id="A1.SS2.p2.pic1.2.10" class="ltx_p"><span id="A1.SS2.p2.pic1.2.10.1" class="ltx_text" style="--ltx-fg-color:#000000;">Your verification for each paragraph should be constructed by 2 parts, wrapped by <code id="A1.SS2.p2.pic1.2.10.1.1" class="ltx_verbatim ltx_font_typewriter">`&lt;analyze&gt;&lt;/analyze&gt;`</code> and <code id="A1.SS2.p2.pic1.2.10.1.2" class="ltx_verbatim ltx_font_typewriter">`&lt;verify&gt;&lt;/verify&gt;`</code> separately. 
+<br class="ltx_break"></span></span>
+<span id="A1.SS2.p2.pic1.2.11" class="ltx_p"><span id="A1.SS2.p2.pic1.2.11.1" class="ltx_text" style="--ltx-fg-color:#000000;">1. In <code id="A1.SS2.p2.pic1.2.11.1.1" class="ltx_verbatim ltx_font_typewriter">`&lt;analyze&gt;&lt;/analyze&gt;`</code> part, you need to analyze the reasoning process and explain why the paragraph is correct or incorrect in detail. 
+<br class="ltx_break">2. In <code id="A1.SS2.p2.pic1.2.11.1.2" class="ltx_verbatim ltx_font_typewriter">`&lt;verify&gt;&lt;/verify&gt;`</code> part, you must write **Python code** in the form of <code id="A1.SS2.p2.pic1.2.11.1.3" class="ltx_verbatim ltx_font_typewriter">```python\n{{CODE}}\n```</code> to verify every details that can be verified by code. You can import PyPI (i.e., ‘sympy‘, ‘scipy‘ and so on) to implement complicated calculation. Make sure to print the critic results in the code. Every code will be executed automatically by system. You need to analyze the ‘[Code Output]‘ after code executing. 
+<br class="ltx_break"></span></span>
+<span id="A1.SS2.p2.pic1.2.12" class="ltx_p"><span id="A1.SS2.p2.pic1.2.12.1" class="ltx_text" style="--ltx-fg-color:#000000;">&gt;Pay attention that you must follow the format of <code id="A1.SS2.p2.pic1.2.12.1.1" class="ltx_verbatim ltx_font_typewriter">```python\n{{CODE}}\n```</code> when you write the code, otherwise the code will not be executed. 
+<br class="ltx_break"></span></span>
+<span id="A1.SS2.p2.pic1.2.13" class="ltx_p"><span id="A1.SS2.p2.pic1.2.13.1" class="ltx_text" style="--ltx-fg-color:#000000;">After all verifications, if you identify an error in a paragraph, return the **index of the paragraph where the earliest error occurs**. Otherwise, return the **index of -1 (which typically denotes &quot;not found&quot;)**. Please put your final answer (i.e., the index) within box in the form of <code id="A1.SS2.p2.pic1.2.13.1.1" class="ltx_verbatim ltx_font_typewriter">`$\\boxed{{INDEX}}$`</code>.</span></span>
+</span></span></span></foreignobject></g></g></svg>

@@ -9,14 +9,18 @@ https://www.alphaxiv.org/shared/folder/01a0d966-30ad-7eb1-8f22-cbcd7f934253
 
 # Papers
 
-The 30 most recent of 2306 papers. Every paper is listed in [papers.csv](papers.csv) and converted under [papers/](papers/).
+The 30 most recent of 2317 papers. Every paper is listed in [papers.csv](papers.csv) and converted under [papers/](papers/).
 
 | Published                 | Identifier         | Title                                                                                                                                                        | Source      |
 | ------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
+| 2026-11-23T00:00:00+00:00 | arxiv:2611.31595   | [LUCID: Statistically Grounded Self-Correction for LLM Reasoning Evaluation](papers/arxiv-2611-31595--e40edf4c6bf4.md)                                       | huggingface |
+| 2026-11-23T00:00:00+00:00 | arxiv:2611.30011   | [MORSE: Optimizing Streaming Memory Design via Open-World Auto-Research](papers/arxiv-2611-30011--f659f82978b0.md)                                           | huggingface |
+| 2026-11-21T00:00:00+00:00 | arxiv:2611.28833   | [Self-WSP: Can Language Models Improve Themselves Through Weight-Space Programming?](papers/arxiv-2611-28833--945bd6067087.md)                               | huggingface |
 | 2026-11-19T16:29:16+00:00 | arxiv:2611.26361v1 | [How Much Should an Agent Remember? Deployment Lessons from Self-Distilled Memory for LLM Agents](papers/arxiv-2611-26361v1--3d6d74bb62fd.md)                | arxiv       |
 | 2026-11-19T13:52:46+00:00 | arxiv:2611.26132v1 | [Sage-Evolve-Preview:Adaptive Observation for Post-Training Self-Improvement](papers/arxiv-2611-26132v1--e288a42085b5.md)                                    | arxiv       |
 | 2026-11-19T05:32:18+00:00 | arxiv:2611.25534v1 | [How Feedback-Free Self-Evolution Reshapes Agent Skills: A Systematic Study](papers/arxiv-2611-25534v1--2721beef405a.md)                                     | arxiv       |
 | 2026-11-19T03:11:24+00:00 | arxiv:2611.25429v1 | [Evolve Where It Matters: Coverage-Guided Self-Evolution of Agent Skills](papers/arxiv-2611-25429v1--996588bbf14c.md)                                        | arxiv       |
+| 2026-11-19T00:00:00+00:00 | arxiv:2611.26863   | [LLMs Memorize Their Own Hallucinations During Post-Training](papers/arxiv-2611-26863--68c7c71a5161.md)                                                      | huggingface |
 | 2026-11-18T15:53:39+00:00 | arxiv:2611.24651v1 | [Piccolo: Co-Evolving Decision Models and Data through Recursive Self-Improvement](papers/arxiv-2611-24651v1--0ee6fc1eb91d.md)                               | arxiv       |
 | 2026-11-18T15:52:24+00:00 | arxiv:2611.24650v2 | [Self-Rewarded Reinforcement Learning for Better-Structured Medical Explanations in Small Language Models](papers/arxiv-2611-24650v2--ad770304904b.md)       | arxiv       |
 | 2026-11-18T07:53:29+00:00 | arxiv:2611.24004v1 | [Space-X: Self-Evolving Spatial Agents Weaving Clues into Evidence Chains](papers/arxiv-2611-24004v1--585dc68d24bd.md)                                       | arxiv       |
@@ -39,10 +43,6 @@ The 30 most recent of 2306 papers. Every paper is listed in [papers.csv](papers.
 | 2026-11-13T16:16:03+00:00 | arxiv:2611.18370v1 | [f-Divergence Self-Play for Tabular Anomaly Detection via Large Language Models](papers/arxiv-2611-18370v1--407629ed5959.md)                                 | arxiv       |
 | 2026-11-13T00:00:00+00:00 | arxiv:2611.18856   | [Self-Improvement Memory Enables Continual Recursive Self-Improvement](papers/arxiv-2611-18856--ee155001ae9f.md)                                             | huggingface |
 | 2026-11-12T07:18:30+00:00 | arxiv:2611.16409v1 | [Experience-Handoff Reinforcement Learning for Recursive Self-Improvement](https://arxiv.org/abs/2611.16409v1)                                               | arxiv       |
-| 2026-11-12T02:57:08+00:00 | arxiv:2611.16206v1 | [Turning Multi-Agent Communication into Token-Level Credit with On Policy Self Distillation](papers/arxiv-2611-16206v1--ee35779f0c71.md)                     | arxiv       |
-| 2026-11-12T00:00:00+00:00 | arxiv:2611.16378   | [Evidence-Governed Adoption of Self-Generated Updates in Autonomous AI Agents](papers/arxiv-2611-16378--ff0e32fafb64.md)                                     | huggingface |
-| 2026-11-11T19:00:41+00:00 | arxiv:2611.15885v1 | [Reward-Driven Collider Physics Challenges for Self-Improving Agentic AI via Reinforcement Learning](papers/arxiv-2611-15885v1--8ec1a68e62fa.md)             | arxiv       |
-| 2026-11-11T16:38:54+00:00 | arxiv:2611.15700v1 | [AskALCF: A Self-Improving Agentic System for Intelligent HPC User Support](papers/arxiv-2611-15700v1--491fcf2eb707.md)                                      | arxiv       |
 
 <!-- papers-index:end -->
 
