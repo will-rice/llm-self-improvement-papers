@@ -9,11 +9,12 @@ https://www.alphaxiv.org/shared/folder/01a0d966-30ad-7eb1-8f22-cbcd7f934253
 
 # Papers
 
-The 30 most recent of 2317 papers. Every paper is listed in [papers.csv](papers.csv) and converted under [papers/](papers/).
+The 30 most recent of 2322 papers. Every paper is listed in [papers.csv](papers.csv) and converted under [papers/](papers/).
 
 | Published                 | Identifier         | Title                                                                                                                                                        | Source      |
 | ------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
 | 2026-11-23T00:00:00+00:00 | arxiv:2611.31595   | [LUCID: Statistically Grounded Self-Correction for LLM Reasoning Evaluation](papers/arxiv-2611-31595--e40edf4c6bf4.md)                                       | huggingface |
+| 2026-11-23T00:00:00+00:00 | arxiv:2611.30962   | [Self-Evolving Evaluation Environments for Computer-Use Agents](papers/arxiv-2611-30962--37f86587cf9a.md)                                                    | huggingface |
 | 2026-11-23T00:00:00+00:00 | arxiv:2611.30011   | [MORSE: Optimizing Streaming Memory Design via Open-World Auto-Research](papers/arxiv-2611-30011--f659f82978b0.md)                                           | huggingface |
 | 2026-11-21T00:00:00+00:00 | arxiv:2611.28833   | [Self-WSP: Can Language Models Improve Themselves Through Weight-Space Programming?](papers/arxiv-2611-28833--945bd6067087.md)                               | huggingface |
 | 2026-11-19T16:29:16+00:00 | arxiv:2611.26361v1 | [How Much Should an Agent Remember? Deployment Lessons from Self-Distilled Memory for LLM Agents](papers/arxiv-2611-26361v1--3d6d74bb62fd.md)                | arxiv       |
@@ -42,7 +43,6 @@ The 30 most recent of 2317 papers. Every paper is listed in [papers.csv](papers.
 | 2026-11-14T03:12:46+00:00 | arxiv:2611.19122v1 | [Agent-Guided Process Verification for Mathematical Self-Correction](papers/arxiv-2611-19122v1--ab172117d467.md)                                             | arxiv       |
 | 2026-11-13T16:16:03+00:00 | arxiv:2611.18370v1 | [f-Divergence Self-Play for Tabular Anomaly Detection via Large Language Models](papers/arxiv-2611-18370v1--407629ed5959.md)                                 | arxiv       |
 | 2026-11-13T00:00:00+00:00 | arxiv:2611.18856   | [Self-Improvement Memory Enables Continual Recursive Self-Improvement](papers/arxiv-2611-18856--ee155001ae9f.md)                                             | huggingface |
-| 2026-11-12T07:18:30+00:00 | arxiv:2611.16409v1 | [Experience-Handoff Reinforcement Learning for Recursive Self-Improvement](https://arxiv.org/abs/2611.16409v1)                                               | arxiv       |
 
 <!-- papers-index:end -->
 
