@@ -9,14 +9,16 @@ https://www.alphaxiv.org/shared/folder/01a0d966-30ad-7eb1-8f22-cbcd7f934253
 
 # Papers
 
-The 30 most recent of 2322 papers. Every paper is listed in [papers.csv](papers.csv) and converted under [papers/](papers/).
+The 30 most recent of 2332 papers. Every paper is listed in [papers.csv](papers.csv) and converted under [papers/](papers/).
 
 | Published                 | Identifier         | Title                                                                                                                                                        | Source      |
 | ------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
 | 2026-11-23T00:00:00+00:00 | arxiv:2611.31595   | [LUCID: Statistically Grounded Self-Correction for LLM Reasoning Evaluation](papers/arxiv-2611-31595--e40edf4c6bf4.md)                                       | huggingface |
+| 2026-11-23T00:00:00+00:00 | arxiv:2611.30965   | [Beyond Self-Consistency: Recursive Self-Improvement at Test Time](papers/arxiv-2611-30965--b62e858a3758.md)                                                 | huggingface |
 | 2026-11-23T00:00:00+00:00 | arxiv:2611.30962   | [Self-Evolving Evaluation Environments for Computer-Use Agents](papers/arxiv-2611-30962--37f86587cf9a.md)                                                    | huggingface |
 | 2026-11-23T00:00:00+00:00 | arxiv:2611.30011   | [MORSE: Optimizing Streaming Memory Design via Open-World Auto-Research](papers/arxiv-2611-30011--f659f82978b0.md)                                           | huggingface |
 | 2026-11-21T00:00:00+00:00 | arxiv:2611.28833   | [Self-WSP: Can Language Models Improve Themselves Through Weight-Space Programming?](papers/arxiv-2611-28833--945bd6067087.md)                               | huggingface |
+| 2026-11-20T00:00:00+00:00 | arxiv:2611.28244   | [Demystifying the Autoresearch Harness: How Context and Skills Shape Self-Evolving Agents](papers/arxiv-2611-28244--1c41427e0431.md)                         | huggingface |
 | 2026-11-19T16:29:16+00:00 | arxiv:2611.26361v1 | [How Much Should an Agent Remember? Deployment Lessons from Self-Distilled Memory for LLM Agents](papers/arxiv-2611-26361v1--3d6d74bb62fd.md)                | arxiv       |
 | 2026-11-19T13:52:46+00:00 | arxiv:2611.26132v1 | [Sage-Evolve-Preview:Adaptive Observation for Post-Training Self-Improvement](papers/arxiv-2611-26132v1--e288a42085b5.md)                                    | arxiv       |
 | 2026-11-19T05:32:18+00:00 | arxiv:2611.25534v1 | [How Feedback-Free Self-Evolution Reshapes Agent Skills: A Systematic Study](papers/arxiv-2611-25534v1--2721beef405a.md)                                     | arxiv       |
@@ -41,8 +43,6 @@ The 30 most recent of 2322 papers. Every paper is listed in [papers.csv](papers.
 | 2026-11-14T09:05:36+00:00 | arxiv:2611.19273v2 | [B-OPSD: On-Policy Self-Distillation with Self-Generated Problem Briefs](papers/arxiv-2611-19273v2--334dd15bd01b.md)                                         | arxiv       |
 | 2026-11-14T07:46:00+00:00 | arxiv:2611.19230v1 | [CompoundingKernel: Self-Improving from Zero to First](papers/arxiv-2611-19230v1--b52a30eaf31f.md)                                                           | arxiv       |
 | 2026-11-14T03:12:46+00:00 | arxiv:2611.19122v1 | [Agent-Guided Process Verification for Mathematical Self-Correction](papers/arxiv-2611-19122v1--ab172117d467.md)                                             | arxiv       |
-| 2026-11-13T16:16:03+00:00 | arxiv:2611.18370v1 | [f-Divergence Self-Play for Tabular Anomaly Detection via Large Language Models](papers/arxiv-2611-18370v1--407629ed5959.md)                                 | arxiv       |
-| 2026-11-13T00:00:00+00:00 | arxiv:2611.18856   | [Self-Improvement Memory Enables Continual Recursive Self-Improvement](papers/arxiv-2611-18856--ee155001ae9f.md)                                             | huggingface |
 
 <!-- papers-index:end -->
 
